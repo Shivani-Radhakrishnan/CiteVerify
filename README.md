@@ -75,7 +75,6 @@ The optimal threshold from the training study was 0.20, giving 97.6% accuracy on
 
 ## Project Structure
 
-```
 citeverify/
 ├── app.py              # Streamlit UI
 ├── requirements.txt    # Dependencies
@@ -83,4 +82,3 @@ citeverify/
 └── utils/
     ├── __init__.py
     └── auditor.py      # Core detection engine
-```
