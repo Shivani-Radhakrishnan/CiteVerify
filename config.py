@@ -10,7 +10,7 @@ registry behavior, or backend architecture. Only UI tokens and styling live here
 # Design tokens (Swiss / International + luxury minimal + corporate professional)
 TOK = {
     # Base
-    "bg": "#F7F8FA",
+     "bg": "#F7F8FA",
     "panel": "#FFFFFF",
     "card": "#FFFFFF",
     "border": "#D9DEE6",
