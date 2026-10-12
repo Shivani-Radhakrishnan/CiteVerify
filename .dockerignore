@@ -1,0 +1,11 @@
+.git
+.github
+**/__pycache__
+*.pyc
+.venv
+venv
+.pytest_cache
+tests
+# recorded registry responses: only needed to re-run the evaluation offline
+data/benchmark/http_cache.json
+data/llm_citations

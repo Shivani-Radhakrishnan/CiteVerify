@@ -164,6 +164,7 @@ result = Auditor().audit(
     doi="10.1162/neco.1997.9.8.1735",
 )
 print(result.label, result.score, result.tier)   # VERIFIED 0.97 DOI registry
+print(result.risk)                               # calibrated probability of fabrication
 for s in result.signals:
     print(s.status, s.name, s.detail)
 ```
@@ -172,6 +173,43 @@ The app has six pages: single audit, batch audit (CSV or pasted list, parallel l
 CSV export, metrics against a `human_label` column), side-by-side compare, study mode
 (metrics, confusion matrix and threshold sweep on your own labelled data), analytics
 (the benchmark results), and documentation.
+
+### REST API
+
+```bash
+pip install -r requirements-api.txt
+uvicorn citeverify.api:app --port 8000      # interactive docs at http://localhost:8000/docs
+```
+
+```bash
+curl -s -X POST localhost:8000/v1/audit -H 'Content-Type: application/json' -d '{
+  "citation": "He, K., Zhang, X., Ren, S., & Sun, J. (2019). Deep residual learning for image recognition. CVPR.",
+  "doi": "10.1109/CVPR.2016.90"}'
+```
+
+```json
+{"label": "HALLUCINATED", "score": 0.05, "risk": 0.7419, "risk_flagged": true,
+ "reason": "DOI exists but details do not match", "explanation": "Cited 2019; registry lists 2016.",
+ "decided_by": "DOI registry",
+ "evidence": [{"check": "Year", "status": "fail", "detail": "Cited 2019; registry lists 2016."}, "..."],
+ "record": {"source": "Crossref", "title": "Deep Residual Learning for Image Recognition", "year": 2016, "...": "..."}}
+```
+
+`POST /v1/audit/batch` takes up to 100 citations and checks them concurrently, keeping
+their order; `GET /health` reports the version and whether the risk model is loaded.
+Requests are validated (length limits, batch size) and registry responses are cached in
+memory.
+
+### Docker
+
+```bash
+docker compose up            # API on :8000, app on :8501
+```
+
+or one image at a time: `docker build --target api -t citeverify-api .` (small: the
+engine needs only `requests`) and `--target app` for the Streamlit app.
+Both run as a non-root user with health checks; CI builds both images and smoke-tests
+the containers on every push.
 
 Batch CSV format:
 
@@ -195,6 +233,7 @@ CiteVerify/
 │   ├── metrics.py             # accuracy / precision / recall / F1
 │   ├── models.py              # AuditResult, WorkRecord, Signal, ...
 │   ├── risk.py                # learned risk: features + JSON logistic model (data/risk_model.json)
+│   ├── api.py                 # FastAPI service: /v1/audit, /v1/audit/batch, /health
 │   ├── clients/               # HTTP layer + Crossref, DataCite, arXiv, doi.org clients
 │   └── detectors/             # temporal, doi, search, heuristics, known_papers (legacy)
 ├── pages/                     # Streamlit pages
@@ -211,9 +250,9 @@ pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-140 tests cover DOI and citation parsing, title/year/author matching, the HTTP layer
+148 tests cover DOI and citation parsing, title/year/author matching, the HTTP layer
 (retries, backoff, caching, offline mode), every registry client, tier routing and
-verdicts of the full pipeline, the risk model, the UI helpers, and the benchmark itself (no overlap with
+verdicts of the full pipeline, the risk model, the REST API, the UI helpers, and the benchmark itself (no overlap with
 the legacy table, splits share no paper, published numbers reproduce from the recorded
 responses). GitHub Actions runs them on Python 3.10–3.12.
 

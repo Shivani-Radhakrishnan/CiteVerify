@@ -102,7 +102,15 @@ for signal in result.signals:
     )
 
     st.markdown("### Version history")
-    with st.expander("**v2.0** — package refactor and honest evaluation", expanded=True):
+    with st.expander("**v2.2** — learned risk, REST API, AI-written citations", expanded=True):
+        for item in [
+            "Calibrated probability of fabrication from a learned model over the collected evidence",
+            "REST API (FastAPI) and Docker images for the API and this app",
+            "Evaluated on 805 references written by ChatGPT, Gemini and Claude models",
+            "arXiv IDs in the DOI field are resolved; better title parsing (abbreviations, quoted phrases)",
+        ]:
+            st.markdown(f"- {item}")
+    with st.expander("**v2.0** — package refactor and held-out evaluation", expanded=False):
         for item in [
             "citeverify package with typed detectors and registry clients (timeouts, retries, caching)",
             "Citation parsing for APA, IEEE and Vancouver styles; title search when no DOI is given",

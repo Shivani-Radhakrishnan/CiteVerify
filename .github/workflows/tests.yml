@@ -29,3 +29,26 @@ jobs:
         run: python -m evaluation.run --split test --no-save
       - name: Reproduce the language-model citation results offline
         run: python -m evaluation.run_llm --no-save
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the API and app images
+        run: |
+          docker build --target api -t citeverify-api .
+          docker build --target app -t citeverify-app .
+      - name: Smoke-test the API container
+        run: |
+          docker run -d --name api -p 8000:8000 citeverify-api
+          for i in $(seq 1 30); do curl -sf localhost:8000/health && break; sleep 1; done
+          curl -sf localhost:8000/health | grep -q '"risk_model":true'
+          # a future year is rejected without any registry call
+          curl -sf -X POST localhost:8000/v1/audit -H 'Content-Type: application/json' \
+            -d '{"citation": "Smith, J. (2031). A paper from the future. Journal of Tests."}' \
+            | tee /dev/stderr | grep -q '"label":"HALLUCINATED"'
+      - name: Smoke-test the app container
+        run: |
+          docker run -d --name app -p 8501:8501 citeverify-app
+          for i in $(seq 1 60); do curl -sf localhost:8501/_stcore/health && break; sleep 1; done
+          curl -sf localhost:8501/_stcore/health

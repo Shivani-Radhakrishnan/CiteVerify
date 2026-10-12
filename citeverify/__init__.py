@@ -13,4 +13,4 @@ __all__ = [
     "WorkRecord", "audit_citation", "default_auditor", "extract_core_citation", "find_doi",
     "normalise_doi", "parse_citation",
 ]
-__version__ = "2.0.0"
+__version__ = "2.2.0"
