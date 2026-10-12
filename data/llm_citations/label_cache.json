@@ -264,6 +264,26 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1002/wat2.1398": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Tim H. M. van Emmerik"
+}
+},
+{
+"author": {
+"display_name": "Anna Schwarz"
+}
+}
+],
+"display_name": "Plastic debris in rivers",
+"id": "https://openalex.org/W2991598684",
+"publication_year": 2019
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1002/widm.1312": {
 "body": {
 "authorships": [
@@ -399,6 +419,46 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1007/978-3-319-61615-5": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Martin Wagner"
+}
+},
+{
+"author": {
+"display_name": "Scott Lambert"
+}
+}
+],
+"display_name": "Freshwater Microplastics",
+"id": "https://openalex.org/W2909645797",
+"publication_year": 2017
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1007/978-3-540-69775-6": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Madeleine J. H. van Oppen"
+}
+},
+{
+"author": {
+"display_name": "Janice M. Lough"
+}
+}
+],
+"display_name": "Coral Bleaching",
+"id": "https://openalex.org/W4237239642",
+"publication_year": 2008
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1007/BF00303779": {
 "body": {
 "authorships": [
@@ -441,6 +501,31 @@
 "display_name": "Toward a computer vision-based wayfinding aid for blind persons to access unfamiliar indoor environments",
 "id": "https://openalex.org/W2106917970",
 "publication_year": 2012
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1007/s00338-019-01844-2": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "C. Mark Eakin"
+}
+},
+{
+"author": {
+"display_name": "Hugh P. A. Sweatman"
+}
+},
+{
+"author": {
+"display_name": "Russell E. Brainard"
+}
+}
+],
+"display_name": "The 2014–2017 global-scale coral bleaching event: insights and impacts",
+"id": "https://openalex.org/W2963093950",
+"publication_year": 2019
 },
 "status": 200
 },
@@ -499,6 +584,21 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1016/0004-6981%2873%2990140-6": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "T. R. Oke"
+}
+}
+],
+"display_name": "City size and the urban heat island",
+"id": "https://openalex.org/W2038125488",
+"publication_year": 1973
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1016/S0003-4916%2802%2900018-0": {
 "body": {
 "authorships": [
@@ -531,6 +631,56 @@
 "display_name": "Thermal remote sensing of urban climates",
 "id": "https://openalex.org/W2153763028",
 "publication_year": 2003
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/S0038-092X%2800%2900089-X": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Hashem Akbari"
+}
+},
+{
+"author": {
+"display_name": "M. Pomerantz"
+}
+},
+{
+"author": {
+"display_name": "Haider Taha"
+}
+}
+],
+"display_name": "Cool surfaces and shade trees to reduce energy use and improve air quality in urban areas",
+"id": "https://openalex.org/W2108554848",
+"publication_year": 2001
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/S1001-0742%2808%2960019-4": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Ahmed Memon RIZWAN"
+}
+},
+{
+"author": {
+"display_name": "Dennis Y.C. Leung"
+}
+},
+{
+"author": {
+"display_name": "Chun‐Ho Liu"
+}
+}
+],
+"display_name": "A review on the generation, determination and mitigation of Urban Heat Island",
+"id": "https://openalex.org/W2028529111",
+"publication_year": 2008
 },
 "status": 200
 },
@@ -656,6 +806,26 @@
 "display_name": "Carbon sequestration in agricultural soils via cultivation of cover crops – A meta-analysis",
 "id": "https://openalex.org/W1964700776",
 "publication_year": 2014
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/j.aiopen.2023.01.001": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Rishabh Misra"
+}
+},
+{
+"author": {
+"display_name": "Prahal Arora"
+}
+}
+],
+"display_name": "Sarcasm detection using news headlines dataset",
+"id": "https://openalex.org/W4318832809",
+"publication_year": 2023
 },
 "status": 200
 },
@@ -826,6 +996,61 @@
 "display_name": "Fatigue and cognitive impairment in Post-COVID-19 Syndrome: A systematic review and meta-analysis",
 "id": "https://openalex.org/W4200066487",
 "publication_year": 2021
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/j.bbi.2022.01.020": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Hiroaki Hori"
+}
+},
+{
+"author": {
+"display_name": "Shuhei Izawa"
+}
+},
+{
+"author": {
+"display_name": "Fuyuko Yoshida"
+}
+},
+{
+"author": {
+"display_name": "Hiroshi Kunugi"
+}
+},
+{
+"author": {
+"display_name": "Yoshiharu Kim"
+}
+},
+{
+"author": {
+"display_name": "Shinya Mizukami"
+}
+},
+{
+"author": {
+"display_name": "Yusuke Inoue"
+}
+},
+{
+"author": {
+"display_name": "Hirokuni Tagaya"
+}
+},
+{
+"author": {
+"display_name": "Yuko Hakamata"
+}
+}
+],
+"display_name": "Association of childhood maltreatment history with salivary interleukin-6 diurnal patterns and C-reactive protein in healthy adults",
+"id": "https://openalex.org/W4210604581",
+"publication_year": 2022
 },
 "status": 200
 },
@@ -1509,6 +1734,76 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1016/j.inffus.2019.12.012": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Alejandro Barredo Arrieta"
+}
+},
+{
+"author": {
+"display_name": "Natalia Díaz-Rodríguez"
+}
+},
+{
+"author": {
+"display_name": "Javier Del Ser"
+}
+},
+{
+"author": {
+"display_name": "Adrien Bennetot"
+}
+},
+{
+"author": {
+"display_name": "Siham Tabik"
+}
+},
+{
+"author": {
+"display_name": "Alberto Barbado"
+}
+},
+{
+"author": {
+"display_name": "Salvador García"
+}
+},
+{
+"author": {
+"display_name": "Sergio Gil-López"
+}
+},
+{
+"author": {
+"display_name": "Daniel Molina"
+}
+},
+{
+"author": {
+"display_name": "Richard Benjamins"
+}
+},
+{
+"author": {
+"display_name": "Raja Chatila"
+}
+},
+{
+"author": {
+"display_name": "Francisco Herrera"
+}
+}
+],
+"display_name": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+"id": "https://openalex.org/W2981731882",
+"publication_year": 2019
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1016/j.jglr.2014.12.020": {
 "body": {
 "authorships": [
@@ -1819,6 +2114,41 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1016/j.marpolbul.2016.01.006": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Rachid Dris"
+}
+},
+{
+"author": {
+"display_name": "Johnny Gaspéri"
+}
+},
+{
+"author": {
+"display_name": "Mohamed Saad"
+}
+},
+{
+"author": {
+"display_name": "Cécile Mirande-Bret"
+}
+},
+{
+"author": {
+"display_name": "Bruno Tassin"
+}
+}
+],
+"display_name": "Synthetic fibers in atmospheric fallout: A source of microplastics in the environment?",
+"id": "https://openalex.org/W2286955579",
+"publication_year": 2016
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1016/j.mcpdig.2023.05.004": {
 "body": {
 "authorships": [
@@ -1896,6 +2226,31 @@
 "display_name": "Methods for Optimizing CRISPR-Cas9 Genome Editing Specificity",
 "id": "https://openalex.org/W2496542349",
 "publication_year": 2016
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/j.neubiorev.2019.03.023": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Richard T. Liu"
+}
+},
+{
+"author": {
+"display_name": "Rachel F.L. Walsh"
+}
+},
+{
+"author": {
+"display_name": "Ana E. Sheehan"
+}
+}
+],
+"display_name": "Prebiotics and probiotics for depression and anxiety: A systematic review and meta-analysis of controlled clinical trials",
+"id": "https://openalex.org/W2938142558",
+"publication_year": 2019
 },
 "status": 200
 },
@@ -2064,6 +2419,61 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1016/j.scitotenv.2018.07.271": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Fredric M. Windsor"
+}
+},
+{
+"author": {
+"display_name": "Rosie M. Tilley"
+}
+},
+{
+"author": {
+"display_name": "Charles R. Tyler"
+}
+},
+{
+"author": {
+"display_name": "Steve J. Ormerod"
+}
+}
+],
+"display_name": "Microplastic ingestion by riverine macroinvertebrates",
+"id": "https://openalex.org/W2884953569",
+"publication_year": 2018
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/j.scitotenv.2019.136193": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Zander Samuel Venter"
+}
+},
+{
+"author": {
+"display_name": "Norun Hjertager Krog"
+}
+},
+{
+"author": {
+"display_name": "David Nicholas Barton"
+}
+}
+],
+"display_name": "Linking green infrastructure to urban heat and human health risk mitigation in Oslo, Norway",
+"id": "https://openalex.org/W2995968881",
+"publication_year": 2019
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1016/j.scitotenv.2020.139866": {
 "body": {
 "authorships": [
@@ -2216,6 +2626,41 @@
 "display_name": "Microplastics in freshwater systems: A review on occurrence, environmental effects, and methods for microplastics detection",
 "id": "https://openalex.org/W2779212101",
 "publication_year": 2017
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1016/j.watres.2018.06.015": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Martín C. M. Blettler"
+}
+},
+{
+"author": {
+"display_name": "Elie Abrial"
+}
+},
+{
+"author": {
+"display_name": "Farhan R. Khan"
+}
+},
+{
+"author": {
+"display_name": "Nüket Sivri"
+}
+},
+{
+"author": {
+"display_name": "Luis A. Espínola"
+}
+}
+],
+"display_name": "Freshwater plastic pollution: Recognizing research biases and identifying knowledge gaps",
+"id": "https://openalex.org/W2810429847",
+"publication_year": 2018
 },
 "status": 200
 },
@@ -2496,6 +2941,76 @@
 "display_name": "Strong contributions of local background climate to urban heat islands",
 "id": "https://openalex.org/W1964805252",
 "publication_year": 2014
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1038/nature14592": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Benjamin P. Kleinstiver"
+}
+},
+{
+"author": {
+"display_name": "Michelle S. Prew"
+}
+},
+{
+"author": {
+"display_name": "Shengdar Q. Tsai"
+}
+},
+{
+"author": {
+"display_name": "Ved V. Topkar"
+}
+},
+{
+"author": {
+"display_name": "Nathalie T. Nguyen"
+}
+},
+{
+"author": {
+"display_name": "Zongli Zheng"
+}
+},
+{
+"author": {
+"display_name": "Andrew P. W. Gonzales"
+}
+},
+{
+"author": {
+"display_name": "Zhuyun Li"
+}
+},
+{
+"author": {
+"display_name": "Randall Theodore Peterson"
+}
+},
+{
+"author": {
+"display_name": "Jing-Ruey Joanna Yeh"
+}
+},
+{
+"author": {
+"display_name": "Martin J. Aryee"
+}
+},
+{
+"author": {
+"display_name": "J. Keith Joung"
+}
+}
+],
+"display_name": "Engineered CRISPR-Cas9 nucleases with altered PAM specificities",
+"id": "https://openalex.org/W4245053291",
+"publication_year": 2015
 },
 "status": 200
 },
@@ -2864,6 +3379,46 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1038/nbt.2673": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Vikram Pattanayak"
+}
+},
+{
+"author": {
+"display_name": "Steven Lin"
+}
+},
+{
+"author": {
+"display_name": "John P. Guilinger"
+}
+},
+{
+"author": {
+"display_name": "Enbo Ma"
+}
+},
+{
+"author": {
+"display_name": "Jennifer A. Doudna"
+}
+},
+{
+"author": {
+"display_name": "David R. Liu"
+}
+}
+],
+"display_name": "High-throughput profiling of off-target DNA cleavage reveals RNA-programmed Cas9 nuclease specificity",
+"id": "https://openalex.org/W2149402050",
+"publication_year": 2013
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1038/nbt.3117": {
 "body": {
 "authorships": [
@@ -3144,6 +3699,26 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1038/nrg.2016.28": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Shengdar Q. Tsai"
+}
+},
+{
+"author": {
+"display_name": "J. Keith Joung"
+}
+}
+],
+"display_name": "Defining and improving the genome-wide specificities of CRISPR–Cas9 nucleases",
+"id": "https://openalex.org/W2336346625",
+"publication_year": 2016
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1038/nrn3346": {
 "body": {
 "authorships": [
@@ -3201,6 +3776,41 @@
 "display_name": "The spread of low-credibility content by social bots",
 "id": "https://openalex.org/W2804365752",
 "publication_year": 2018
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1038/s41467-019-09238-2": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Shannon Sully"
+}
+},
+{
+"author": {
+"display_name": "Deron E. Burkepile"
+}
+},
+{
+"author": {
+"display_name": "Mary K. Donovan"
+}
+},
+{
+"author": {
+"display_name": "Gregor Hodgson"
+}
+},
+{
+"author": {
+"display_name": "Robert van Woesik"
+}
+}
+],
+"display_name": "A global analysis of coral bleaching over the past two decades",
+"id": "https://openalex.org/W2924041486",
+"publication_year": 2019
 },
 "status": 200
 },
@@ -4494,6 +5104,10 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1038/s41592-021-01319-5": {
+"body": null,
+"status": 404
+},
 "https://api.openalex.org/works/doi:10.1038/s41592-022-01488-1": {
 "body": {
 "authorships": [
@@ -4734,6 +5348,71 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1038/s41893-020-0491-z": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Déborah Bossio"
+}
+},
+{
+"author": {
+"display_name": "Susan C. Cook‐Patton"
+}
+},
+{
+"author": {
+"display_name": "Peter Woods Ellis"
+}
+},
+{
+"author": {
+"display_name": "Joseph Fargione"
+}
+},
+{
+"author": {
+"display_name": "Jonathan Sanderman"
+}
+},
+{
+"author": {
+"display_name": "Pete Smith"
+}
+},
+{
+"author": {
+"display_name": "Stephen Andrew Wood"
+}
+},
+{
+"author": {
+"display_name": "Robert J. Zomer"
+}
+},
+{
+"author": {
+"display_name": "M. Unger"
+}
+},
+{
+"author": {
+"display_name": "Igino M. Emmer"
+}
+},
+{
+"author": {
+"display_name": "Bronson W. Griscom"
+}
+}
+],
+"display_name": "The role of soil carbon in natural climate solutions",
+"id": "https://openalex.org/W3011738444",
+"publication_year": 2020
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1038/s42256-019-0048-x": {
 "body": {
 "authorships": [
@@ -4866,6 +5545,46 @@
 "display_name": "PoseBusters: AI-based docking methods fail to generate physically valid poses or generalise to novel sequences",
 "id": "https://openalex.org/W4389696354",
 "publication_year": 2023
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1051/agro%3A2002043": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Johan Six"
+}
+},
+{
+"author": {
+"display_name": "Christian L. Feller"
+}
+},
+{
+"author": {
+"display_name": "Karolien Denef"
+}
+},
+{
+"author": {
+"display_name": "Stephen M. Ogle"
+}
+},
+{
+"author": {
+"display_name": "Joao Carlos De Moraes"
+}
+},
+{
+"author": {
+"display_name": "Alain Albrecht"
+}
+}
+],
+"display_name": "Soil organic matter, biota and aggregation in temperate and tropical soils - Effects of no-tillage",
+"id": "https://openalex.org/W2128385410",
+"publication_year": 2002
 },
 "status": 200
 },
@@ -5066,6 +5785,31 @@
 "display_name": "Cognition and Memory after Covid-19 in a Large Community Sample",
 "id": "https://openalex.org/W4392243692",
 "publication_year": 2024
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1056/NEJMra1814259": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Alvin Rajkomar"
+}
+},
+{
+"author": {
+"display_name": "Jay B. Dean"
+}
+},
+{
+"author": {
+"display_name": "Isaac S. Kohane"
+}
+}
+],
+"display_name": "Machine Learning in Medicine",
+"id": "https://openalex.org/W2934399013",
+"publication_year": 2019
 },
 "status": 200
 },
@@ -5354,6 +6098,36 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1073/pnas.1817561116": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Carly D. Ziter"
+}
+},
+{
+"author": {
+"display_name": "Eric J. Pedersen"
+}
+},
+{
+"author": {
+"display_name": "Christopher J. Kucharik"
+}
+},
+{
+"author": {
+"display_name": "Monica G. Turner"
+}
+}
+],
+"display_name": "Scale-dependent interactions between tree canopy cover and impervious surfaces reduce daytime urban heat during summer",
+"id": "https://openalex.org/W2923210967",
+"publication_year": 2019
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1073/pnas.1914677117": {
 "body": {
 "authorships": [
@@ -5480,6 +6254,41 @@
 ],
 "display_name": "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences",
 "id": "https://openalex.org/W3146944767",
+"publication_year": 2021
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1073/pnas.2023301118": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Matteo Cinelli"
+}
+},
+{
+"author": {
+"display_name": "Gianmarco De Francisci Morales"
+}
+},
+{
+"author": {
+"display_name": "Alessandro Galeazzi"
+}
+},
+{
+"author": {
+"display_name": "Walter Quattrociocchi"
+}
+},
+{
+"author": {
+"display_name": "Michele Starnini"
+}
+}
+],
+"display_name": "The echo chamber effect on social media",
+"id": "https://openalex.org/W3133423348",
 "publication_year": 2021
 },
 "status": 200
@@ -5669,6 +6478,31 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1080/21670811.2017.1360143": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Edson C. Tandoc"
+}
+},
+{
+"author": {
+"display_name": "Zheng Wei Lim"
+}
+},
+{
+"author": {
+"display_name": "Richard S. Ling"
+}
+}
+],
+"display_name": "Defining “Fake News”",
+"id": "https://openalex.org/W2751589903",
+"publication_year": 2017
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1086/380085": {
 "body": {
 "authorships": [
@@ -5688,6 +6522,10 @@
 "publication_year": 2004
 },
 "status": 200
+},
+"https://api.openalex.org/works/doi:10.1086/tpe.16.20061896": {
+"body": null,
+"status": 404
 },
 "https://api.openalex.org/works/doi:10.1093/bioinformatics/btad651": {
 "body": {
@@ -5916,6 +6754,26 @@
 "display_name": "Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts: Evidence from Denmark *",
 "id": "https://openalex.org/W2236924981",
 "publication_year": 2014
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1093/qje/qjv013": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Karthik Muralidharan"
+}
+},
+{
+"author": {
+"display_name": "Venkatesh Sundararaman"
+}
+}
+],
+"display_name": "The Aggregate Effect of School Choice: Evidence from a Two-Stage Experiment in India *",
+"id": "https://openalex.org/W2089946336",
+"publication_year": 2015
 },
 "status": 200
 },
@@ -6509,6 +7367,46 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1109/70.928559": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Patric Jensfelt"
+}
+},
+{
+"author": {
+"display_name": "Henrik I. Christensen"
+}
+}
+],
+"display_name": "Pose tracking using laser scanning and minimalistic environmental models",
+"id": "https://openalex.org/W2164000999",
+"publication_year": 2001
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/ACCESS.2018.2807385": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Naveed Akhtar"
+}
+},
+{
+"author": {
+"display_name": "Ajmal Saeed Mian"
+}
+}
+],
+"display_name": "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey",
+"id": "https://openalex.org/W2962700793",
+"publication_year": 2018
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1109/ACCESS.2018.2870052": {
 "body": {
 "authorships": [
@@ -6526,6 +7424,26 @@
 "display_name": "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)",
 "id": "https://openalex.org/W2891503716",
 "publication_year": 2018
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/ACCESS.2020.3028072": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Özge Mercanoğlu Sincan"
+}
+},
+{
+"author": {
+"display_name": "Hacer Yalım Keleş"
+}
+}
+],
+"display_name": "AUTSL: A Large Scale Multi-Modal Turkish Sign Language Dataset and Baseline Methods",
+"id": "https://openalex.org/W3046544838",
+"publication_year": 2020
 },
 "status": 200
 },
@@ -6751,6 +7669,116 @@
 "display_name": "Mechanism Design via Differential Privacy",
 "id": "https://openalex.org/W2123820077",
 "publication_year": 2007
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/FOCS.2010.12": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Cynthia Dwork"
+}
+},
+{
+"author": {
+"display_name": "Guy N. Rothblum"
+}
+},
+{
+"author": {
+"display_name": "Salil Vadhan"
+}
+}
+],
+"display_name": "Boosting and Differential Privacy",
+"id": "https://openalex.org/W2167372639",
+"publication_year": 2010
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/ICCV.1999.791201": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Darnell Moore"
+}
+},
+{
+"author": {
+"display_name": "Irfan A. Essa"
+}
+},
+{
+"author": {
+"display_name": "Monson H. Hayes III"
+}
+}
+],
+"display_name": "Exploiting human actions and object context for recognition tasks",
+"id": "https://openalex.org/W2098517267",
+"publication_year": 1999
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/ICCV.2017.331": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Pan Li He"
+}
+},
+{
+"author": {
+"display_name": "Weilin Huang"
+}
+},
+{
+"author": {
+"display_name": "Tong He"
+}
+},
+{
+"author": {
+"display_name": "Qile Zhu"
+}
+},
+{
+"author": {
+"display_name": "Yu Qiao"
+}
+},
+{
+"author": {
+"display_name": "Xiaolin Li"
+}
+}
+],
+"display_name": "Single Shot Text Detector with Regional Attention",
+"id": "https://openalex.org/W2963977642",
+"publication_year": 2017
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/ICCV.2017.333": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Isma Hadji"
+}
+},
+{
+"author": {
+"display_name": "Richard P. Wildes"
+}
+}
+],
+"display_name": "A Spatiotemporal Oriented Energy Network for Dynamic Texture Recognition",
+"id": "https://openalex.org/W2749285435",
+"publication_year": 2017
 },
 "status": 200
 },
@@ -7041,6 +8069,61 @@
 "display_name": "Explaining Deep Neural Networks and Beyond: A Review of Methods and Applications",
 "id": "https://openalex.org/W3132191748",
 "publication_year": 2021
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/MPRV.2016.49": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Mónica E. Tentori"
+}
+},
+{
+"author": {
+"display_name": "Lizbeth Escobedo"
+}
+},
+{
+"author": {
+"display_name": "Carlos Hernandez"
+}
+},
+{
+"author": {
+"display_name": "Aleksandar Matic"
+}
+},
+{
+"author": {
+"display_name": "Gillian R. Hayes"
+}
+}
+],
+"display_name": "Pervasive Displays in Classrooms of Children with Severe Autism",
+"id": "https://openalex.org/W2461348130",
+"publication_year": 2016
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1109/PERCOM.2004.1276851": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "C. Fretzagias"
+}
+},
+{
+"author": {
+"display_name": "Maria Papadopouli"
+}
+}
+],
+"display_name": "Cooperative location-sensing for wireless networks",
+"id": "https://openalex.org/W2158442058",
+"publication_year": 2004
 },
 "status": 200
 },
@@ -7614,6 +8697,101 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1126/science.1085046": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Terry P. Hughes"
+}
+},
+{
+"author": {
+"display_name": "Andrew H. Baird"
+}
+},
+{
+"author": {
+"display_name": "David R. Bellwood"
+}
+},
+{
+"author": {
+"display_name": "M. A. Card"
+}
+},
+{
+"author": {
+"display_name": "Sean R. Connolly"
+}
+},
+{
+"author": {
+"display_name": "Carl Folke"
+}
+},
+{
+"author": {
+"display_name": "Richard K. Grosberg"
+}
+},
+{
+"author": {
+"display_name": "Ove Hoegh‐Guldberg"
+}
+},
+{
+"author": {
+"display_name": "Jeremy B. C. Jackson"
+}
+},
+{
+"author": {
+"display_name": "Joan A. Kleypas"
+}
+},
+{
+"author": {
+"display_name": "Janice Lough"
+}
+},
+{
+"author": {
+"display_name": "Paul Marshall"
+}
+},
+{
+"author": {
+"display_name": "Magnus Nyström"
+}
+},
+{
+"author": {
+"display_name": "Stephen R. Palumbi"
+}
+},
+{
+"author": {
+"display_name": "John Michael Pandolfi"
+}
+},
+{
+"author": {
+"display_name": "Brian Roy Rosen"
+}
+},
+{
+"author": {
+"display_name": "Joan E. Roughgarden"
+}
+}
+],
+"display_name": "Climate Change, Human Impacts, and the Resilience of Coral Reefs",
+"id": "https://openalex.org/W2142598180",
+"publication_year": 2003
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1126/science.1097396": {
 "body": {
 "authorships": [
@@ -7781,6 +8959,21 @@
 "display_name": "Genomic determinants of coral heat tolerance across latitudes",
 "id": "https://openalex.org/W1552780263",
 "publication_year": 2015
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1126/science.181.4096.223": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Christian B. Anfinsen"
+}
+}
+],
+"display_name": "Principles that Govern the Folding of Protein Chains",
+"id": "https://openalex.org/W2045777307",
+"publication_year": 1973
 },
 "status": 200
 },
@@ -8484,6 +9677,36 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1145/2470654.2470734": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Gilles Bailly"
+}
+},
+{
+"author": {
+"display_name": "Thomas Pietrzak"
+}
+},
+{
+"author": {
+"display_name": "Jonathan Deber"
+}
+},
+{
+"author": {
+"display_name": "Daniel Wigdor"
+}
+}
+],
+"display_name": "Métamorphe",
+"id": "https://openalex.org/W2056433986",
+"publication_year": 2013
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1145/2660267.2660348": {
 "body": {
 "authorships": [
@@ -9014,6 +10237,51 @@
 ],
 "display_name": "Adversarial Sensor Attack on LiDAR-based Perception in Autonomous Driving",
 "id": "https://openalex.org/W2959364614",
+"publication_year": 2019
+},
+"status": 200
+},
+"https://api.openalex.org/works/doi:10.1145/3338501.3357370": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Stacey Truex"
+}
+},
+{
+"author": {
+"display_name": "Nathalie Baracaldo"
+}
+},
+{
+"author": {
+"display_name": "Ali Anwar"
+}
+},
+{
+"author": {
+"display_name": "Thomas Steinke"
+}
+},
+{
+"author": {
+"display_name": "Heiko Ludwig"
+}
+},
+{
+"author": {
+"display_name": "Rui Zhang"
+}
+},
+{
+"author": {
+"display_name": "Yi Zhou"
+}
+}
+],
+"display_name": "A Hybrid Approach to Privacy-Preserving Federated Learning",
+"id": "https://openalex.org/W2970606380",
 "publication_year": 2019
 },
 "status": 200
@@ -9943,6 +11211,41 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1177/0956797620939054": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Gordon Pennycook"
+}
+},
+{
+"author": {
+"display_name": "Jonathon McPhetres"
+}
+},
+{
+"author": {
+"display_name": "Yunhao Zhang"
+}
+},
+{
+"author": {
+"display_name": "Jackson G. Lu"
+}
+},
+{
+"author": {
+"display_name": "David Gertler Rand"
+}
+}
+],
+"display_name": "Fighting COVID-19 Misinformation on Social Media: Experimental Evidence for a Scalable Accuracy-Nudge Intervention",
+"id": "https://openalex.org/W3013473577",
+"publication_year": 2020
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1177/1529100612451018": {
 "body": {
 "authorships": [
@@ -10083,6 +11386,41 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.1186/s12911-020-01332-6": {
+"body": {
+"authorships": [
+{
+"author": {
+"display_name": "Julia Amann"
+}
+},
+{
+"author": {
+"display_name": "Alessandro Blasimme"
+}
+},
+{
+"author": {
+"display_name": "Effy Vayena"
+}
+},
+{
+"author": {
+"display_name": "Dietmar Frey"
+}
+},
+{
+"author": {
+"display_name": "Vince I. Madai"
+}
+}
+],
+"display_name": "Explainability for artificial intelligence in healthcare: a multidisciplinary perspective",
+"id": "https://openalex.org/W3109650690",
+"publication_year": 2020
+},
+"status": 200
+},
 "https://api.openalex.org/works/doi:10.1186/s13054-023-04393-x": {
 "body": {
 "authorships": [
@@ -10162,6 +11500,10 @@
 "publication_year": 2017
 },
 "status": 200
+},
+"https://api.openalex.org/works/doi:10.1289/ehp.7619": {
+"body": null,
+"status": 404
 },
 "https://api.openalex.org/works/doi:10.1371/journal.pcbi.1005324": {
 "body": {
@@ -10953,9 +12295,381 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works/doi:10.7907/06k1-1x84": {
+"body": null,
+"status": 404
+},
 "https://api.openalex.org/works/doi:arXiv%3Aquant-ph/9705052": {
 "body": null,
 "status": 404
+},
+"https://api.openalex.org/works?search=a%20survey%20on%20hallucination%20in%20large%20language%20models%20principles%20taxonomy%20challenges%20and%20open%20questions&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Lei Huang"
+}
+},
+{
+"author": {
+"display_name": "Weijiang Yu"
+}
+},
+{
+"author": {
+"display_name": "Weitao Ma"
+}
+},
+{
+"author": {
+"display_name": "Weihong Zhong"
+}
+},
+{
+"author": {
+"display_name": "Zhangyin Feng"
+}
+},
+{
+"author": {
+"display_name": "Haotian Wang"
+}
+},
+{
+"author": {
+"display_name": "Qianglong Chen"
+}
+},
+{
+"author": {
+"display_name": "Weihua Peng"
+}
+},
+{
+"author": {
+"display_name": "Xiaocheng Feng"
+}
+},
+{
+"author": {
+"display_name": "Bing Qin"
+}
+},
+{
+"author": {
+"display_name": "Ting Liu"
+}
+}
+],
+"display_name": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+"id": "https://openalex.org/W4404534210",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Aisha Alansari"
+}
+},
+{
+"author": {
+"display_name": "Hamzah Luqman"
+}
+}
+],
+"display_name": "Large language models hallucination: A comprehensive survey",
+"id": "https://openalex.org/W7148355944",
+"publication_year": 2026
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Yue Zhang"
+}
+},
+{
+"author": {
+"display_name": "Yafu Li"
+}
+},
+{
+"author": {
+"display_name": "Leyang Cui"
+}
+},
+{
+"author": {
+"display_name": "Deng Cai"
+}
+},
+{
+"author": {
+"display_name": "Lemao Liu"
+}
+},
+{
+"author": {
+"display_name": "Tingchen Fu"
+}
+},
+{
+"author": {
+"display_name": "Xinting Huang"
+}
+},
+{
+"author": {
+"display_name": "Enbo Zhao"
+}
+},
+{
+"author": {
+"display_name": "Yu Zhang"
+}
+},
+{
+"author": {
+"display_name": "Yulong Chen"
+}
+},
+{
+"author": {
+"display_name": "Longyue Wang"
+}
+},
+{
+"author": {
+"display_name": "Anh Tuan Luu"
+}
+},
+{
+"author": {
+"display_name": "Wei Bi"
+}
+},
+{
+"author": {
+"display_name": "Freda Shi"
+}
+},
+{
+"author": {
+"display_name": "Shuming Shi"
+}
+}
+],
+"display_name": "🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+"id": "https://openalex.org/W4412158322",
+"publication_year": 2025
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Hanchao Liu"
+}
+},
+{
+"author": {
+"display_name": "Wenyuan Xue"
+}
+},
+{
+"author": {
+"display_name": "Yifei Chen"
+}
+},
+{
+"author": {
+"display_name": "Dapeng Chen"
+}
+},
+{
+"author": {
+"display_name": "Xiutian Zhao"
+}
+},
+{
+"author": {
+"display_name": "Ke Wang"
+}
+},
+{
+"author": {
+"display_name": "Liping Hou"
+}
+},
+{
+"author": {
+"display_name": "Rongjun Li"
+}
+},
+{
+"author": {
+"display_name": "Wei Peng"
+}
+}
+],
+"display_name": "A Survey on Hallucination in Large Vision-Language Models",
+"id": "https://openalex.org/W4391505377",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Mohaimenul Azam Khan Raiaan"
+}
+},
+{
+"author": {
+"display_name": "Md. Saddam Hossain Mukta"
+}
+},
+{
+"author": {
+"display_name": "Kaniz Fatema"
+}
+},
+{
+"author": {
+"display_name": "Nur Mohammad Fahad"
+}
+},
+{
+"author": {
+"display_name": "Sadman Sakib"
+}
+},
+{
+"author": {
+"display_name": "Most. Marufatul Jannat Mim"
+}
+},
+{
+"author": {
+"display_name": "Jubaer Ahmad"
+}
+},
+{
+"author": {
+"display_name": "Mohammed Eunus Ali"
+}
+},
+{
+"author": {
+"display_name": "Sami Azam"
+}
+}
+],
+"display_name": "A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges",
+"id": "https://openalex.org/W4391855109",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Ola Shorinwa"
+}
+},
+{
+"author": {
+"display_name": "Zhiting Mei"
+}
+},
+{
+"author": {
+"display_name": "Justin Lidard"
+}
+},
+{
+"author": {
+"display_name": "Allen Z. Ren"
+}
+},
+{
+"author": {
+"display_name": "Anirudha Majumdar"
+}
+}
+],
+"display_name": "A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions",
+"id": "https://openalex.org/W4411121371",
+"publication_year": 2025
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Angela Fan"
+}
+},
+{
+"author": {
+"display_name": "Beliz U. Gokkaya"
+}
+},
+{
+"author": {
+"display_name": "Mark Harman"
+}
+},
+{
+"author": {
+"display_name": "Mitya Lyubarskiy"
+}
+},
+{
+"author": {
+"display_name": "Shubho Sengupta"
+}
+},
+{
+"author": {
+"display_name": "Shin Yoo"
+}
+},
+{
+"author": {
+"display_name": "Jie M. Zhang"
+}
+}
+],
+"display_name": "Large Language Models for Software Engineering: Survey and Open Problems",
+"id": "https://openalex.org/W4392414327",
+"publication_year": 2023
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Xu, Ziwei"
+}
+},
+{
+"author": {
+"display_name": "Jain, Sanjay"
+}
+},
+{
+"author": {
+"display_name": "Mohan Kankanhalli"
+}
+}
+],
+"display_name": "Hallucination is Inevitable: An Innate Limitation of Large Language Models",
+"id": "https://openalex.org/W4391158659",
+"publication_year": 2024
+}
+]
+},
+"status": 200
 },
 "https://api.openalex.org/works?search=abundance%20characteristics%20and%20variation%20of%20microplastics%20in%20different%20freshwater%20fish%20species%20from%20bangladesh&per-page=8": {
 "body": {
@@ -12114,6 +13828,795 @@
 "display_name": "DALK: Dynamic Co-Augmentation of LLMs and KG to answer Alzheimer’s Disease Questions with Scientific Literature",
 "id": "https://openalex.org/W4404783689",
 "publication_year": 2024
+}
+]
+},
+"status": 200
+},
+"https://api.openalex.org/works?search=cognition%20and%20memory%20after%20covid%2019%20in%20a%20large%20community%20sample&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Adam Hampshire"
+}
+},
+{
+"author": {
+"display_name": "Adriana M. Azor"
+}
+},
+{
+"author": {
+"display_name": "Christina Joanne Atchison"
+}
+},
+{
+"author": {
+"display_name": "William R. Trender"
+}
+},
+{
+"author": {
+"display_name": "Peter John Hellyer"
+}
+},
+{
+"author": {
+"display_name": "Valentina Giunchiglia"
+}
+},
+{
+"author": {
+"display_name": "Masud Husain"
+}
+},
+{
+"author": {
+"display_name": "Graham Cooke"
+}
+},
+{
+"author": {
+"display_name": "Emily Cooper"
+}
+},
+{
+"author": {
+"display_name": "Adam Lound"
+}
+},
+{
+"author": {
+"display_name": "Christl Ann Donnelly"
+}
+},
+{
+"author": {
+"display_name": "Marc Chadeau‐Hyam"
+}
+},
+{
+"author": {
+"display_name": "Helen Ward"
+}
+},
+{
+"author": {
+"display_name": "Paul Elliott"
+}
+}
+],
+"display_name": "Cognition and Memory after Covid-19 in a Large Community Sample",
+"id": "https://openalex.org/W4392243692",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Lei Xu"
+}
+},
+{
+"author": {
+"display_name": "Xin Huang"
+}
+},
+{
+"author": {
+"display_name": "Yi Li"
+}
+}
+],
+"display_name": "Cognition and Memory after Covid-19 in a Large Community Sample",
+"id": "https://openalex.org/W4399369768",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Sijia Zhao"
+}
+},
+{
+"author": {
+"display_name": "Sofia Toniolo"
+}
+},
+{
+"author": {
+"display_name": "Adam Hampshire"
+}
+},
+{
+"author": {
+"display_name": "Masud Husain"
+}
+}
+],
+"display_name": "Effects of COVID-19 on cognition and brain health",
+"id": "https://openalex.org/W4386286677",
+"publication_year": 2023
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Panyuan Guo"
+}
+},
+{
+"author": {
+"display_name": "Alvaro Benito Ballesteros"
+}
+},
+{
+"author": {
+"display_name": "Sabine P. Yeung"
+}
+},
+{
+"author": {
+"display_name": "Ruby Liu"
+}
+},
+{
+"author": {
+"display_name": "Arka Saha"
+}
+},
+{
+"author": {
+"display_name": "Lyn Curtis"
+}
+},
+{
+"author": {
+"display_name": "Muzaffer Kaşer"
+}
+},
+{
+"author": {
+"display_name": "Mark P. Haggard"
+}
+},
+{
+"author": {
+"display_name": "Lucy G. Cheke"
+}
+}
+],
+"display_name": "COVCOG 1: Factors Predicting Physical, Neurological and Cognitive Symptoms in Long COVID in a Community Sample. A First Publication From the COVID and Cognition Study",
+"id": "https://openalex.org/W4221039194",
+"publication_year": 2022
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Sijia Zhao"
+}
+},
+{
+"author": {
+"display_name": "Kengo Shibata"
+}
+},
+{
+"author": {
+"display_name": "Peter John Hellyer"
+}
+},
+{
+"author": {
+"display_name": "William R. Trender"
+}
+},
+{
+"author": {
+"display_name": "Sanjay Manohar"
+}
+},
+{
+"author": {
+"display_name": "Adam Hampshire"
+}
+},
+{
+"author": {
+"display_name": "Masud Husain"
+}
+}
+],
+"display_name": "Rapid vigilance and episodic memory decrements in COVID-19 survivors",
+"id": "https://openalex.org/W4206795828",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Giacomo Tondo"
+}
+},
+{
+"author": {
+"display_name": "Barbara Sarasso"
+}
+},
+{
+"author": {
+"display_name": "Paola Serra"
+}
+},
+{
+"author": {
+"display_name": "Fabiana Tesser"
+}
+},
+{
+"author": {
+"display_name": "Cristoforo Comi"
+}
+}
+],
+"display_name": "The Impact of the COVID-19 Pandemic on the Cognition of People with Dementia",
+"id": "https://openalex.org/W3152763831",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Gaëtan Thiebaut"
+}
+},
+{
+"author": {
+"display_name": "Alain Méot"
+}
+},
+{
+"author": {
+"display_name": "Arnaud Witt"
+}
+},
+{
+"author": {
+"display_name": "Pavol Prokop"
+}
+},
+{
+"author": {
+"display_name": "Patrick Bonin"
+}
+}
+],
+"display_name": "COVID-19 and Memory: A Novel Contamination Effect in Memory",
+"id": "https://openalex.org/W4283447733",
+"publication_year": 2022
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Natasha A. Strydhorst"
+}
+},
+{
+"author": {
+"display_name": "Asheley R. Landrum"
+}
+}
+],
+"display_name": "Charting cognition: Mapping public understanding of COVID-19",
+"id": "https://openalex.org/W4220852824",
+"publication_year": 2022
+}
+]
+},
+"status": 200
+},
+"https://api.openalex.org/works?search=cognitive%20mapping%20and%20wayfinding%20by%20adults%20without%20vision&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Reginald G. Golledge"
+}
+},
+{
+"author": {
+"display_name": "Roberta L. Klatzky"
+}
+},
+{
+"author": {
+"display_name": "Jack M. Loomis"
+}
+}
+],
+"display_name": "Cognitive Mapping and Wayfinding by Adults Without Vision",
+"id": "https://openalex.org/W12181516",
+"publication_year": 2007
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Reginald G. Golledge"
+}
+},
+{
+"author": {
+"display_name": "Daniel Jacobson"
+}
+},
+{
+"author": {
+"display_name": "Rob Kitchin"
+}
+},
+{
+"author": {
+"display_name": "Mark Blades"
+}
+}
+],
+"display_name": "Cognitive Maps, Spatial Abilities, and Human Wayfinding",
+"id": "https://openalex.org/W2078406042",
+"publication_year": 2000
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Nicholas A. Giudice"
+}
+},
+{
+"author": {
+"display_name": "Benjamin A. Guenther"
+}
+},
+{
+"author": {
+"display_name": "Nicholas A. Jensen"
+}
+},
+{
+"author": {
+"display_name": "Kaitlyn N. Haase"
+}
+}
+],
+"display_name": "Cognitive Mapping Without Vision: Comparing Wayfinding Performance After Learning From Digital Touchscreen-Based Multimodal Maps vs. Embossed Tactile Overlays",
+"id": "https://openalex.org/W3010660260",
+"publication_year": 2020
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Catia Prandi"
+}
+},
+{
+"author": {
+"display_name": "Barbara Rita Barricelli"
+}
+},
+{
+"author": {
+"display_name": "Silvia Mirri"
+}
+},
+{
+"author": {
+"display_name": "Daniela Fogli"
+}
+}
+],
+"display_name": "Accessible wayfinding and navigation: a systematic mapping study",
+"id": "https://openalex.org/W3197037832",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Yao‐Jen Chang"
+}
+},
+{
+"author": {
+"display_name": "Shuming Peng"
+}
+},
+{
+"author": {
+"display_name": "Tsen-Yung Wang"
+}
+},
+{
+"author": {
+"display_name": "Shu-Fang Chen"
+}
+},
+{
+"author": {
+"display_name": "Yanru Chen"
+}
+},
+{
+"author": {
+"display_name": "Hung‐Chi Chen"
+}
+}
+],
+"display_name": "Autonomous indoor wayfinding for individuals with cognitive impairments",
+"id": "https://openalex.org/W2145271582",
+"publication_year": 2010
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Irma Castellanos"
+}
+},
+{
+"author": {
+"display_name": "Florian Hruby"
+}
+}
+],
+"display_name": "Mapping Autistic Wayfinding in Urban Environments",
+"id": "https://openalex.org/W4200104485",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Anna Charisse Farr"
+}
+},
+{
+"author": {
+"display_name": "Tristan Kleinschmidt"
+}
+},
+{
+"author": {
+"display_name": "Prasad K.D.V. Yarlagadda"
+}
+},
+{
+"author": {
+"display_name": "Kerrie Lee Mengersen"
+}
+}
+],
+"display_name": "Wayfinding: A simple concept, a complex process",
+"id": "https://openalex.org/W1996628464",
+"publication_year": 2012
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Kelly Jane Bryden"
+}
+},
+{
+"author": {
+"display_name": "Judith Charlton"
+}
+},
+{
+"author": {
+"display_name": "Jennifer Anne Oxley"
+}
+},
+{
+"author": {
+"display_name": "Georgia Lowndes"
+}
+}
+],
+"display_name": "Wayfinding Whilst Driving, Age and Cognitive Functioning",
+"id": "https://openalex.org/W4376955427",
+"publication_year": 2023
+}
+]
+},
+"status": 200
+},
+"https://api.openalex.org/works?search=comparing%20task%20simplifications%20to%20learn%20closed%20loop%20object%20picking%20using%20deep%20reinforcement%20learning&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Michel Breyer"
+}
+},
+{
+"author": {
+"display_name": "Fadri Furrer"
+}
+},
+{
+"author": {
+"display_name": "Tonči Novković"
+}
+},
+{
+"author": {
+"display_name": "Roland Siegwart"
+}
+},
+{
+"author": {
+"display_name": "Juan I. Nieto"
+}
+}
+],
+"display_name": "Comparing Task Simplifications to Learn Closed-Loop Object Picking Using Deep Reinforcement Learning",
+"id": "https://openalex.org/W2914358862",
+"publication_year": 2019
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Michel Breyer"
+}
+},
+{
+"author": {
+"display_name": "Fadri Furrer"
+}
+},
+{
+"author": {
+"display_name": "Tonči Novković"
+}
+},
+{
+"author": {
+"display_name": "Roland Siegwart"
+}
+},
+{
+"author": {
+"display_name": "Juan I. Nieto"
+}
+}
+],
+"display_name": "Comparing Task Simplifications to Learn Closed-Loop Object Picking Using Deep Reinforcement Learning",
+"id": "https://openalex.org/W2953129341",
+"publication_year": 2018
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Bangalore Ravi Kiran"
+}
+},
+{
+"author": {
+"display_name": "Ibrahim Sobh"
+}
+},
+{
+"author": {
+"display_name": "Victor Talpaert"
+}
+},
+{
+"author": {
+"display_name": "Patrick Mannion"
+}
+},
+{
+"author": {
+"display_name": "Ahmad A. Al Sallab"
+}
+},
+{
+"author": {
+"display_name": "Senthil Kumar Yogamani"
+}
+},
+{
+"author": {
+"display_name": "Patrick Pérez"
+}
+}
+],
+"display_name": "Deep Reinforcement Learning for Autonomous Driving: A Survey",
+"id": "https://openalex.org/W3003533476",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Yutaka Matsuo"
+}
+},
+{
+"author": {
+"display_name": "Yann LeCun"
+}
+},
+{
+"author": {
+"display_name": "Maneesh Sahani"
+}
+},
+{
+"author": {
+"display_name": "Doina Precup"
+}
+},
+{
+"author": {
+"display_name": "David Silver"
+}
+},
+{
+"author": {
+"display_name": "Masashi Sugiyama"
+}
+},
+{
+"author": {
+"display_name": "Eiji Uchibe"
+}
+},
+{
+"author": {
+"display_name": "Jun Morimoto"
+}
+}
+],
+"display_name": "Deep learning, reinforcement learning, and world models",
+"id": "https://openalex.org/W4224220194",
+"publication_year": 2022
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Michael R. Behrens"
+}
+},
+{
+"author": {
+"display_name": "Warren C. Ruder"
+}
+}
+],
+"display_name": "Smart Magnetic Microrobots Learn to Swim with Deep Reinforcement Learning",
+"id": "https://openalex.org/W4284879444",
+"publication_year": 2022
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Daniel Honerkamp"
+}
+},
+{
+"author": {
+"display_name": "Tim Welschehold"
+}
+},
+{
+"author": {
+"display_name": "Abhinav Valada"
+}
+}
+],
+"display_name": "Learning Kinematic Feasibility for Mobile Manipulation Through Deep Reinforcement Learning",
+"id": "https://openalex.org/W3120528925",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Andrew Lobbezoo"
+}
+},
+{
+"author": {
+"display_name": "Yanjun Qian"
+}
+},
+{
+"author": {
+"display_name": "Hyock‐Ju Kwon"
+}
+}
+],
+"display_name": "Reinforcement Learning for Pick and Place Operations in Robotics: A Survey",
+"id": "https://openalex.org/W3199096322",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Hao Zhang"
+}
+},
+{
+"author": {
+"display_name": "Hongzhuo Liang"
+}
+},
+{
+"author": {
+"display_name": "Cong Lin"
+}
+},
+{
+"author": {
+"display_name": "Jianzhi Lyu"
+}
+},
+{
+"author": {
+"display_name": "Long Zeng"
+}
+},
+{
+"author": {
+"display_name": "Pingfa Feng"
+}
+},
+{
+"author": {
+"display_name": "Jianwei Zhang"
+}
+}
+],
+"display_name": "Reinforcement Learning Based Pushing and Grasping Objects from Ungraspable Poses",
+"id": "https://openalex.org/W4383097676",
+"publication_year": 2023
 }
 ]
 },
@@ -15360,6 +17863,91 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works?search=nudge%20improving%20decisions%20about%20health%20wealth%20and%20happiness&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [],
+"display_name": "Nudge: improving decisions about health, wealth, and happiness",
+"id": "https://openalex.org/W1481908410",
+"publication_year": 2008
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Richard V. Adkisson"
+}
+}
+],
+"display_name": "Nudge: Improving Decisions About Health, Wealth and Happiness",
+"id": "https://openalex.org/W3023695158",
+"publication_year": 2008
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Gail Mitchell Hoyt"
+}
+}
+],
+"display_name": "Nudge: Improving Decisions About Health, Wealth, and Happiness",
+"id": "https://openalex.org/W4235610140",
+"publication_year": 2009
+},
+{
+"authorships": [],
+"display_name": "Nudge – Improving Decisions about Health, Wealth and Happiness",
+"id": "https://openalex.org/W1556528141",
+"publication_year": 2010
+},
+{
+"authorships": [],
+"display_name": "Nudge: Improving Decisions about Health, Wealth, and Happiness",
+"id": "https://openalex.org/W1522008957",
+"publication_year": 2011
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Gail Mitchell Hoyt"
+}
+}
+],
+"display_name": "Review of \"Nudge: Improving Decisions About Health, Wealth, and Happiness\"",
+"id": "https://openalex.org/W1538781317",
+"publication_year": 2009
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Simon Rooze"
+}
+}
+],
+"display_name": "Review: Nudge: Improving Decisions about Health, Wealth and Happiness",
+"id": "https://openalex.org/W1529813229",
+"publication_year": 2009
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Robert Sugden"
+}
+}
+],
+"display_name": "On Nudging: A Review of Nudge: Improving Decisions About Health, Wealth and Happiness by Richard H. Thaler and Cass R. Sunstein",
+"id": "https://openalex.org/W2163566780",
+"publication_year": 2009
+}
+]
+},
+"status": 200
+},
 "https://api.openalex.org/works?search=object%20removal%20attacks%20on%20lidar%20based%203d%20object%20detectors&per-page=8": {
 "body": {
 "results": [
@@ -15816,6 +18404,529 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works?search=quantum%20error%20correction%20below%20the%20surface%20code%20threshold&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Google Quantum AI and Collaborators"
+}
+},
+{
+"author": {
+"display_name": "Rajeev Acharya"
+}
+},
+{
+"author": {
+"display_name": "Dmitry A. Abanin"
+}
+},
+{
+"author": {
+"display_name": "Laleh Aghababaie Beni"
+}
+},
+{
+"author": {
+"display_name": "I. L. Aleǐner"
+}
+},
+{
+"author": {
+"display_name": "Trond I. Andersen"
+}
+},
+{
+"author": {
+"display_name": "M. Ansmann"
+}
+},
+{
+"author": {
+"display_name": "Frank Arute"
+}
+},
+{
+"author": {
+"display_name": "Kunal Arya"
+}
+},
+{
+"author": {
+"display_name": "Abraham T. Asfaw"
+}
+},
+{
+"author": {
+"display_name": "Nikita Astrakhantsev"
+}
+},
+{
+"author": {
+"display_name": "Juan Atalaya"
+}
+},
+{
+"author": {
+"display_name": "Ryan Babbush"
+}
+},
+{
+"author": {
+"display_name": "Dave Bacon"
+}
+},
+{
+"author": {
+"display_name": "Brian Ballard"
+}
+},
+{
+"author": {
+"display_name": "Joseph C. Bardin"
+}
+},
+{
+"author": {
+"display_name": "Johannes Bausch"
+}
+},
+{
+"author": {
+"display_name": "Andreas Bengtsson"
+}
+},
+{
+"author": {
+"display_name": "Alexander Bilmes"
+}
+},
+{
+"author": {
+"display_name": "Sam Blackwell"
+}
+},
+{
+"author": {
+"display_name": "Sergio Boixo"
+}
+},
+{
+"author": {
+"display_name": "Gina Bortoli"
+}
+},
+{
+"author": {
+"display_name": "Alexandre Bourassa"
+}
+},
+{
+"author": {
+"display_name": "Jenna Bovaird"
+}
+},
+{
+"author": {
+"display_name": "Leon Brill"
+}
+}
+],
+"display_name": "Quantum error correction below the surface code threshold",
+"id": "https://openalex.org/W4405183524",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Google Quantum AI"
+}
+},
+{
+"author": {
+"display_name": "Lee, Joonho"
+}
+}
+],
+"display_name": "Quantum error correction below the surface code threshold",
+"id": "https://openalex.org/W7113055816",
+"publication_year": 2025
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Google AI Quantum and Collaborators"
+}
+},
+{
+"author": {
+"display_name": "Rajeev Acharya"
+}
+},
+{
+"author": {
+"display_name": "Dmitry A. Abanin"
+}
+},
+{
+"author": {
+"display_name": "Laleh Aghababaie Beni"
+}
+},
+{
+"author": {
+"display_name": "I. L. Aleǐner"
+}
+},
+{
+"author": {
+"display_name": "Trond I. Andersen"
+}
+},
+{
+"author": {
+"display_name": "M. Ansmann"
+}
+},
+{
+"author": {
+"display_name": "Frank Arute"
+}
+},
+{
+"author": {
+"display_name": "Kunal Arya"
+}
+},
+{
+"author": {
+"display_name": "Abraham T. Asfaw"
+}
+},
+{
+"author": {
+"display_name": "Nikita Astrakhantsev"
+}
+},
+{
+"author": {
+"display_name": "Juan Atalaya"
+}
+},
+{
+"author": {
+"display_name": "Ryan Babbush"
+}
+},
+{
+"author": {
+"display_name": "Dave Bacon"
+}
+},
+{
+"author": {
+"display_name": "Brian Ballard"
+}
+},
+{
+"author": {
+"display_name": "Joseph C. Bardin"
+}
+},
+{
+"author": {
+"display_name": "Johannes Bausch"
+}
+},
+{
+"author": {
+"display_name": "Andreas Bengtsson"
+}
+},
+{
+"author": {
+"display_name": "Alexander Bilmes"
+}
+},
+{
+"author": {
+"display_name": "Sam Blackwell"
+}
+},
+{
+"author": {
+"display_name": "Sergio Boixo"
+}
+},
+{
+"author": {
+"display_name": "Gina Bortoli"
+}
+},
+{
+"author": {
+"display_name": "Alexandre Bourassa"
+}
+},
+{
+"author": {
+"display_name": "Jenna Bovaird"
+}
+},
+{
+"author": {
+"display_name": "Leon Brill"
+}
+}
+],
+"display_name": "Author Correction: Quantum error correction below the surface code threshold",
+"id": "https://openalex.org/W7158152814",
+"publication_year": 2026
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Ricard Santiago Raigada García"
+}
+}
+],
+"display_name": "Explaining the paper: quantum error correction below the surface code threshold",
+"id": "https://openalex.org/W7131768120",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Tan He"
+}
+},
+{
+"author": {
+"display_name": "W. W. Lin"
+}
+},
+{
+"author": {
+"display_name": "R. N. Wang"
+}
+},
+{
+"author": {
+"display_name": "Yuan Li"
+}
+},
+{
+"author": {
+"display_name": "Jiahao Bei"
+}
+},
+{
+"author": {
+"display_name": "Jianbin Cai"
+}
+},
+{
+"author": {
+"display_name": "Sirui Cao"
+}
+},
+{
+"author": {
+"display_name": "Danning Chen"
+}
+},
+{
+"author": {
+"display_name": "K.Y. Chen"
+}
+},
+{
+"author": {
+"display_name": "Xiawei Chen"
+}
+},
+{
+"author": {
+"display_name": "Zhe Chen"
+}
+},
+{
+"author": {
+"display_name": "Zhiyuan Chen"
+}
+},
+{
+"author": {
+"display_name": "Zihua Chen"
+}
+},
+{
+"author": {
+"display_name": "Wenhao Chu"
+}
+},
+{
+"author": {
+"display_name": "Hui Deng"
+}
+},
+{
+"author": {
+"display_name": "Xun Ding"
+}
+},
+{
+"author": {
+"display_name": "Zhuzhengqi Ding"
+}
+},
+{
+"author": {
+"display_name": "Bo Fan"
+}
+},
+{
+"author": {
+"display_name": "Daojin Fan"
+}
+},
+{
+"author": {
+"display_name": "Yuanhao Fu"
+}
+},
+{
+"author": {
+"display_name": "Dongxin Gao"
+}
+},
+{
+"author": {
+"display_name": "Ming Gong"
+}
+},
+{
+"author": {
+"display_name": "Jiacheng Gui"
+}
+},
+{
+"author": {
+"display_name": "Cheng Guo"
+}
+},
+{
+"author": {
+"display_name": "Shaojun Guo"
+}
+}
+],
+"display_name": "Experimental Quantum Error Correction below the Surface Code Threshold via All-Microwave Leakage Suppression",
+"id": "https://openalex.org/W7116702366",
+"publication_year": 2025
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Yirong Jin"
+}
+}
+],
+"display_name": "Google’s “Willow” quantum processor: New RCS record and first error correction below the surface code threshold",
+"id": "https://openalex.org/W4410089848",
+"publication_year": 2025
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Andrew S. Darmawan"
+}
+},
+{
+"author": {
+"display_name": "Benjamin J. Brown"
+}
+},
+{
+"author": {
+"display_name": "Arne L. Grimsmo"
+}
+},
+{
+"author": {
+"display_name": "David K. Tuckett"
+}
+},
+{
+"author": {
+"display_name": "Shruti Puri"
+}
+}
+],
+"display_name": "Practical quantum error correction with the XZZX code and Kerr-cat qubits",
+"id": "https://openalex.org/W3199789432",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Charles D. Hill"
+}
+},
+{
+"author": {
+"display_name": "Eldad Peretz"
+}
+},
+{
+"author": {
+"display_name": "Samuel James Hile"
+}
+},
+{
+"author": {
+"display_name": "Matthew Gregory House"
+}
+},
+{
+"author": {
+"display_name": "Martin Fuechsle"
+}
+},
+{
+"author": {
+"display_name": "Sven Rogge"
+}
+},
+{
+"author": {
+"display_name": "Michelle Yvonne Simmons"
+}
+},
+{
+"author": {
+"display_name": "Lloyd C. L. Hollenberg"
+}
+}
+],
+"display_name": "A surface code quantum computer in silicon",
+"id": "https://openalex.org/W2239674394",
+"publication_year": 2015
+}
+]
+},
+"status": 200
+},
 "https://api.openalex.org/works?search=rotating%20without%20seeing%20towards%20in%20hand%20dexterity%20through%20touch&per-page=8": {
 "body": {
 "results": [
@@ -16099,6 +19210,167 @@
 "display_name": "General In-Hand Object Rotation with Vision and Touch",
 "id": "https://openalex.org/W4386874604",
 "publication_year": 2023
+}
+]
+},
+"status": 200
+},
+"https://api.openalex.org/works?search=smart%20guiding%20glasses%20for%20visually%20impaired%20people%20in%20indoor%20environment&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Jinqiang Bai"
+}
+},
+{
+"author": {
+"display_name": "Shiguo Lian"
+}
+},
+{
+"author": {
+"display_name": "Zhaoxiang Liu"
+}
+},
+{
+"author": {
+"display_name": "Kai Wang"
+}
+},
+{
+"author": {
+"display_name": "Dijun Liu"
+}
+}
+],
+"display_name": "Smart guiding glasses for visually impaired people in indoor environment",
+"id": "https://openalex.org/W2963658615",
+"publication_year": 2017
+},
+{
+"authorships": [],
+"display_name": "ULTRASONIC SMART GLASSES FOR VISUALLY IMPAIRED PEOPLES",
+"id": "https://openalex.org/W4365453848",
+"publication_year": 2023
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Ishan Jadhav"
+}
+}
+],
+"display_name": "Smart Glasses for Visually Impaired People",
+"id": "https://openalex.org/W7162295426",
+"publication_year": 2026
+},
+{
+"authorships": [],
+"display_name": "IMPLEMENTATION OF ULTRASONIC SMART GLASSES FOR VISUALLY IMPAIRED PEOPLES",
+"id": "https://openalex.org/W4376641695",
+"publication_year": 2023
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Suvarna Nandyal"
+}
+},
+{
+"author": {
+"display_name": "Prajita R Udgiri"
+}
+},
+{
+"author": {
+"display_name": "Sakshi Sherikar"
+}
+}
+],
+"display_name": "Smart Glasses for Visually Impaired Person",
+"id": "https://openalex.org/W4379962175",
+"publication_year": 2023
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Stefano Mattoccia"
+}
+},
+{
+"author": {
+"display_name": "Paolo Macrı’"
+}
+}
+],
+"display_name": "3D Glasses as Mobility Aid for Visually Impaired People",
+"id": "https://openalex.org/W2294991447",
+"publication_year": 2015
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Farhan Ibn Mustafa"
+}
+},
+{
+"author": {
+"display_name": "Abubokor Hanip"
+}
+},
+{
+"author": {
+"display_name": "Touhid Bhuiyan"
+}
+},
+{
+"author": {
+"display_name": "Masuma Akter Akhi"
+}
+},
+{
+"author": {
+"display_name": "Yeasmin Akter"
+}
+},
+{
+"author": {
+"display_name": "Md. Hafizul Imran"
+}
+}
+],
+"display_name": "VisionBot smart assistive robotic glasses for visually impaired people",
+"id": "https://openalex.org/W7166433864",
+"publication_year": 2026
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Gabriel Iluebe Okolo"
+}
+},
+{
+"author": {
+"display_name": "Turke Althobaiti"
+}
+},
+{
+"author": {
+"display_name": "Naeem Ramzan"
+}
+}
+],
+"display_name": "Smart Assistive Navigation System for Visually Impaired People",
+"id": "https://openalex.org/W4406045056",
+"publication_year": 2025
 }
 ]
 },
@@ -16600,6 +19872,209 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works?search=the%20effect%20of%20providing%20peer%20information%20on%20retirement%20savings%20decisions&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "John Leonard Beshears"
+}
+},
+{
+"author": {
+"display_name": "James J. Choi"
+}
+},
+{
+"author": {
+"display_name": "David Laibson"
+}
+},
+{
+"author": {
+"display_name": "Brigitte C. Madrian"
+}
+},
+{
+"author": {
+"display_name": "Katherine L. Milkman"
+}
+}
+],
+"display_name": "The Effect of Providing Peer Information on Retirement Savings Decisions",
+"id": "https://openalex.org/W2098716691",
+"publication_year": 2015
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "John Leonard Beshears"
+}
+},
+{
+"author": {
+"display_name": "James Choi"
+}
+},
+{
+"author": {
+"display_name": "David Laibson"
+}
+},
+{
+"author": {
+"display_name": "Brigitte C. Madrian"
+}
+},
+{
+"author": {
+"display_name": "Katherine L. Milkman"
+}
+}
+],
+"display_name": "The Effect of Providing Peer Information on Retirement Savings Decisions",
+"id": "https://openalex.org/W2179527366",
+"publication_year": 2011
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Rob Bauer"
+}
+},
+{
+"author": {
+"display_name": "Inka Eberhardt"
+}
+},
+{
+"author": {
+"display_name": "Paul Smeets"
+}
+}
+],
+"display_name": "A Fistful of Dollars: Financial Incentives, Peer Information, and Retirement Savings",
+"id": "https://openalex.org/W3194382677",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Josh Wiener"
+}
+},
+{
+"author": {
+"display_name": "Tabitha A. Doescher"
+}
+}
+],
+"display_name": "A Framework for Promoting Retirement Savings",
+"id": "https://openalex.org/W2079075890",
+"publication_year": 2008
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Anders Anderson"
+}
+},
+{
+"author": {
+"display_name": "David Robinson"
+}
+}
+],
+"display_name": "Who Feels the Nudge? Knowledge, Self-Awareness and Retirement Savings Decisions",
+"id": "https://openalex.org/W2750700466",
+"publication_year": 2018
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Kay Blaufus"
+}
+},
+{
+"author": {
+"display_name": "Michael Milde"
+}
+}
+],
+"display_name": "Learning to save tax-efficiently: Tax misperceptions and the effect of informational tax nudges on retirement savings",
+"id": "https://openalex.org/W2800075951",
+"publication_year": 2018
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Huan Liu"
+}
+},
+{
+"author": {
+"display_name": "Xiaoyang Sui"
+}
+},
+{
+"author": {
+"display_name": "Yuan‐Na Huang"
+}
+},
+{
+"author": {
+"display_name": "Rong-Ping LIN"
+}
+},
+{
+"author": {
+"display_name": "Ming‐Xing Xu"
+}
+}
+],
+"display_name": "The nudging role of behavioral economics in retirement savings decisions: Current situation and future prospects",
+"id": "https://openalex.org/W2916605894",
+"publication_year": 2019
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Mathias Dolls"
+}
+},
+{
+"author": {
+"display_name": "Philipp Doerrenberg"
+}
+},
+{
+"author": {
+"display_name": "Andreas Peichl"
+}
+},
+{
+"author": {
+"display_name": "Holger Stichnoth"
+}
+}
+],
+"display_name": "Do savings increase in response to salient information about retirement and expected pensions",
+"id": "https://openalex.org/W3146675539",
+"publication_year": 2016
+}
+]
+},
+"status": 200
+},
 "https://api.openalex.org/works?search=the%20importance%20of%20default%20options%20for%20retirement%20saving%20outcomes%20evidence%20from%20the%20united%20states&per-page=8": {
 "body": {
 "results": [
@@ -17046,6 +20521,234 @@
 },
 "status": 200
 },
+"https://api.openalex.org/works?search=wearable%20assistive%20devices%20for%20visually%20impaired%20a%20state%20of%20the%20art%20survey&per-page=8": {
+"body": {
+"results": [
+{
+"authorships": [
+{
+"author": {
+"display_name": "Ruxandra Țapu"
+}
+},
+{
+"author": {
+"display_name": "Bogdan Mocanu"
+}
+},
+{
+"author": {
+"display_name": "Titus B. Zaharia"
+}
+}
+],
+"display_name": "Wearable assistive devices for visually impaired: A state of the art survey",
+"id": "https://openalex.org/W2898741879",
+"publication_year": 2018
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Amit Chaudhary"
+}
+},
+{
+"author": {
+"display_name": "Prabhat Verma"
+}
+}
+],
+"display_name": "State of Art on Wearable Device to Assist Visually Impaired Person Navigation in Outdoor Environment",
+"id": "https://openalex.org/W3134138444",
+"publication_year": 2019
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Dionysia Danai Brilli"
+}
+},
+{
+"author": {
+"display_name": "Evangelos Georgaras"
+}
+},
+{
+"author": {
+"display_name": "Stefania Tsilivaki"
+}
+},
+{
+"author": {
+"display_name": "Nikos Melanitis"
+}
+},
+{
+"author": {
+"display_name": "Konstantina S. Nikita"
+}
+}
+],
+"display_name": "AIris: An AI-Powered Wearable Assistive Device for the Visually Impaired",
+"id": "https://openalex.org/W4403675385",
+"publication_year": 2024
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Caspo, Adam"
+}
+},
+{
+"author": {
+"display_name": "György Wersényi"
+}
+},
+{
+"author": {
+"display_name": "Myounghoon Jeon"
+}
+}
+],
+"display_name": "A Survey on Hardware and Software Solutions for Multimodal Wearable Assistive Devices Targeting the Visually Impaired",
+"id": "https://openalex.org/W2991905266",
+"publication_year": 2016
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Yassine Bouteraa"
+}
+}
+],
+"display_name": "Design and Development of a Wearable Assistive Device Integrating a Fuzzy Decision Support System for Blind and Visually Impaired People",
+"id": "https://openalex.org/W3196967874",
+"publication_year": 2021
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Sadia Zafar"
+}
+},
+{
+"author": {
+"display_name": "Muhammad Asif"
+}
+},
+{
+"author": {
+"display_name": "Maaz Bin Ahmad"
+}
+},
+{
+"author": {
+"display_name": "Taher M. Ghazal"
+}
+},
+{
+"author": {
+"display_name": "Tauqeer Faiz"
+}
+},
+{
+"author": {
+"display_name": "Munir Ahmad"
+}
+},
+{
+"author": {
+"display_name": "Muhammad Adnan Khan"
+}
+}
+],
+"display_name": "Assistive Devices Analysis for Visually Impaired Persons: A Review on Taxonomy",
+"id": "https://openalex.org/W4210498946",
+"publication_year": 2022
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Suranga Seneviratne"
+}
+},
+{
+"author": {
+"display_name": "Yining Hu"
+}
+},
+{
+"author": {
+"display_name": "Tham Nguyen"
+}
+},
+{
+"author": {
+"display_name": "Guohao Lan"
+}
+},
+{
+"author": {
+"display_name": "Sara Khalifa"
+}
+},
+{
+"author": {
+"display_name": "Kanchana Thilakarathna"
+}
+},
+{
+"author": {
+"display_name": "Mahbub Hassan"
+}
+},
+{
+"author": {
+"display_name": "Aruna Prasad Seneviratne"
+}
+}
+],
+"display_name": "A Survey of Wearable Devices and Challenges",
+"id": "https://openalex.org/W2740884108",
+"publication_year": 2017
+},
+{
+"authorships": [
+{
+"author": {
+"display_name": "Yimin Lin"
+}
+},
+{
+"author": {
+"display_name": "Kai Wang"
+}
+},
+{
+"author": {
+"display_name": "Wanxin Yi"
+}
+},
+{
+"author": {
+"display_name": "Shiguo Lian"
+}
+}
+],
+"display_name": "Deep Learning Based Wearable Assistive System for Visually Impaired People",
+"id": "https://openalex.org/W2967299574",
+"publication_year": 2019
+}
+]
+},
+"status": 200
+},
 "https://api.openalex.org/works?search=you%20can%20t%20see%20me%20physical%20removal%20attacks%20on%20lidar%20based%20autonomous%20vehicles%20driving%20frameworks&per-page=8": {
 "body": {
 "results": [
@@ -17359,7 +21062,23 @@
 },
 "status": 200
 },
+"https://doi.org/api/handles/10.1038/s41592-021-01319-5": {
+"body": null,
+"status": 404
+},
+"https://doi.org/api/handles/10.1086/tpe.16.20061896": {
+"body": null,
+"status": 404
+},
 "https://doi.org/api/handles/10.1145/3219819.3220138": {
+"body": null,
+"status": 404
+},
+"https://doi.org/api/handles/10.1289/ehp.7619": {
+"body": null,
+"status": 404
+},
+"https://doi.org/api/handles/10.7907/06k1-1x84": {
 "body": null,
 "status": 404
 },
@@ -17389,6 +21108,10 @@
 },
 "https://export.arxiv.org/api/query?id_list=1602.05629": {
 "body": "<entry><title>Communication-Efficient Learning of Deep Networks from Decentralized Data</title><published>2016-02-17T23:40:56Z</published><name>H. Brendan McMahan</name><name>Eider Moore</name><name>Daniel Ramage</name><name>Seth Hampson</name><name>Blaise Agüera y Arcas</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?id_list=1605.02065": {
+"body": "<entry><title>Concentrated Differential Privacy: Simplifications, Extensions, and Lower Bounds</title><published>2016-05-06T19:57:35Z</published><name>Mark Bun</name><name>Thomas Steinke</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?id_list=1606.09375": {
@@ -17431,6 +21154,10 @@
 "body": "<entry><title>Towards Deep Learning Models Resistant to Adversarial Attacks</title><published>2017-06-19T17:53:11Z</published><name>Aleksander Madry</name><name>Aleksandar Makelov</name><name>Ludwig Schmidt</name><name>Dimitris Tsipras</name><name>Adrian Vladu</name></entry>",
 "status": 200
 },
+"https://export.arxiv.org/api/query?id_list=1706.09911": {
+"body": "<entry><title>Grasp Pose Detection in Point Clouds</title><published>2017-06-29T18:03:44Z</published><name>Andreas ten Pas</name><name>Marcus Gualtieri</name><name>Kate Saenko</name><name>Robert Platt</name></entry>",
+"status": 200
+},
 "https://export.arxiv.org/api/query?id_list=1710.06963": {
 "body": "<entry><title>Learning Differentially Private Recurrent Language Models</title><published>2017-10-18T23:46:57Z</published><name>H. Brendan McMahan</name><name>Daniel Ramage</name><name>Kunal Talwar</name><name>Li Zhang</name></entry>",
 "status": 200
@@ -17441,6 +21168,10 @@
 },
 "https://export.arxiv.org/api/query?id_list=1712.07557": {
 "body": "<entry><title>Differentially Private Federated Learning: A Client Level Perspective</title><published>2017-12-20T16:28:37Z</published><name>Robin C. Geyer</name><name>Tassilo Klein</name><name>Moin Nabi</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?id_list=1712.09923": {
+"body": "<entry><title>What do we need to build explainable AI systems for the medical domain?</title><published>2017-12-28T16:46:05Z</published><name>Andreas Holzinger</name><name>Chris Biemann</name><name>Constantinos S. Pattichis</name><name>Douglas B. Kell</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?id_list=1802.00420": {
@@ -17459,12 +21190,20 @@
 "body": "<entry><title>Relational inductive biases, deep learning, and graph networks</title><published>2018-06-04T17:58:18Z</published><name>Peter W. Battaglia</name><name>Jessica B. Hamrick</name><name>Victor Bapst</name><name>Alvaro Sanchez-Gonzalez</name><name>Vinicius Zambaldi</name><name>Mateusz Malinowski</name><name>Andrea Tacchetti</name><name>David Raposo</name><name>Adam Santoro</name><name>Ryan Faulkner</name><name>Caglar Gulcehre</name><name>Francis Song</name><name>Andrew Ballard</name><name>Justin Gilmer</name><name>George Dahl</name><name>Ashish Vaswani</name><name>Kelsey Allen</name><name>Charles Nash</name><name>Victoria Langston</name><name>Chris Dyer</name><name>Nicolas Heess</name><name>Daan Wierstra</name><name>Pushmeet Kohli</name><name>Matt Botvinick</name><name>Oriol Vinyals</name><name>Yujia Li</name><name>Razvan Pascanu</name></entry>",
 "status": 200
 },
+"https://export.arxiv.org/api/query?id_list=1806.02973": {
+"body": "<entry><title>An Intermittent Click Planning Model</title><published>2018-06-08T05:17:18Z</published><name>Eunji Park</name><name>Byungjoo Lee</name></entry>",
+"status": 200
+},
 "https://export.arxiv.org/api/query?id_list=1806.10293": {
 "body": "<entry><title>QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation</title><published>2018-06-27T04:34:30Z</published><name>Dmitry Kalashnikov</name><name>Alex Irpan</name><name>Peter Pastor</name><name>Julian Ibarz</name><name>Alexander Herzog</name><name>Eric Jang</name><name>Deirdre Quillen</name><name>Ethan Holly</name><name>Mrinal Kalakrishnan</name><name>Vincent Vanhoucke</name><name>Sergey Levine</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?id_list=1810.00826": {
 "body": "<entry><title>How Powerful are Graph Neural Networks?</title><published>2018-10-01T17:11:31Z</published><name>Keyulu Xu</name><name>Weihua Hu</name><name>Jure Leskovec</name><name>Stefanie Jegelka</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?id_list=1812.01053": {
+"body": "<entry><title>MS-ASL: A Large-Scale Data Set and Benchmark for Understanding American Sign Language</title><published>2018-12-03T19:41:16Z</published><name>Hamid Reza Vaezi Joze</name><name>Oscar Koller</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?id_list=1812.07252": {
@@ -17477,6 +21216,10 @@
 },
 "https://export.arxiv.org/api/query?id_list=1910.11006": {
 "body": "<entry><title>Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison</title><published>2019-10-24T10:04:29Z</published><name>Dongxu Li</name><name>Cristian Rodriguez Opazo</name><name>Xin Yu</name><name>Hongdong Li</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?id_list=2003.00950": {
+"body": "<entry><title>A new application of Crapper's exact solution to waves in constant vorticity flows</title><published>2020-03-02T14:53:02Z</published><name>Vera Mikyoung Hur</name><name>Jean-Marc Vanden-Broeck</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?id_list=2003.13830": {
@@ -17509,6 +21252,10 @@
 },
 "https://export.arxiv.org/api/query?id_list=2104.07567": {
 "body": "<entry><title>Retrieval Augmentation Reduces Hallucination in Conversation</title><published>2021-04-15T16:24:43Z</published><name>Kurt Shuster</name><name>Spencer Poff</name><name>Moya Chen</name><name>Douwe Kiela</name><name>Jason Weston</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?id_list=2207.05221": {
+"body": "<entry><title>Language Models (Mostly) Know What They Know</title><published>2022-07-11T22:59:39Z</published><name>Saurav Kadavath</name><name>Tom Conerly</name><name>Amanda Askell</name><name>Tom Henighan</name><name>Dawn Drain</name><name>Ethan Perez</name><name>Nicholas Schiefer</name><name>Zac Hatfield-Dodds</name><name>Nova DasSarma</name><name>Eli Tran-Johnson</name><name>Scott Johnston</name><name>Sheer El-Showk</name><name>Andy Jones</name><name>Nelson Elhage</name><name>Tristan Hume</name><name>Anna Chen</name><name>Yuntao Bai</name><name>Sam Bowman</name><name>Stanislav Fort</name><name>Deep Ganguli</name><name>Danny Hernandez</name><name>Josh Jacobson</name><name>Jackson Kernion</name><name>Shauna Kravec</name><name>Liane Lovitt</name><name>Kamal Ndousse</name><name>Catherine Olsson</name><name>Sam Ringer</name><name>Dario Amodei</name><name>Tom Brown</name><name>Jack Clark</name><name>Nicholas Joseph</name><name>Ben Mann</name><name>Sam McCandlish</name><name>Chris Olah</name><name>Jared Kaplan</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?id_list=2210.04887": {
@@ -17551,6 +21298,10 @@
 "body": "<entry><title>General In-Hand Object Rotation with Vision and Touch</title><published>2023-09-18T17:59:25Z</published><name>Haozhi Qi</name><name>Brent Yi</name><name>Sudharshan Suresh</name><name>Mike Lambeta</name><name>Yi Ma</name><name>Roberto Calandra</name><name>Jitendra Malik</name></entry>",
 "status": 200
 },
+"https://export.arxiv.org/api/query?id_list=2310.06271": {
+"body": "<entry><title>Towards Mitigating Hallucination in Large Language Models via Self-Reflection</title><published>2023-10-10T03:05:44Z</published><name>Ziwei Ji</name><name>Tiezheng Yu</name><name>Yan Xu</name><name>Nayeon Lee</name><name>Etsuko Ishii</name><name>Pascale Fung</name></entry>",
+"status": 200
+},
 "https://export.arxiv.org/api/query?id_list=2311.05232": {
 "body": "<entry><title>A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions</title><published>2023-11-09T09:25:37Z</published><name>Lei Huang</name><name>Weijiang Yu</name><name>Weitao Ma</name><name>Weihong Zhong</name><name>Zhangyin Feng</name><name>Haotian Wang</name><name>Qianglong Chen</name><name>Weihua Peng</name><name>Xiaocheng Feng</name><name>Bing Qin</name><name>Ting Liu</name></entry>",
 "status": 200
@@ -17579,6 +21330,10 @@
 "body": "<entry><title>Stabilizer Codes and Quantum Error Correction</title><published>1997-05-28T23:51:29Z</published><name>Daniel Gottesman</name></entry>",
 "status": 200
 },
+"https://export.arxiv.org/api/query?search_query=ti:%22a%20survey%20on%20hallucination%20in%20large%20language%20models%20principles%20taxonomy%20challenges%20and%20open%20questions%22&max_results=5": {
+"body": "<entry><title>A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions</title><published>2023-11-09T09:25:37Z</published><name>Lei Huang</name><name>Weijiang Yu</name><name>Weitao Ma</name><name>Weihong Zhong</name><name>Zhangyin Feng</name><name>Haotian Wang</name><name>Qianglong Chen</name><name>Weihua Peng</name><name>Xiaocheng Feng</name><name>Bing Qin</name><name>Ting Liu</name></entry>",
+"status": 200
+},
 "https://export.arxiv.org/api/query?search_query=ti:%22abundance%20characteristics%20and%20variation%20of%20microplastics%20in%20different%20freshwater%20fish%20species%20from%20bangladesh%22&max_results=5": {
 "body": "",
 "status": 200
@@ -17593,6 +21348,18 @@
 },
 "https://export.arxiv.org/api/query?search_query=ti:%22clinfo%20ai%20an%20open%20source%20retrieval%20augmented%20large%20language%20model%20system%20for%20answering%20medical%20questions%20using%20scientific%20literature%22&max_results=5": {
 "body": "",
+"status": 200
+},
+"https://export.arxiv.org/api/query?search_query=ti:%22cognition%20and%20memory%20after%20covid%2019%20in%20a%20large%20community%20sample%22&max_results=5": {
+"body": "",
+"status": 200
+},
+"https://export.arxiv.org/api/query?search_query=ti:%22cognitive%20mapping%20and%20wayfinding%20by%20adults%20without%20vision%22&max_results=5": {
+"body": "",
+"status": 200
+},
+"https://export.arxiv.org/api/query?search_query=ti:%22comparing%20task%20simplifications%20to%20learn%20closed%20loop%20object%20picking%20using%20deep%20reinforcement%20learning%22&max_results=5": {
+"body": "<entry><title>Comparing Task Simplifications to Learn Closed-Loop Object Picking Using Deep Reinforcement Learning</title><published>2018-03-13T18:20:13Z</published><name>Michel Breyer</name><name>Fadri Furrer</name><name>Tonci Novkovic</name><name>Roland Siegwart</name><name>Juan Nieto</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?search_query=ti:%22differential%20perspectives%20epistemic%20disconnects%20surrounding%20the%20u%20s%20census%20bureau%20s%20use%20of%20differential%20privacy%22&max_results=5": {
@@ -17643,6 +21410,10 @@
 "body": "",
 "status": 200
 },
+"https://export.arxiv.org/api/query?search_query=ti:%22nudge%20improving%20decisions%20about%20health%20wealth%20and%20happiness%22&max_results=5": {
+"body": "",
+"status": 200
+},
 "https://export.arxiv.org/api/query?search_query=ti:%22object%20removal%20attacks%20on%20lidar%20based%203d%20object%20detectors%22&max_results=5": {
 "body": "<entry><title>Object Removal Attacks on LiDAR-based 3D Object Detectors</title><published>2021-02-07T05:34:14Z</published><name>Zhongyuan Hau</name><name>Kenneth T. Co</name><name>Soteris Demetriou</name><name>Emil C. Lupu</name></entry>",
 "status": 200
@@ -17651,8 +21422,16 @@
 "body": "",
 "status": 200
 },
+"https://export.arxiv.org/api/query?search_query=ti:%22quantum%20error%20correction%20below%20the%20surface%20code%20threshold%22&max_results=5": {
+"body": "<entry><title>Quantum error correction below the surface code threshold</title><published>2024-08-24T23:08:50Z</published><name>Rajeev Acharya</name><name>Laleh Aghababaie-Beni</name><name>Igor Aleiner</name><name>Trond I. Andersen</name><name>Markus Ansmann</name><name>Frank Arute</name><name>Kunal Arya</name><name>Abraham Asfaw</name><name>Nikita Astrakhantsev</name><name>Juan Atalaya</name><name>Ryan Babbush</name><name>Dave Bacon</name><name>Brian Ballard</name><name>Joseph C. Bardin</name><name>Johannes Bausch</name><name>Andreas Bengtsson</name><name>Alexander Bilmes</name><name>Sam Blackwell</name><name>Sergio Boixo</name><name>Gina Bortoli</name><name>Alexandre Bourassa</name><name>Jenna Bovaird</name><name>Leon Brill</name><name>Michael Broughton</name><name>David A. Browne</name><name>Brett Buchea</name><name>Bob B. Buckley</name><name>David A. Buell</name><name>Tim Burger</name><name>Brian Burkett</name><name>Nicholas Bushnell</name><name>Anthony Cabrera</name><name>Juan Campero</name><name>Hung-Shen Chang</name><name>Yu Chen</name><name>Zijun Chen</name><name>Ben Chiaro</name><name>Desmond Chik</name><name>Charina Chou</name><name>Jahan Claes</name><name>Agnetta Y. Cleland</name><name>Josh Cogan</name><name>Roberto Collins</name><name>Paul Conner</name><name>William Courtney</name><name>Alexander L. Crook</name><name>Ben Curtin</name><name>Sayan Das</name><name>Alex Davies</name><name>Laura De Lorenzo</name><name>Dripto M. Debroy</name><name>Sean Demura</name><name>Michel Devoret</name><name>Agustin Di Paolo</name><name>Paul Donohoe</name><name>Ilya Drozdov</name><name>Andrew Dunsworth</name><name>Clint Earle</name><name>Thomas Edlich</name><name>Alec Eickbusch</name><name>Aviv Moshe Elbag</name><name>Mahmoud Elzouka</name><name>Catherine Erickson</name><name>Lara Faoro</name><name>Edward Farhi</name><name>Vinicius S. Ferreira</name><name>Leslie Flores Burgos</name><name>Ebrahim Forati</name><name>Austin G. Fowler</name><name>Brooks Foxen</name><name>Suhas Ganjam</name><name>Gonzalo Garcia</name><name>Robert Gasca</name><name>Élie Genois</name><name>William Giang</name><name>Craig Gidney</name><name>Dar Gilboa</name><name>Raja Gosula</name><name>Alejandro Grajales Dau</name><name>Dietrich Graumann</name><name>Alex Greene</name><name>Jonathan A. Gross</name><name>Steve Habegger</name><name>John Hall</name><name>Michael C. Hamilton</name><name>Monica Hansen</name><name>Matthew P. Harrigan</name><name>Sean D. Harrington</name><name>Francisco J. H. Heras</name><name>Stephen Heslin</name><name>Paula Heu</name><name>Oscar Higgott</name><name>Gordon Hill</name><name>Jeremy Hilton</name><name>George Holland</name><name>Sabrina Hong</name><name>Hsin-Yuan Huang</name><name>Ashley Huff</name><name>William J. Huggins</name><name>Lev B. Ioffe</name><name>Sergei V. Isakov</name><name>Justin Iveland</name><name>Evan Jeffrey</name><name>Zhang Jiang</name><name>Cody Jones</name><name>Stephen Jordan</name><name>Chaitali Joshi</name><name>Pavol Juhas</name><name>Dvir Kafri</name><name>Hui Kang</name><name>Amir H. Karamlou</name><name>Kostyantyn Kechedzhi</name><name>Julian Kelly</name><name>Trupti Khaire</name><name>Tanuj Khattar</name><name>Mostafa Khezri</name><name>Seon Kim</name><name>Paul V. Klimov</name><name>Andrey R. Klots</name><name>Bryce Kobrin</name><name>Pushmeet Kohli</name><name>Alexander N. Korotkov</name><name>Fedor Kostritsa</name><name>Robin Kothari</name><name>Borislav Kozlovskii</name><name>John Mark Kreikebaum</name><name>Vladislav D. Kurilovich</name><name>Nathan Lacroix</name><name>David Landhuis</name><name>Tiano Lange-Dei</name><name>Brandon W. Langley</name><name>Pavel Laptev</name><name>Kim-Ming Lau</name><name>Loïck Le Guevel</name><name>Justin Ledford</name><name>Kenny Lee</name><name>Yuri D. Lensky</name><name>Shannon Leon</name><name>Brian J. Lester</name><name>Wing Yan Li</name><name>Yin Li</name><name>Alexander T. Lill</name><name>Wayne Liu</name><name>William P. Livingston</name><name>Aditya Locharla</name><name>Erik Lucero</name><name>Daniel Lundahl</name><name>Aaron Lunt</name><name>Sid Madhuk</name><name>Fionn D. Malone</name><name>Ashley Maloney</name><name>Salvatore Mandrá</name><name>Leigh S. Martin</name><name>Steven Martin</name><name>Orion Martin</name><name>Cameron Maxfield</name><name>Jarrod R. McClean</name><name>Matt McEwen</name><name>Seneca Meeks</name><name>Anthony Megrant</name><name>Xiao Mi</name><name>Kevin C. Miao</name><name>Amanda Mieszala</name><name>Reza Molavi</name><name>Sebastian Molina</name><name>Shirin Montazeri</name><name>Alexis Morvan</name><name>Ramis Movassagh</name><name>Wojciech Mruczkiewicz</name><name>Ofer Naaman</name><name>Matthew Neeley</name><name>Charles Neill</name><name>Ani Nersisyan</name><name>Hartmut Neven</name><name>Michael Newman</name><name>Jiun How Ng</name><name>Anthony Nguyen</name><name>Murray Nguyen</name><name>Chia-Hung Ni</name><name>Thomas E. O'Brien</name><name>William D. Oliver</name><name>Alex Opremcak</name><name>Kristoffer Ottosson</name><name>Andre Petukhov</name><name>Alex Pizzuto</name><name>John Platt</name><name>Rebecca Potter</name><name>Orion Pritchard</name><name>Leonid P. Pryadko</name><name>Chris Quintana</name><name>Ganesh Ramachandran</name><name>Matthew J. Reagor</name><name>David M. Rhodes</name><name>Gabrielle Roberts</name><name>Eliott Rosenberg</name><name>Emma Rosenfeld</name><name>Pedram Roushan</name><name>Nicholas C. Rubin</name><name>Negar Saei</name><name>Daniel Sank</name><name>Kannan Sankaragomathi</name><name>Kevin J. Satzinger</name><name>Henry F. Schurkus</name><name>Christopher Schuster</name><name>Andrew W. Senior</name><name>Michael J. Shearn</name><name>Aaron Shorter</name><name>Noah Shutty</name><name>Vladimir Shvarts</name><name>Shraddha Singh</name><name>Volodymyr Sivak</name><name>Jindra Skruzny</name><name>Spencer Small</name><name>Vadim Smelyanskiy</name><name>W. Clarke Smith</name><name>Rolando D. Somma</name><name>Sofia Springer</name><name>George Sterling</name><name>Doug Strain</name><name>Jordan Suchard</name><name>Aaron Szasz</name><name>Alex Sztein</name><name>Douglas Thor</name><name>Alfredo Torres</name><name>M. Mert Torunbalci</name><name>Abeer Vaishnav</name><name>Justin Vargas</name><name>Sergey Vdovichev</name><name>Guifre Vidal</name><name>Benjamin Villalonga</name><name>Catherine Vollgraff Heidweiller</name><name>Steven Waltman</name><name>Shannon X. Wang</name><name>Brayden Ware</name><name>Kate Weber</name><name>Theodore White</name><name>Kristi Wong</name><name>Bryan W. K. Woo</name><name>Cheng Xing</name><name>Z. Jamie Yao</name><name>Ping Yeh</name><name>Bicheng Ying</name><name>Juhwan Yoo</name><name>Noureldin Yosri</name><name>Grayson Young</name><name>Adam Zalcman</name><name>Yaxing Zhang</name><name>Ningfeng Zhu</name><name>Nicholas Zobrist</name></entry>",
+"status": 200
+},
 "https://export.arxiv.org/api/query?search_query=ti:%22rotating%20without%20seeing%20towards%20in%20hand%20dexterity%20through%20touch%22&max_results=5": {
 "body": "<entry><title>Rotating without Seeing: Towards In-hand Dexterity through Touch</title><published>2023-03-20T05:38:30Z</published><name>Zhao-Heng Yin</name><name>Binghao Huang</name><name>Yuzhe Qin</name><name>Qifeng Chen</name><name>Xiaolong Wang</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?search_query=ti:%22smart%20guiding%20glasses%20for%20visually%20impaired%20people%20in%20indoor%20environment%22&max_results=5": {
+"body": "<entry><title>Smart Guiding Glasses for Visually Impaired People in Indoor Environment</title><published>2017-09-27T06:58:20Z</published><name>Jinqiang Bai</name><name>Shiguo Lian</name><name>Zhaoxiang Liu</name><name>Kai Wang</name><name>Dijun Liu</name></entry>",
 "status": 200
 },
 "https://export.arxiv.org/api/query?search_query=ti:%22the%202020%20census%20disclosure%20avoidance%20system%20topdown%20algorithm%22&max_results=5": {
@@ -17663,12 +21442,20 @@
 "body": "",
 "status": 200
 },
+"https://export.arxiv.org/api/query?search_query=ti:%22the%20effect%20of%20providing%20peer%20information%20on%20retirement%20savings%20decisions%22&max_results=5": {
+"body": "",
+"status": 200
+},
 "https://export.arxiv.org/api/query?search_query=ti:%22the%20importance%20of%20default%20options%20for%20retirement%20saving%20outcomes%20evidence%20from%20the%20united%20states%22&max_results=5": {
 "body": "",
 "status": 200
 },
 "https://export.arxiv.org/api/query?search_query=ti:%22towards%20robust%20lidar%20based%20perception%20in%20autonomous%20driving%20general%20black%20box%20adversarial%20sensor%20attack%20and%20countermeasures%22&max_results=5": {
 "body": "<entry><title>Towards Robust LiDAR-based Perception in Autonomous Driving: General Black-box Adversarial Sensor Attack and Countermeasures</title><published>2020-06-30T17:07:45Z</published><name>Jiachen Sun</name><name>Yulong Cao</name><name>Qi Alfred Chen</name><name>Z. Morley Mao</name></entry>",
+"status": 200
+},
+"https://export.arxiv.org/api/query?search_query=ti:%22wearable%20assistive%20devices%20for%20visually%20impaired%20a%20state%20of%20the%20art%20survey%22&max_results=5": {
+"body": "",
 "status": 200
 },
 "https://export.arxiv.org/api/query?search_query=ti:%22you%20can%20t%20see%20me%20physical%20removal%20attacks%20on%20lidar%20based%20autonomous%20vehicles%20driving%20frameworks%22&max_results=5": {

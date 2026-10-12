@@ -3,3 +3,5 @@ claude-haiku-043,0,real_text_only,"Chapter in Wise (Ed.), Perspectives on the Ec
 claude-sonnet-043,0,real_text_only,"Chapter in Wise (Ed.), Perspectives on the Economics of Aging, University of Chicago Press, 2004; OpenAlex only indexes the 2001 NBER working paper"
 claude-opus-niche-016,0,real_text_only,"bioRxiv preprint 10.1101/2025.02.03.636309 (Skrinjar, Eberhardt, ... Schwede, 2025); found in Crossref, not by the OpenAlex title search"
 claude-opus-niche-037,0,real_text_only,"Pacific Symposium on Biocomputing 2024, 10.1142/9789811286421_0002, arXiv:2310.16146; found in Crossref and arXiv, not by the OpenAlex title search"
+chatgpt-049,0,real_text_only,"Chapter in Portugali (Ed.), The Construction of Cognitive Maps, GeoJournal Library vol. 32, Springer, 1996 (10.1007/978-0-585-33485-1_10); OpenAlex lists a 2007 date"
+gemini-012,0,real_text_only,"Real chapter, 2009: 10.7208/chicago/9780226076508.003.0006 in Brown, Liebman & Wise (Eds.), Social Security Policy in a Changing Environment. Gemini's book title and pages are wrong; the labelling rules check title, first author and year only"

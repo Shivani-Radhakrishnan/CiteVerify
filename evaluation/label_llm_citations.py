@@ -63,7 +63,7 @@ def sim(a: str, b: str) -> float:
 
 def main_title(t: str) -> str:
     """The part before a subtitle ("NavCog: A navigational ..." -> "NavCog")."""
-    return re.split(r"\s*[:?]\s+", t or "", maxsplit=1)[0]
+    return re.split(r"\s*[:?][\"”’]?\s+", t or "", maxsplit=1)[0]
 
 
 def titles_match(cited: str, record: str, pinned: bool) -> bool:
@@ -86,7 +86,7 @@ def parse_apa(text: str) -> dict:
     # The title runs to the first sentence end (". eClinicalMedicine", ". arXiv", "USA. Remote"
     # all end it); a bracketed note such as "[Doctoral dissertation]" is not part of it.
     title = re.sub(r"\s*\[[^\]]*\]", "", title.strip())
-    t = re.split(r"(?<=[^\s.])(?<!\b[A-Z])(?<!\bvs)(?<!\be\.g)(?<!\bi\.e)(?<!\bal)(?<!\bSt)[.!]\s+|(?<=\?)\s+(?=[A-Z])", title, maxsplit=1)[0].strip().rstrip(".")
+    t = re.split(r"(?<=[^\s.])(?<!\b[A-Z])(?<!\bvs)(?<!\be\.g)(?<!\bi\.e)(?<!\bal)(?<!\bSt)[.!][\"”’]?\s+|(?<=\?)\s+(?=[A-Z])", title, maxsplit=1)[0].strip().rstrip(".")
     author = re.split(r",|\s&\s|\s\(", text.strip(), maxsplit=1)[0].strip()
     return {"year": year, "title": t, "first_author": author}
 
@@ -209,7 +209,7 @@ def matches(p: dict, rec: dict, pinned: bool = False) -> tuple[bool, str]:
     year or two before the print year that a correct reference cites."""
     if not titles_match(p["title"], rec["title"], pinned):
         return False, "title"
-    if not surname_in(p["first_author"], rec["authors"]):
+    if rec["authors"] and not surname_in(p["first_author"], rec["authors"]):  # no author data can't contradict
         return False, "author"
     if p["year"] is not None and rec["year"] is not None and abs(p["year"] - rec["year"]) > 2:
         return False, "year"
