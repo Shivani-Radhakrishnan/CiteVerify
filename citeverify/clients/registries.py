@@ -206,6 +206,22 @@ def query_terms(title: str, limit: int = 8) -> list[str]:
     return seen[:limit]
 
 
+def slim_atom(xml_text: str) -> str:
+    """Keep only id, title, published date and author names of each feed entry."""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        return xml_text
+    out = ET.Element("feed", xmlns=_ATOM[1:-1])
+    for entry in root.iter(f"{_ATOM}entry"):
+        e = ET.SubElement(out, "entry")
+        for tag in ("id", "title", "published"):
+            ET.SubElement(e, tag).text = entry.findtext(f"{_ATOM}{tag}") or ""
+        for a in entry.findall(f"{_ATOM}author"):
+            ET.SubElement(ET.SubElement(e, "author"), "name").text = a.findtext(f"{_ATOM}name") or ""
+    return ET.tostring(out, encoding="unicode")
+
+
 class ArxivClient:
     """arXiv export API (https://info.arxiv.org/help/api). Asks for 3 s between calls."""
 
@@ -217,7 +233,7 @@ class ArxivClient:
         self.http.min_interval.setdefault("export.arxiv.org", self.MIN_INTERVAL)
 
     def _query(self, params: dict[str, Any]) -> list[WorkRecord]:
-        resp = self.http.get(self.BASE, params=params, as_json=False)
+        resp = self.http.get(self.BASE, params=params, as_json=False, slim=slim_atom)
         if not resp.ok:
             raise HttpError(f"arXiv returned HTTP {resp.status}")
         return _parse_arxiv_feed(resp.data)

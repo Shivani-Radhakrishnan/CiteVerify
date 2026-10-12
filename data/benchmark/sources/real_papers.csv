@@ -1,0 +1,80 @@
+key,authors,et_al,year,title,venue,doi
+he2016,"He, K.; Zhang, X.; Ren, S.; Sun, J.",0,2016,Deep residual learning for image recognition,Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2016.90
+krizhevsky2017,"Krizhevsky, A.; Sutskever, I.; Hinton, G. E.",0,2017,ImageNet classification with deep convolutional neural networks,Communications of the ACM,10.1145/3065386
+kingma2014,"Kingma, D. P.; Ba, J.",0,2014,Adam: A method for stochastic optimization,arXiv preprint,10.48550/arXiv.1412.6980
+jumper2021,"Jumper, J.; Evans, R.; Pritzel, A.",1,2021,Highly accurate protein structure prediction with AlphaFold,Nature,10.1038/s41586-021-03819-2
+mnih2015,"Mnih, V.; Kavukcuoglu, K.; Silver, D.",1,2015,Human-level control through deep reinforcement learning,Nature,10.1038/nature14236
+shannon1948,"Shannon, C. E.",0,1948,A mathematical theory of communication,Bell System Technical Journal,10.1002/j.1538-7305.1948.tb01338.x
+watson1953,"Watson, J. D.; Crick, F. H. C.",0,1953,Molecular structure of nucleic acids: A structure for deoxyribose nucleic acid,Nature,10.1038/171737a0
+breiman2001,"Breiman, L.",0,2001,Random forests,Machine Learning,10.1023/A:1010933404324
+cortes1995,"Cortes, C.; Vapnik, V.",0,1995,Support-vector networks,Machine Learning,10.1007/BF00994018
+rumelhart1986,"Rumelhart, D. E.; Hinton, G. E.; Williams, R. J.",0,1986,Learning representations by back-propagating errors,Nature,10.1038/323533a0
+russakovsky2015,"Russakovsky, O.; Deng, J.; Su, H.",1,2015,ImageNet large scale visual recognition challenge,International Journal of Computer Vision,10.1007/s11263-015-0816-y
+ronneberger2015,"Ronneberger, O.; Fischer, P.; Brox, T.",0,2015,U-Net: Convolutional networks for biomedical image segmentation,Medical Image Computing and Computer-Assisted Intervention (MICCAI),10.1007/978-3-319-24574-4_28
+rajpurkar2016,"Rajpurkar, P.; Zhang, J.; Lopyrev, K.; Liang, P.",0,2016,"SQuAD: 100,000+ questions for machine comprehension of text",Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing,10.18653/v1/D16-1264
+papineni2002,"Papineni, K.; Roukos, S.; Ward, T.; Zhu, W.-J.",0,2002,BLEU: A method for automatic evaluation of machine translation,Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics,10.3115/1073083.1073135
+ioffe2015,"Ioffe, S.; Szegedy, C.",0,2015,Batch normalization: Accelerating deep network training by reducing internal covariate shift,arXiv preprint,10.48550/arXiv.1502.03167
+kipf2016,"Kipf, T. N.; Welling, M.",0,2016,Semi-supervised classification with graph convolutional networks,arXiv preprint,10.48550/arXiv.1609.02907
+mikolov2013,"Mikolov, T.; Chen, K.; Corrado, G.; Dean, J.",0,2013,Efficient estimation of word representations in vector space,arXiv preprint,10.48550/arXiv.1301.3781
+raffel2019,"Raffel, C.; Shazeer, N.; Roberts, A.",1,2019,Exploring the limits of transfer learning with a unified text-to-text transformer,arXiv preprint,10.48550/arXiv.1910.10683
+dosovitskiy2020,"Dosovitskiy, A.; Beyer, L.; Kolesnikov, A.",1,2020,An image is worth 16x16 words: Transformers for image recognition at scale,arXiv preprint,10.48550/arXiv.2010.11929
+schmidhuber2015,"Schmidhuber, J.",0,2015,Deep learning in neural networks: An overview,Neural Networks,10.1016/j.neunet.2014.09.003
+bahdanau2014,"Bahdanau, D.; Cho, K.; Bengio, Y.",0,2014,Neural machine translation by jointly learning to align and translate,arXiv preprint,10.48550/arXiv.1409.0473
+girshick2014,"Girshick, R.; Donahue, J.; Darrell, T.; Malik, J.",0,2014,Rich feature hierarchies for accurate object detection and semantic segmentation,Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2014.81
+redmon2016,"Redmon, J.; Divvala, S.; Girshick, R.; Farhadi, A.",0,2016,"You only look once: Unified, real-time object detection",Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2016.91
+szegedy2015,"Szegedy, C.; Liu, W.; Jia, Y.",1,2015,Going deeper with convolutions,Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2015.7298594
+deng2009,"Deng, J.; Dong, W.; Socher, R.",1,2009,ImageNet: A large-scale hierarchical image database,IEEE Conference on Computer Vision and Pattern Recognition,10.1109/CVPR.2009.5206848
+harris2020,"Harris, C. R.; Millman, K. J.; van der Walt, S. J.",1,2020,Array programming with NumPy,Nature,10.1038/s41586-020-2649-2
+virtanen2020,"Virtanen, P.; Gommers, R.; Oliphant, T. E.",1,2020,SciPy 1.0: Fundamental algorithms for scientific computing in Python,Nature Methods,10.1038/s41592-019-0686-2
+hunter2007,"Hunter, J. D.",0,2007,Matplotlib: A 2D graphics environment,Computing in Science & Engineering,10.1109/MCSE.2007.55
+chen2016,"Chen, T.; Guestrin, C.",0,2016,XGBoost: A scalable tree boosting system,Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining,10.1145/2939672.2939785
+wilkinson2016,"Wilkinson, M. D.; Dumontier, M.; Aalbersberg, I. J.",1,2016,The FAIR Guiding Principles for scientific data management and stewardship,Scientific Data,10.1038/sdata.2016.18
+ioannidis2005,"Ioannidis, J. P. A.",0,2005,Why most published research findings are false,PLoS Medicine,10.1371/journal.pmed.0020124
+hirsch2005,"Hirsch, J. E.",0,2005,An index to quantify an individual's scientific research output,Proceedings of the National Academy of Sciences,10.1073/pnas.0507655102
+altschul1990,"Altschul, S. F.; Gish, W.; Miller, W.; Myers, E. W.; Lipman, D. J.",0,1990,Basic local alignment search tool,Journal of Molecular Biology,10.1016/S0022-2836(05)80360-2
+kahneman1979,"Kahneman, D.; Tversky, A.",0,1979,Prospect theory: An analysis of decision under risk,Econometrica,10.2307/1914185
+granovetter1973,"Granovetter, M. S.",0,1973,The strength of weak ties,American Journal of Sociology,10.1086/225469
+watts1998,"Watts, D. J.; Strogatz, S. H.",0,1998,Collective dynamics of 'small-world' networks,Nature,10.1038/30918
+barabasi1999,"Barabási, A.-L.; Albert, R.",0,1999,Emergence of scaling in random networks,Science,10.1126/science.286.5439.509
+jinek2012,"Jinek, M.; Chylinski, K.; Fonfara, I.",1,2012,A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity,Science,10.1126/science.1225829
+bengio1994,"Bengio, Y.; Simard, P.; Frasconi, P.",0,1994,Learning long-term dependencies with gradient descent is difficult,IEEE Transactions on Neural Networks,10.1109/72.279181
+hopfield1982,"Hopfield, J. J.",0,1982,Neural networks and physical systems with emergent collective computational abilities,Proceedings of the National Academy of Sciences,10.1073/pnas.79.8.2554
+rosenblatt1958,"Rosenblatt, F.",0,1958,The perceptron: A probabilistic model for information storage and organization in the brain,Psychological Review,10.1037/h0042519
+turing1950,"Turing, A. M.",0,1950,Computing machinery and intelligence,Mind,10.1093/mind/LIX.236.433
+cho2014,"Cho, K.; van Merriënboer, B.; Gulcehre, C.",1,2014,Learning phrase representations using RNN encoder-decoder for statistical machine translation,Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP),10.3115/v1/D14-1179
+peters2018,"Peters, M. E.; Neumann, M.; Iyyer, M.",1,2018,Deep contextualized word representations,"Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics",10.18653/v1/N18-1202
+kirkpatrick2017,"Kirkpatrick, J.; Pascanu, R.; Rabinowitz, N.",1,2017,Overcoming catastrophic forgetting in neural networks,Proceedings of the National Academy of Sciences,10.1073/pnas.1611835114
+bojanowski2017,"Bojanowski, P.; Grave, E.; Joulin, A.; Mikolov, T.",0,2017,Enriching word vectors with subword information,Transactions of the Association for Computational Linguistics,10.1162/tacl_a_00051
+zhu2017,"Zhu, J.-Y.; Park, T.; Isola, P.; Efros, A. A.",0,2017,Unpaired image-to-image translation using cycle-consistent adversarial networks,IEEE International Conference on Computer Vision (ICCV),10.1109/ICCV.2017.244
+ribeiro2016,"Ribeiro, M. T.; Singh, S.; Guestrin, C.",0,2016,"""Why should I trust you?"": Explaining the predictions of any classifier",Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining,10.1145/2939672.2939778
+esteva2017,"Esteva, A.; Kuprel, B.; Novoa, R. A.",1,2017,Dermatologist-level classification of skin cancer with deep neural networks,Nature,10.1038/nature21056
+wei2022,"Wei, J.; Wang, X.; Schuurmans, D.",1,2022,Chain-of-thought prompting elicits reasoning in large language models,arXiv preprint,10.48550/arXiv.2201.11903
+touvron2023,"Touvron, H.; Lavril, T.; Izacard, G.",1,2023,LLaMA: Open and efficient foundation language models,arXiv preprint,10.48550/arXiv.2302.13971
+kaplan2020,"Kaplan, J.; McCandlish, S.; Henighan, T.",1,2020,Scaling laws for neural language models,arXiv preprint,10.48550/arXiv.2001.08361
+schulman2017,"Schulman, J.; Wolski, F.; Dhariwal, P.",1,2017,Proximal policy optimization algorithms,arXiv preprint,10.48550/arXiv.1707.06347
+isola2017,"Isola, P.; Zhu, J.-Y.; Zhou, T.; Efros, A. A.",0,2017,Image-to-image translation with conditional adversarial networks,Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2017.632
+long2015,"Long, J.; Shelhamer, E.; Darrell, T.",0,2015,Fully convolutional networks for semantic segmentation,Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2015.7298965
+huang2017,"Huang, G.; Liu, Z.; van der Maaten, L.; Weinberger, K. Q.",0,2017,Densely connected convolutional networks,Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2017.243
+lowe2004,"Lowe, D. G.",0,2004,Distinctive image features from scale-invariant keypoints,International Journal of Computer Vision,10.1023/B:VISI.0000029664.99615.94
+dalal2005,"Dalal, N.; Triggs, B.",0,2005,Histograms of oriented gradients for human detection,IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR),10.1109/CVPR.2005.177
+tibshirani1996,"Tibshirani, R.",0,1996,Regression shrinkage and selection via the lasso,Journal of the Royal Statistical Society: Series B (Methodological),10.1111/j.2517-6161.1996.tb02080.x
+dempster1977,"Dempster, A. P.; Laird, N. M.; Rubin, D. B.",0,1977,Maximum likelihood from incomplete data via the EM algorithm,Journal of the Royal Statistical Society: Series B (Methodological),10.1111/j.2517-6161.1977.tb01600.x
+kalman1960,"Kalman, R. E.",0,1960,A new approach to linear filtering and prediction problems,Journal of Basic Engineering,10.1115/1.3662552
+metropolis1953,"Metropolis, N.; Rosenbluth, A. W.; Rosenbluth, M. N.; Teller, A. H.; Teller, E.",0,1953,Equation of state calculations by fast computing machines,The Journal of Chemical Physics,10.1063/1.1699114
+cooley1965,"Cooley, J. W.; Tukey, J. W.",0,1965,An algorithm for the machine calculation of complex Fourier series,Mathematics of Computation,10.1090/S0025-5718-1965-0178586-1
+benjamini1995,"Benjamini, Y.; Hochberg, Y.",0,1995,Controlling the false discovery rate: A practical and powerful approach to multiple testing,Journal of the Royal Statistical Society: Series B (Methodological),10.1111/j.2517-6161.1995.tb02031.x
+kaplanmeier1958,"Kaplan, E. L.; Meier, P.",0,1958,Nonparametric estimation from incomplete observations,Journal of the American Statistical Association,10.1080/01621459.1958.10501452
+cox1972,"Cox, D. R.",0,1972,Regression models and life-tables,Journal of the Royal Statistical Society: Series B (Methodological),10.1111/j.2517-6161.1972.tb00899.x
+sanger1977,"Sanger, F.; Nicklen, S.; Coulson, A. R.",0,1977,DNA sequencing with chain-terminating inhibitors,Proceedings of the National Academy of Sciences,10.1073/pnas.74.12.5463
+lowry1951,"Lowry, O. H.; Rosebrough, N. J.; Farr, A. L.; Randall, R. J.",0,1951,Protein measurement with the Folin phenol reagent,Journal of Biological Chemistry,10.1016/S0021-9258(19)52451-6
+laemmli1970,"Laemmli, U. K.",0,1970,Cleavage of structural proteins during the assembly of the head of bacteriophage T4,Nature,10.1038/227680a0
+bradford1976,"Bradford, M. M.",0,1976,A rapid and sensitive method for the quantitation of microgram quantities of protein utilizing the principle of protein-dye binding,Analytical Biochemistry,10.1016/0003-2697(76)90527-3
+kohn1965,"Kohn, W.; Sham, L. J.",0,1965,Self-consistent equations including exchange and correlation effects,Physical Review,10.1103/PhysRev.140.A1133
+perdew1996,"Perdew, J. P.; Burke, K.; Ernzerhof, M.",0,1996,Generalized gradient approximation made simple,Physical Review Letters,10.1103/PhysRevLett.77.3865
+novoselov2004,"Novoselov, K. S.; Geim, A. K.; Morozov, S. V.",1,2004,Electric field effect in atomically thin carbon films,Science,10.1126/science.1102896
+abbott2016,"Abbott, B. P.",1,2016,Observation of gravitational waves from a binary black hole merger,Physical Review Letters,10.1103/PhysRevLett.116.061102
+takahashi2006,"Takahashi, K.; Yamanaka, S.",0,2006,Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors,Cell,10.1016/j.cell.2006.07.024
+lander2001,"Lander, E. S.",1,2001,Initial sequencing and analysis of the human genome,Nature,10.1038/35057062
+moher2009,"Moher, D.; Liberati, A.; Tetzlaff, J.; Altman, D. G.",0,2009,Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement,PLoS Medicine,10.1371/journal.pmed.1000097
+braun2006,"Braun, V.; Clarke, V.",0,2006,Using thematic analysis in psychology,Qualitative Research in Psychology,10.1191/1478088706qp063oa
+davis1989,"Davis, F. D.",0,1989,"Perceived usefulness, perceived ease of use, and user acceptance of information technology",MIS Quarterly,10.2307/249008

@@ -1,0 +1,1312 @@
+{
+ "split": "dev",
+ "n_items": 134,
+ "n_real": 78,
+ "n_fabricated": 56,
+ "threshold": 0.2,
+ "reference_year": 2026,
+ "systems": {
+  "v1": {
+   "overall": {
+    "n": 134,
+    "accuracy": 0.7985074626865671,
+    "precision": 0.967741935483871,
+    "recall": 0.5357142857142857,
+    "f1": 0.6896551724137931,
+    "false_positive_rate": 0.01282051282051282,
+    "confusion": {
+     "tp": 30,
+     "fp": 1,
+     "fn": 26,
+     "tn": 77
+    }
+   },
+   "review_mode": {
+    "n": 134,
+    "accuracy": 0.664179104477612,
+    "precision": 0.5604395604395604,
+    "recall": 0.9107142857142857,
+    "f1": 0.6938775510204082,
+    "false_positive_rate": 0.5128205128205128,
+    "confusion": {
+     "tp": 51,
+     "fp": 40,
+     "fn": 5,
+     "tn": 38
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 38,
+     "UNCERTAIN": 39,
+     "HALLUCINATED": 1
+    },
+    "fabricated": {
+     "HALLUCINATED": 30,
+     "VERIFIED": 5,
+     "UNCERTAIN": 21
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 70,
+     "real": 39,
+     "fabricated": 31,
+     "correct": 64
+    },
+    "Plausibility heuristics": {
+     "n": 60,
+     "real": 39,
+     "fabricated": 21,
+     "correct": 39
+    },
+    "Temporal check": {
+     "n": 4,
+     "real": 0,
+     "fabricated": 4,
+     "correct": 4
+    }
+   },
+   "by_category": {
+    "chimeric_text": {
+     "n": 6,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "doi_swap": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "fabricated_arxiv": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "fabricated_doi": {
+     "n": 8,
+     "label": 1,
+     "flagged": 8,
+     "correct": 8
+    },
+    "fabricated_text": {
+     "n": 10,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "future_year_doi": {
+     "n": 3,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "future_year_text": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "misattributed_text": {
+     "n": 5,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "real_text_only": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "real_with_doi": {
+     "n": 39,
+     "label": 0,
+     "flagged": 1,
+     "correct": 38
+    },
+    "wrong_author_doi": {
+     "n": 5,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "wrong_year_doi": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    }
+   },
+   "errors": [
+    {
+     "id": "B013",
+     "category": "real_with_doi",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B104",
+     "category": "wrong_author_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B106",
+     "category": "wrong_author_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B107",
+     "category": "future_year_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B108",
+     "category": "future_year_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B109",
+     "category": "future_year_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B110",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B111",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B112",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B113",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B114",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B115",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B116",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B117",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B118",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B119",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B120",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B121",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B122",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B123",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B124",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B125",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B126",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B127",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B128",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B129",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B130",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    }
+   ]
+  },
+  "v1_no_table": {
+   "overall": {
+    "n": 134,
+    "accuracy": 0.7985074626865671,
+    "precision": 0.967741935483871,
+    "recall": 0.5357142857142857,
+    "f1": 0.6896551724137931,
+    "false_positive_rate": 0.01282051282051282,
+    "confusion": {
+     "tp": 30,
+     "fp": 1,
+     "fn": 26,
+     "tn": 77
+    }
+   },
+   "review_mode": {
+    "n": 134,
+    "accuracy": 0.664179104477612,
+    "precision": 0.5604395604395604,
+    "recall": 0.9107142857142857,
+    "f1": 0.6938775510204082,
+    "false_positive_rate": 0.5128205128205128,
+    "confusion": {
+     "tp": 51,
+     "fp": 40,
+     "fn": 5,
+     "tn": 38
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 38,
+     "UNCERTAIN": 39,
+     "HALLUCINATED": 1
+    },
+    "fabricated": {
+     "HALLUCINATED": 30,
+     "VERIFIED": 5,
+     "UNCERTAIN": 21
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 70,
+     "real": 39,
+     "fabricated": 31,
+     "correct": 64
+    },
+    "Plausibility heuristics": {
+     "n": 60,
+     "real": 39,
+     "fabricated": 21,
+     "correct": 39
+    },
+    "Temporal check": {
+     "n": 4,
+     "real": 0,
+     "fabricated": 4,
+     "correct": 4
+    }
+   },
+   "by_category": {
+    "chimeric_text": {
+     "n": 6,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "doi_swap": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "fabricated_arxiv": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "fabricated_doi": {
+     "n": 8,
+     "label": 1,
+     "flagged": 8,
+     "correct": 8
+    },
+    "fabricated_text": {
+     "n": 10,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "future_year_doi": {
+     "n": 3,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "future_year_text": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "misattributed_text": {
+     "n": 5,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "real_text_only": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "real_with_doi": {
+     "n": 39,
+     "label": 0,
+     "flagged": 1,
+     "correct": 38
+    },
+    "wrong_author_doi": {
+     "n": 5,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "wrong_year_doi": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    }
+   },
+   "errors": [
+    {
+     "id": "B013",
+     "category": "real_with_doi",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B104",
+     "category": "wrong_author_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B106",
+     "category": "wrong_author_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B107",
+     "category": "future_year_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B108",
+     "category": "future_year_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B109",
+     "category": "future_year_doi",
+     "label": 1,
+     "pred_score": 0.99,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "B110",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B111",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B112",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B113",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B114",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B115",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B116",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B117",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B118",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B119",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B120",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B121",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B122",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B123",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B124",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B125",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B126",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B127",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B128",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B129",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B130",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    }
+   ]
+  },
+  "v2": {
+   "overall": {
+    "n": 134,
+    "accuracy": 0.9701492537313433,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1": 0.962962962962963,
+    "false_positive_rate": 0.0,
+    "confusion": {
+     "tp": 52,
+     "fp": 0,
+     "fn": 4,
+     "tn": 78
+    }
+   },
+   "review_mode": {
+    "n": 134,
+    "accuracy": 0.9626865671641791,
+    "precision": 0.9180327868852459,
+    "recall": 1.0,
+    "f1": 0.9572649572649572,
+    "false_positive_rate": 0.0641025641025641,
+    "confusion": {
+     "tp": 56,
+     "fp": 5,
+     "fn": 0,
+     "tn": 73
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 73,
+     "UNCERTAIN": 5
+    },
+    "fabricated": {
+     "HALLUCINATED": 52,
+     "UNCERTAIN": 4
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 67,
+     "real": 39,
+     "fabricated": 28,
+     "correct": 67
+    },
+    "Plausibility heuristics": {
+     "n": 1,
+     "real": 1,
+     "fabricated": 0,
+     "correct": 1
+    },
+    "Registry search": {
+     "n": 59,
+     "real": 38,
+     "fabricated": 21,
+     "correct": 55
+    },
+    "Temporal check": {
+     "n": 7,
+     "real": 0,
+     "fabricated": 7,
+     "correct": 7
+    }
+   },
+   "by_category": {
+    "chimeric_text": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "doi_swap": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "fabricated_arxiv": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "fabricated_doi": {
+     "n": 8,
+     "label": 1,
+     "flagged": 8,
+     "correct": 8
+    },
+    "fabricated_text": {
+     "n": 10,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "future_year_doi": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "future_year_text": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "misattributed_text": {
+     "n": 5,
+     "label": 1,
+     "flagged": 5,
+     "correct": 5
+    },
+    "real_text_only": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "real_with_doi": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "wrong_author_doi": {
+     "n": 5,
+     "label": 1,
+     "flagged": 5,
+     "correct": 5
+    },
+    "wrong_year_doi": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    }
+   },
+   "errors": [
+    {
+     "id": "B112",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    },
+    {
+     "id": "B116",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    },
+    {
+     "id": "B117",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    },
+    {
+     "id": "B119",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    }
+   ]
+  },
+  "v2_with_table": {
+   "overall": {
+    "n": 134,
+    "accuracy": 0.9701492537313433,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1": 0.962962962962963,
+    "false_positive_rate": 0.0,
+    "confusion": {
+     "tp": 52,
+     "fp": 0,
+     "fn": 4,
+     "tn": 78
+    }
+   },
+   "review_mode": {
+    "n": 134,
+    "accuracy": 0.9626865671641791,
+    "precision": 0.9180327868852459,
+    "recall": 1.0,
+    "f1": 0.9572649572649572,
+    "false_positive_rate": 0.0641025641025641,
+    "confusion": {
+     "tp": 56,
+     "fp": 5,
+     "fn": 0,
+     "tn": 73
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 73,
+     "UNCERTAIN": 5
+    },
+    "fabricated": {
+     "HALLUCINATED": 52,
+     "UNCERTAIN": 4
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 67,
+     "real": 39,
+     "fabricated": 28,
+     "correct": 67
+    },
+    "Plausibility heuristics": {
+     "n": 1,
+     "real": 1,
+     "fabricated": 0,
+     "correct": 1
+    },
+    "Registry search": {
+     "n": 59,
+     "real": 38,
+     "fabricated": 21,
+     "correct": 55
+    },
+    "Temporal check": {
+     "n": 7,
+     "real": 0,
+     "fabricated": 7,
+     "correct": 7
+    }
+   },
+   "by_category": {
+    "chimeric_text": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "doi_swap": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "fabricated_arxiv": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "fabricated_doi": {
+     "n": 8,
+     "label": 1,
+     "flagged": 8,
+     "correct": 8
+    },
+    "fabricated_text": {
+     "n": 10,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "future_year_doi": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "future_year_text": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "misattributed_text": {
+     "n": 5,
+     "label": 1,
+     "flagged": 5,
+     "correct": 5
+    },
+    "real_text_only": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "real_with_doi": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "wrong_author_doi": {
+     "n": 5,
+     "label": 1,
+     "flagged": 5,
+     "correct": 5
+    },
+    "wrong_year_doi": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    }
+   },
+   "errors": [
+    {
+     "id": "B112",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    },
+    {
+     "id": "B116",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    },
+    {
+     "id": "B117",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    },
+    {
+     "id": "B119",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.4,
+     "tier": "Registry search"
+    }
+   ]
+  },
+  "v2_no_search": {
+   "overall": {
+    "n": 134,
+    "accuracy": 0.8432835820895522,
+    "precision": 1.0,
+    "recall": 0.625,
+    "f1": 0.7692307692307693,
+    "false_positive_rate": 0.0,
+    "confusion": {
+     "tp": 35,
+     "fp": 0,
+     "fn": 21,
+     "tn": 78
+    }
+   },
+   "review_mode": {
+    "n": 134,
+    "accuracy": 0.7014925373134329,
+    "precision": 0.5833333333333334,
+    "recall": 1.0,
+    "f1": 0.7368421052631579,
+    "false_positive_rate": 0.5128205128205128,
+    "confusion": {
+     "tp": 56,
+     "fp": 40,
+     "fn": 0,
+     "tn": 38
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 38,
+     "UNCERTAIN": 40
+    },
+    "fabricated": {
+     "HALLUCINATED": 35,
+     "UNCERTAIN": 21
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 67,
+     "real": 39,
+     "fabricated": 28,
+     "correct": 67
+    },
+    "Plausibility heuristics": {
+     "n": 60,
+     "real": 39,
+     "fabricated": 21,
+     "correct": 39
+    },
+    "Temporal check": {
+     "n": 7,
+     "real": 0,
+     "fabricated": 7,
+     "correct": 7
+    }
+   },
+   "by_category": {
+    "chimeric_text": {
+     "n": 6,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "doi_swap": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    },
+    "fabricated_arxiv": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "fabricated_doi": {
+     "n": 8,
+     "label": 1,
+     "flagged": 8,
+     "correct": 8
+    },
+    "fabricated_text": {
+     "n": 10,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "future_year_doi": {
+     "n": 3,
+     "label": 1,
+     "flagged": 3,
+     "correct": 3
+    },
+    "future_year_text": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "misattributed_text": {
+     "n": 5,
+     "label": 1,
+     "flagged": 0,
+     "correct": 0
+    },
+    "real_text_only": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "real_with_doi": {
+     "n": 39,
+     "label": 0,
+     "flagged": 0,
+     "correct": 39
+    },
+    "wrong_author_doi": {
+     "n": 5,
+     "label": 1,
+     "flagged": 5,
+     "correct": 5
+    },
+    "wrong_year_doi": {
+     "n": 6,
+     "label": 1,
+     "flagged": 6,
+     "correct": 6
+    }
+   },
+   "errors": [
+    {
+     "id": "B110",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B111",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B112",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B113",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B114",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B115",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B116",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B117",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B118",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B119",
+     "category": "fabricated_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B120",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B121",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B122",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B123",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B124",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B125",
+     "category": "chimeric_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B126",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B127",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B128",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B129",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.35,
+     "tier": "Plausibility heuristics"
+    },
+    {
+     "id": "B130",
+     "category": "misattributed_text",
+     "label": 1,
+     "pred_score": 0.45,
+     "tier": "Plausibility heuristics"
+    }
+   ]
+  }
+ },
+ "probe": {
+  "n": 25,
+  "flagged": {
+   "v1": {
+    "raw": 7,
+    "study": 16
+   },
+   "v1_no_table": {
+    "raw": 0,
+    "study": 3
+   },
+   "v2": {
+    "raw": 0,
+    "study": 2
+   },
+   "v2_with_table": {
+    "raw": 7,
+    "study": 16
+   },
+   "v2_no_search": {
+    "raw": 0,
+    "study": 3
+   }
+  }
+ }
+}

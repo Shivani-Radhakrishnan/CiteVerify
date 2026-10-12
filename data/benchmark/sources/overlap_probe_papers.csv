@@ -1,0 +1,26 @@
+key,authors,et_al,year,title,venue,doi
+vaswani2017,"Vaswani, A.; Shazeer, N.; Parmar, N.",1,2017,Attention is all you need,Advances in Neural Information Processing Systems,10.48550/arXiv.1706.03762
+devlin2019,"Devlin, J.; Chang, M.-W.; Lee, K.; Toutanova, K.",0,2019,BERT: Pre-training of deep bidirectional transformers for language understanding,"Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics",10.18653/v1/N19-1423
+pedregosa2011,"Pedregosa, F.; Varoquaux, G.; Gramfort, A.",1,2011,Scikit-learn: Machine learning in Python,Journal of Machine Learning Research,
+lewis2020,"Lewis, P.; Perez, E.; Piktus, A.",1,2020,Retrieval-augmented generation for knowledge-intensive NLP tasks,Advances in Neural Information Processing Systems,10.48550/arXiv.2005.11401
+thorne2018,"Thorne, J.; Vlachos, A.; Christodoulopoulos, C.; Mittal, A.",0,2018,FEVER: A large-scale dataset for fact extraction and VERification,"Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics",10.18653/v1/N18-1074
+karpukhin2020,"Karpukhin, V.; Oguz, B.; Min, S.",1,2020,Dense passage retrieval for open-domain question answering,Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP),10.18653/v1/2020.emnlp-main.550
+reimers2019,"Reimers, N.; Gurevych, I.",0,2019,Sentence-BERT: Sentence embeddings using Siamese BERT-networks,Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP-IJCNLP),10.18653/v1/D19-1410
+lin2004,"Lin, C.-Y.",0,2004,ROUGE: A package for automatic evaluation of summaries,Text Summarization Branches Out,
+kleinberg1999,"Kleinberg, J. M.",0,1999,Authoritative sources in a hyperlinked environment,Journal of the ACM,10.1145/324133.324140
+newman2003,"Newman, M. E. J.",0,2003,The structure and function of complex networks,SIAM Review,10.1137/S003614450342480
+radford2019,"Radford, A.; Wu, J.; Child, R.",1,2019,Language models are unsupervised multitask learners,OpenAI technical report,
+ouyang2022,"Ouyang, L.; Wu, J.; Jiang, X.",1,2022,Training language models to follow instructions with human feedback,Advances in Neural Information Processing Systems,10.48550/arXiv.2203.02155
+hochreiter1997,"Hochreiter, S.; Schmidhuber, J.",0,1997,Long short-term memory,Neural Computation,10.1162/neco.1997.9.8.1735
+pennington2014,"Pennington, J.; Socher, R.; Manning, C. D.",0,2014,GloVe: Global vectors for word representation,Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP),10.3115/v1/D14-1162
+goodfellow2014,"Goodfellow, I.; Pouget-Abadie, J.; Mirza, M.",1,2014,Generative adversarial nets,Advances in Neural Information Processing Systems,10.48550/arXiv.1406.2661
+brown2020,"Brown, T. B.; Mann, B.; Ryder, N.",1,2020,Language models are few-shot learners,Advances in Neural Information Processing Systems,10.48550/arXiv.2005.14165
+ji2023,"Ji, Z.; Lee, N.; Frieske, R.",1,2023,Survey of hallucination in natural language generation,ACM Computing Surveys,10.1145/3571730
+bender2021,"Bender, E. M.; Gebru, T.; McMillan-Major, A.; Shmitchell, S.",0,2021,On the dangers of stochastic parrots: Can language models be too big?,"Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency",10.1145/3442188.3445922
+maynez2020,"Maynez, J.; Narayan, S.; Bohnet, B.; McDonald, R.",0,2020,On faithfulness and factuality in abstractive summarization,Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics,10.18653/v1/2020.acl-main.173
+zellers2019,"Zellers, R.; Holtzman, A.; Rashkin, H.",1,2019,Defending against neural fake news,Advances in Neural Information Processing Systems,10.48550/arXiv.1905.12616
+hinton2006,"Hinton, G. E.; Osindero, S.; Teh, Y.-W.",0,2006,A fast learning algorithm for deep belief nets,Neural Computation,10.1162/neco.2006.18.7.1527
+lecun1998,"LeCun, Y.; Bottou, L.; Bengio, Y.; Haffner, P.",0,1998,Gradient-based learning applied to document recognition,Proceedings of the IEEE,10.1109/5.726791
+silver2017,"Silver, D.; Schrittwieser, J.; Simonyan, K.",1,2017,Mastering the game of Go without human knowledge,Nature,10.1038/nature24270
+amershi2014,"Amershi, S.; Cakmak, M.; Knox, W. B.; Kulesza, T.",0,2014,Power to the people: The role of humans in interactive machine learning,AI Magazine,10.1609/aimag.v35i4.2513
+peng2023,"Peng, B.; Galley, M.; He, P.",1,2023,Check your facts and try again: Improving large language models with external knowledge and automated feedback,arXiv preprint,10.48550/arXiv.2302.12813

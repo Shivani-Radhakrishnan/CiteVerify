@@ -88,6 +88,7 @@ class JsonFileCache:
         if self.path.exists():
             self._data = json.loads(self.path.read_text(encoding="utf-8"))
         self.dirty = False
+        self.used: set[str] = set()  # keys read or written since loading
 
     def __len__(self) -> int:
         return len(self._data)
@@ -96,12 +97,25 @@ class JsonFileCache:
         return list(self._data)
 
     def get(self, key: str) -> Optional[dict]:
-        return self._data.get(key)
+        hit = self._data.get(key)
+        if hit is not None:
+            self.used.add(key)
+        return hit
 
     def set(self, key: str, value: dict) -> None:
         with self._lock:
             self._data[key] = value
+            self.used.add(key)
             self.dirty = True
+
+    def prune(self) -> int:
+        """Drop entries not used since loading; returns how many were removed."""
+        with self._lock:
+            stale = [k for k in self._data if k not in self.used]
+            for k in stale:
+                del self._data[k]
+            self.dirty = self.dirty or bool(stale)
+            return len(stale)
 
     def save(self) -> None:
         with self._lock:

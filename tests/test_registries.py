@@ -90,3 +90,12 @@ def test_doi_org_handles(registry):
     d = DoiOrgClient(registry.http)
     assert d.exists("10.1/yes") is True
     assert d.exists("10.1/no") is False
+
+
+def test_slim_atom_keeps_only_used_fields():
+    from citeverify.clients.registries import slim_atom
+    feed = atom_feed(("1706.03762", "Attention Is All You Need", ["Ashish Vaswani"], 2017))
+    feed = feed.replace("</entry>", "<summary>long abstract</summary></entry>")
+    slim = slim_atom(feed)
+    assert "abstract" not in slim
+    assert _parse_arxiv_feed(slim) == _parse_arxiv_feed(feed)

@@ -121,3 +121,12 @@ def test_json_file_cache_round_trip(tmp_path):
     cache.save()
     again = JsonFileCache(path)
     assert again.get("k") == {"status": 200, "data": {"t": "Ünïcode"}} and len(again) == 1
+
+
+def test_json_file_cache_prune(tmp_path):
+    path = tmp_path / "cache.json"
+    c = JsonFileCache(path)
+    c.set("a", {"status": 200, "data": 1}); c.set("b", {"status": 200, "data": 2}); c.save()
+    c2 = JsonFileCache(path)
+    c2.get("a")
+    assert c2.prune() == 1 and c2.keys() == ["a"]
