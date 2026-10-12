@@ -163,3 +163,12 @@ def test_arxiv_id_from_doi_field():
     assert arxiv_id_from_field("https://arxiv.org/abs/1706.03762") == "1706.03762"
     assert arxiv_id_from_field("arXiv:quant-ph/9705052") == "quant-ph/9705052"
     assert arxiv_id_from_field("10.1109/CVPR.2016.90") is None
+
+
+def test_apa_title_containing_a_quoted_phrase():
+    p = parse_citation("Tandoc, E. C., Jr., Lim, Z. W., & Ling, R. (2018). Defining “fake news”: A typology of "
+                       "scholarly definitions. Digital Journalism, 6(2), 137–153.")
+    assert p.style == "apa" and p.title == "Defining “fake news”: A typology of scholarly definitions"
+    # IEEE still takes the quoted title.
+    p = parse_citation('K. He, X. Zhang, S. Ren and J. Sun, "Deep residual learning for image recognition," CVPR, 2016.')
+    assert p.style == "ieee" and p.title == "Deep residual learning for image recognition"

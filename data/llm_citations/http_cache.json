@@ -457,6 +457,66 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1002/wat2.1398": {
+  "data": {
+   "message": {
+    "DOI": "10.1002/wat2.1398",
+    "author": [
+     {
+      "family": "van Emmerik",
+      "given": "Tim"
+     },
+     {
+      "family": "Schwarz",
+      "given": "Anna"
+     }
+    ],
+    "container-title": [
+     "WIREs Water"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       29
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       29
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       29
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2020,
+       1
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Plastic debris in rivers"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1002/widm.1312": {
   "data": {
    "message": {
@@ -741,6 +801,82 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1007/978-3-319-61615-5": {
+  "data": {
+   "message": {
+    "DOI": "10.1007/978-3-319-61615-5",
+    "container-title": [
+     "The Handbook of Environmental Chemistry"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2018
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2018
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2018
+      ]
+     ]
+    },
+    "subtitle": [
+     "Emerging Environmental Contaminants?"
+    ],
+    "title": [
+     "Freshwater Microplastics"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1007/978-3-540-69775-6": {
+  "data": {
+   "message": {
+    "DOI": "10.1007/978-3-540-69775-6",
+    "container-title": [
+     "Ecological Studies"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2009
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2009
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2009
+      ]
+     ]
+    },
+    "subtitle": [
+     "Patterns, Processes, Causes and Consequences"
+    ],
+    "title": [
+     "Coral Bleaching"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1007/BF00303779": {
   "data": {
    "message": {
@@ -849,6 +985,70 @@
     "subtitle": [],
     "title": [
      "Toward a computer vision-based wayfinding aid for blind persons to access unfamiliar indoor environments"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1007/s00338-019-01844-2": {
+  "data": {
+   "message": {
+    "DOI": "10.1007/s00338-019-01844-2",
+    "author": [
+     {
+      "family": "Eakin",
+      "given": "C. Mark"
+     },
+     {
+      "family": "Sweatman",
+      "given": "Hugh P. A."
+     },
+     {
+      "family": "Brainard",
+      "given": "Russel E."
+     }
+    ],
+    "container-title": [
+     "Coral Reefs"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       7,
+       22
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       7,
+       22
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2019,
+       7,
+       22
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2019,
+       8
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "The 2014–2017 global-scale coral bleaching event: insights and impacts"
     ]
    }
   },
@@ -986,6 +1186,51 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1016/0004-6981(73)90140-6": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/0004-6981(73)90140-6",
+    "author": [
+     {
+      "family": "Oke",
+      "given": "T.R."
+     }
+    ],
+    "container-title": [
+     "Atmospheric Environment (1967)"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       1973,
+       8
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       1973,
+       8
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       1973,
+       8
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "City size and the urban heat island"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1016/S0003-4916(02)00018-0": {
   "data": {
    "message": {
@@ -1075,6 +1320,109 @@
     "subtitle": [],
     "title": [
      "Thermal remote sensing of urban climates"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1016/S0038-092X(00)00089-X": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/s0038-092x(00)00089-x",
+    "author": [
+     {
+      "family": "Akbari",
+      "given": "H"
+     },
+     {
+      "family": "Pomerantz",
+      "given": "M"
+     },
+     {
+      "family": "Taha",
+      "given": "H"
+     }
+    ],
+    "container-title": [
+     "Solar Energy"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2001
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2001
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2001
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Cool surfaces and shade trees to reduce energy use and improve air quality in urban areas"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1016/S1001-0742(08)60019-4": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/s1001-0742(08)60019-4",
+    "author": [
+     {
+      "family": "RIZWAN",
+      "given": "Ahmed Memon"
+     },
+     {
+      "family": "DENNIS",
+      "given": "Leung Y.C."
+     },
+     {
+      "family": "LIU",
+      "given": "Chunho"
+     }
+    ],
+    "container-title": [
+     "Journal of Environmental Sciences"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2008,
+       1
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2008,
+       1
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2008,
+       1
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "A review on the generation, determination and mitigation of Urban Heat Island"
     ]
    }
   },
@@ -1312,6 +1660,52 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1016/j.aiopen.2023.01.001": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.aiopen.2023.01.001",
+    "author": [
+     {
+      "family": "Misra",
+      "given": "Rishabh"
+     },
+     {
+      "family": "Arora",
+      "given": "Prahal"
+     }
+    ],
+    "container-title": [
+     "AI Open"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2023
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2023
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2023
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Sarcasm detection using news headlines dataset"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1016/j.bbi.2015.03.016": {
   "data": {
    "message": {
@@ -1509,6 +1903,83 @@
     "subtitle": [],
     "title": [
      "Fatigue and cognitive impairment in Post-COVID-19 Syndrome: A systematic review and meta-analysis"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1016/j.bbi.2022.01.020": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.bbi.2022.01.020",
+    "author": [
+     {
+      "family": "Hori",
+      "given": "Hiroaki"
+     },
+     {
+      "family": "Izawa",
+      "given": "Shuhei"
+     },
+     {
+      "family": "Yoshida",
+      "given": "Fuyuko"
+     },
+     {
+      "family": "Kunugi",
+      "given": "Hiroshi"
+     },
+     {
+      "family": "Kim",
+      "given": "Yoshiharu"
+     },
+     {
+      "family": "Mizukami",
+      "given": "Shinya"
+     },
+     {
+      "family": "Inoue",
+      "given": "Yusuke"
+     },
+     {
+      "family": "Tagaya",
+      "given": "Hirokuni"
+     },
+     {
+      "family": "Hakamata",
+      "given": "Yuko"
+     }
+    ],
+    "container-title": [
+     "Brain, Behavior, and Immunity"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2022,
+       3
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2022,
+       3
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2022,
+       3
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Association of childhood maltreatment history with salivary interleukin-6 diurnal patterns and C-reactive protein in healthy adults"
     ]
    }
   },
@@ -2669,6 +3140,95 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1016/j.inffus.2019.12.012": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.inffus.2019.12.012",
+    "author": [
+     {
+      "family": "Barredo Arrieta",
+      "given": "Alejandro"
+     },
+     {
+      "family": "Díaz-Rodríguez",
+      "given": "Natalia"
+     },
+     {
+      "family": "Del Ser",
+      "given": "Javier"
+     },
+     {
+      "family": "Bennetot",
+      "given": "Adrien"
+     },
+     {
+      "family": "Tabik",
+      "given": "Siham"
+     },
+     {
+      "family": "Barbado",
+      "given": "Alberto"
+     },
+     {
+      "family": "Garcia",
+      "given": "Salvador"
+     },
+     {
+      "family": "Gil-Lopez",
+      "given": "Sergio"
+     },
+     {
+      "family": "Molina",
+      "given": "Daniel"
+     },
+     {
+      "family": "Benjamins",
+      "given": "Richard"
+     },
+     {
+      "family": "Chatila",
+      "given": "Raja"
+     },
+     {
+      "family": "Herrera",
+      "given": "Francisco"
+     }
+    ],
+    "container-title": [
+     "Information Fusion"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2020,
+       6
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2020,
+       6
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2020,
+       6
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1016/j.jglr.2014.12.020": {
   "data": {
    "message": {
@@ -3115,6 +3675,67 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1016/j.marpolbul.2016.01.006": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.marpolbul.2016.01.006",
+    "author": [
+     {
+      "family": "Dris",
+      "given": "Rachid"
+     },
+     {
+      "family": "Gasperi",
+      "given": "Johnny"
+     },
+     {
+      "family": "Saad",
+      "given": "Mohamed"
+     },
+     {
+      "family": "Mirande",
+      "given": "Cécile"
+     },
+     {
+      "family": "Tassin",
+      "given": "Bruno"
+     }
+    ],
+    "container-title": [
+     "Marine Pollution Bulletin"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2016,
+       3
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2016,
+       3
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2016,
+       3
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Synthetic fibers in atmospheric fallout: A source of microplastics in the environment?"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1016/j.mcpdig.2023.05.004": {
   "data": {
    "message": {
@@ -3273,6 +3894,59 @@
     "subtitle": [],
     "title": [
      "Methods for Optimizing CRISPR-Cas9 Genome Editing Specificity"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1016/j.neubiorev.2019.03.023": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.neubiorev.2019.03.023",
+    "author": [
+     {
+      "family": "Liu",
+      "given": "Richard T."
+     },
+     {
+      "family": "Walsh",
+      "given": "Rachel F.L."
+     },
+     {
+      "family": "Sheehan",
+      "given": "Ana E."
+     }
+    ],
+    "container-title": [
+     "Neuroscience &amp; Biobehavioral Reviews"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       7
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       7
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2019,
+       7
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Prebiotics and probiotics for depression and anxiety: A systematic review and meta-analysis of controlled clinical trials"
     ]
    }
   },
@@ -3644,6 +4318,116 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1016/j.scitotenv.2018.07.271": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.scitotenv.2018.07.271",
+    "author": [
+     {
+      "family": "Windsor",
+      "given": "Fredric M."
+     },
+     {
+      "family": "Tilley",
+      "given": "Rosie M."
+     },
+     {
+      "family": "Tyler",
+      "given": "Charles R."
+     },
+     {
+      "family": "Ormerod",
+      "given": "Steve J."
+     }
+    ],
+    "container-title": [
+     "Science of The Total Environment"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       1
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       1
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2019,
+       1
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Microplastic ingestion by riverine macroinvertebrates"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1016/j.scitotenv.2019.136193": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.scitotenv.2019.136193",
+    "author": [
+     {
+      "family": "Venter",
+      "given": "Zander S."
+     },
+     {
+      "family": "Krog",
+      "given": "Norun Hjertager"
+     },
+     {
+      "family": "Barton",
+      "given": "David N."
+     }
+    ],
+    "container-title": [
+     "Science of The Total Environment"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2020,
+       3
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2020,
+       3
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2020,
+       3
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Linking green infrastructure to urban heat and human health risk mitigation in Oslo, Norway"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1016/j.scitotenv.2020.139866": {
   "data": {
    "message": {
@@ -3928,6 +4712,67 @@
     "subtitle": [],
     "title": [
      "Microplastics in freshwater systems: A review on occurrence, environmental effects, and methods for microplastics detection"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1016/j.watres.2018.06.015": {
+  "data": {
+   "message": {
+    "DOI": "10.1016/j.watres.2018.06.015",
+    "author": [
+     {
+      "family": "Blettler",
+      "given": "Martín C.M."
+     },
+     {
+      "family": "Abrial",
+      "given": "Elie"
+     },
+     {
+      "family": "Khan",
+      "given": "Farhan R."
+     },
+     {
+      "family": "Sivri",
+      "given": "Nuket"
+     },
+     {
+      "family": "Espinola",
+      "given": "Luis A."
+     }
+    ],
+    "container-title": [
+     "Water Research"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2018,
+       10
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2018,
+       10
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2018,
+       10
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Freshwater plastic pollution: Recognizing research biases and identifying knowledge gaps"
     ]
    }
   },
@@ -4397,6 +5242,106 @@
     "subtitle": [],
     "title": [
      "Strong contributions of local background climate to urban heat islands"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1038/nature14592": {
+  "data": {
+   "message": {
+    "DOI": "10.1038/nature14592",
+    "author": [
+     {
+      "family": "Kleinstiver",
+      "given": "Benjamin P."
+     },
+     {
+      "family": "Prew",
+      "given": "Michelle S."
+     },
+     {
+      "family": "Tsai",
+      "given": "Shengdar Q."
+     },
+     {
+      "family": "Topkar",
+      "given": "Ved V."
+     },
+     {
+      "family": "Nguyen",
+      "given": "Nhu T."
+     },
+     {
+      "family": "Zheng",
+      "given": "Zongli"
+     },
+     {
+      "family": "Gonzales",
+      "given": "Andrew P. W."
+     },
+     {
+      "family": "Li",
+      "given": "Zhuyun"
+     },
+     {
+      "family": "Peterson",
+      "given": "Randall T."
+     },
+     {
+      "family": "Yeh",
+      "given": "Jing-Ruey Joanna"
+     },
+     {
+      "family": "Aryee",
+      "given": "Martin J."
+     },
+     {
+      "family": "Joung",
+      "given": "J. Keith"
+     }
+    ],
+    "container-title": [
+     "Nature"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2015,
+       6,
+       22
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2015,
+       6,
+       22
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2015,
+       6,
+       22
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2015,
+       7
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Engineered CRISPR-Cas9 nucleases with altered PAM specificities"
     ]
    }
   },
@@ -5039,6 +5984,82 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1038/nbt.2673": {
+  "data": {
+   "message": {
+    "DOI": "10.1038/nbt.2673",
+    "author": [
+     {
+      "family": "Pattanayak",
+      "given": "Vikram"
+     },
+     {
+      "family": "Lin",
+      "given": "Steven"
+     },
+     {
+      "family": "Guilinger",
+      "given": "John P"
+     },
+     {
+      "family": "Ma",
+      "given": "Enbo"
+     },
+     {
+      "family": "Doudna",
+      "given": "Jennifer A"
+     },
+     {
+      "family": "Liu",
+      "given": "David R"
+     }
+    ],
+    "container-title": [
+     "Nature Biotechnology"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2013,
+       8,
+       11
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2013,
+       8,
+       11
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2013,
+       8,
+       11
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2013,
+       9
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "High-throughput profiling of off-target DNA cleavage reveals RNA-programmed Cas9 nuclease specificity"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1038/nbt.3117": {
   "data": {
    "message": {
@@ -5475,6 +6496,66 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1038/nrg.2016.28": {
+  "data": {
+   "message": {
+    "DOI": "10.1038/nrg.2016.28",
+    "author": [
+     {
+      "family": "Tsai",
+      "given": "Shengdar Q."
+     },
+     {
+      "family": "Joung",
+      "given": "J. Keith"
+     }
+    ],
+    "container-title": [
+     "Nature Reviews Genetics"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2016,
+       4,
+       18
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2016,
+       4,
+       18
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2016,
+       4,
+       18
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2016,
+       5
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Defining and improving the genome-wide specificities of CRISPR–Cas9 nucleases"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1038/nrn3346": {
   "data": {
    "message": {
@@ -5598,6 +6679,70 @@
     "subtitle": [],
     "title": [
      "The spread of low-credibility content by social bots"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1038/s41467-019-09238-2": {
+  "data": {
+   "message": {
+    "DOI": "10.1038/s41467-019-09238-2",
+    "author": [
+     {
+      "family": "Sully",
+      "given": "S."
+     },
+     {
+      "family": "Burkepile",
+      "given": "D. E."
+     },
+     {
+      "family": "Donovan",
+      "given": "M. K."
+     },
+     {
+      "family": "Hodgson",
+      "given": "G."
+     },
+     {
+      "family": "van Woesik",
+      "given": "R."
+     }
+    ],
+    "container-title": [
+     "Nature Communications"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       3,
+       20
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       3,
+       20
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2019,
+       3,
+       20
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "A global analysis of coral bleaching over the past two decades"
     ]
    }
   },
@@ -8979,6 +10124,10 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1038/s41592-021-01319-5": {
+  "data": null,
+  "status": 404
+ },
  "https://api.crossref.org/works/10.1038/s41592-022-01488-1": {
   "data": {
    "message": {
@@ -9359,6 +10508,94 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1038/s41893-020-0491-z": {
+  "data": {
+   "message": {
+    "DOI": "10.1038/s41893-020-0491-z",
+    "author": [
+     {
+      "family": "Bossio",
+      "given": "D. A."
+     },
+     {
+      "family": "Cook-Patton",
+      "given": "S. C."
+     },
+     {
+      "family": "Ellis",
+      "given": "P. W."
+     },
+     {
+      "family": "Fargione",
+      "given": "J."
+     },
+     {
+      "family": "Sanderman",
+      "given": "J."
+     },
+     {
+      "family": "Smith",
+      "given": "P."
+     },
+     {
+      "family": "Wood",
+      "given": "S."
+     },
+     {
+      "family": "Zomer",
+      "given": "R. J."
+     },
+     {
+      "family": "von Unger",
+      "given": "M."
+     },
+     {
+      "family": "Emmer",
+      "given": "I. M."
+     },
+     {
+      "family": "Griscom",
+      "given": "B. W."
+     }
+    ],
+    "container-title": [
+     "Nature Sustainability"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2020,
+       3,
+       16
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2020,
+       3,
+       16
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2020,
+       3,
+       16
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "The role of soil carbon in natural climate solutions"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1038/s42256-019-0048-x": {
   "data": {
    "message": {
@@ -9605,6 +10842,71 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1051/agro:2002043": {
+  "data": {
+   "message": {
+    "DOI": "10.1051/agro:2002043",
+    "author": [
+     {
+      "family": "Six",
+      "given": "Johan"
+     },
+     {
+      "family": "Feller",
+      "given": "Christian"
+     },
+     {
+      "family": "Denef",
+      "given": "Karolien"
+     },
+     {
+      "family": "Ogle",
+      "given": "Stephen M."
+     },
+     {
+      "family": "de Moraes",
+      "given": "Joao Carlos"
+     },
+     {
+      "family": "Albrecht",
+      "given": "Alain"
+     }
+    ],
+    "container-title": [
+     "Agronomie"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2002,
+       11
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2002,
+       11
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2002,
+       11
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Soil organic matter, biota and aggregation in temperate\nand tropical soils - Effects of no-tillage"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1056/AIoa2300068": {
   "data": {
    "message": {
@@ -9832,6 +11134,62 @@
     "subtitle": [],
     "title": [
      "Cognition and Memory after Covid-19 in a Large Community Sample"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1056/NEJMra1814259": {
+  "data": {
+   "message": {
+    "DOI": "10.1056/nejmra1814259",
+    "author": [
+     {
+      "family": "Rajkomar",
+      "given": "Alvin"
+     },
+     {
+      "family": "Dean",
+      "given": "Jeffrey"
+     },
+     {
+      "family": "Kohane",
+      "given": "Isaac"
+     }
+    ],
+    "container-title": [
+     "New England Journal of Medicine"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       4,
+       4
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       4,
+       4
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2019,
+       4,
+       4
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Machine Learning in Medicine"
     ]
    }
   },
@@ -10407,6 +11765,75 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1073/pnas.1817561116": {
+  "data": {
+   "message": {
+    "DOI": "10.1073/pnas.1817561116",
+    "author": [
+     {
+      "family": "Ziter",
+      "given": "Carly D."
+     },
+     {
+      "family": "Pedersen",
+      "given": "Eric J."
+     },
+     {
+      "family": "Kucharik",
+      "given": "Christopher J."
+     },
+     {
+      "family": "Turner",
+      "given": "Monica G."
+     }
+    ],
+    "container-title": [
+     "Proceedings of the National Academy of Sciences"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       3,
+       25
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       3,
+       25
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2019,
+       3,
+       25
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2019,
+       4,
+       9
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Scale-dependent interactions between tree canopy cover and impervious surfaces reduce daytime urban heat during summer"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1073/pnas.1914677117": {
   "data": {
    "message": {
@@ -10641,6 +12068,79 @@
     "subtitle": [],
     "title": [
      "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1073/pnas.2023301118": {
+  "data": {
+   "message": {
+    "DOI": "10.1073/pnas.2023301118",
+    "author": [
+     {
+      "family": "Cinelli",
+      "given": "Matteo"
+     },
+     {
+      "family": "De Francisci Morales",
+      "given": "Gianmarco"
+     },
+     {
+      "family": "Galeazzi",
+      "given": "Alessandro"
+     },
+     {
+      "family": "Quattrociocchi",
+      "given": "Walter"
+     },
+     {
+      "family": "Starnini",
+      "given": "Michele"
+     }
+    ],
+    "container-title": [
+     "Proceedings of the National Academy of Sciences"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2021,
+       2,
+       23
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2021,
+       2,
+       23
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2021,
+       2,
+       23
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2021,
+       3,
+       2
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "The echo chamber effect on social media"
     ]
    }
   },
@@ -10974,6 +12474,73 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1080/21670811.2017.1360143": {
+  "data": {
+   "message": {
+    "DOI": "10.1080/21670811.2017.1360143",
+    "author": [
+     {
+      "family": "Tandoc",
+      "given": "Edson C."
+     },
+     {
+      "family": "Lim",
+      "given": "Zheng Wei"
+     },
+     {
+      "family": "Ling",
+      "given": "Richard"
+     }
+    ],
+    "container-title": [
+     "Digital Journalism"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2017,
+       8,
+       30
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2017,
+       8,
+       30
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2017,
+       8,
+       30
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2018,
+       2,
+       7
+      ]
+     ]
+    },
+    "subtitle": [
+     "A typology of scholarly definitions"
+    ],
+    "title": [
+     "Defining “Fake News”"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1086/380085": {
   "data": {
    "message": {
@@ -11022,6 +12589,10 @@
    }
   },
   "status": 200
+ },
+ "https://api.crossref.org/works/10.1086/tpe.16.20061896": {
+  "data": null,
+  "status": 404
  },
  "https://api.crossref.org/works/10.1093/bioinformatics/btad651": {
   "data": {
@@ -11444,6 +13015,67 @@
     "subtitle": [],
     "title": [
      "Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts: Evidence from Denmark *"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1093/qje/qjv013": {
+  "data": {
+   "message": {
+    "DOI": "10.1093/qje/qjv013",
+    "author": [
+     {
+      "family": "Muralidharan",
+      "given": "Karthik"
+     },
+     {
+      "family": "Sundararaman",
+      "given": "Venkatesh"
+     }
+    ],
+    "container-title": [
+     "The Quarterly Journal of Economics"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2015,
+       2,
+       27
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2015,
+       2,
+       27
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2015,
+       2,
+       27
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2015,
+       8,
+       1
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "The Aggregate Effect of School Choice: Evidence from a Two-Stage Experiment in India *"
     ]
    }
   },
@@ -12437,6 +14069,101 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1109/70.928559": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/70.928559",
+    "author": [
+     {
+      "family": "Jensfelt",
+      "given": "P."
+     },
+     {
+      "family": "Christensen",
+      "given": "H.I."
+     }
+    ],
+    "container-title": [
+     "IEEE Transactions on Robotics and Automation"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2001,
+       4
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2001,
+       4
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2001,
+       4
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Pose tracking using laser scanning and minimalistic environmental models"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/ACCESS.2018.2807385": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/access.2018.2807385",
+    "author": [
+     {
+      "family": "Akhtar",
+      "given": "Naveed"
+     },
+     {
+      "family": "Mian",
+      "given": "Ajmal"
+     }
+    ],
+    "container-title": [
+     "IEEE Access"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2018
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2018
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2018
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1109/ACCESS.2018.2870052": {
   "data": {
    "message": {
@@ -12478,6 +14205,52 @@
     "subtitle": [],
     "title": [
      "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/ACCESS.2020.3028072": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/access.2020.3028072",
+    "author": [
+     {
+      "family": "Sincan",
+      "given": "Ozge Mercanoglu"
+     },
+     {
+      "family": "Keles",
+      "given": "Hacer Yalim"
+     }
+    ],
+    "container-title": [
+     "IEEE Access"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2020
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2020
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2020
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "AUTSL: A Large Scale Multi-Modal Turkish Sign Language Dataset and Baseline Methods"
     ]
    }
   },
@@ -12922,6 +14695,223 @@
     "subtitle": [],
     "title": [
      "Mechanism Design via Differential Privacy"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/FOCS.2010.12": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/focs.2010.12",
+    "author": [
+     {
+      "family": "Dwork",
+      "given": "Cynthia"
+     },
+     {
+      "family": "Rothblum",
+      "given": "Guy N."
+     },
+     {
+      "family": "Vadhan",
+      "given": "Salil"
+     }
+    ],
+    "container-title": [
+     "2010 IEEE 51st Annual Symposium on Foundations of Computer Science"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2010,
+       10
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2010,
+       10
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2010,
+       10
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Boosting and Differential Privacy"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/ICCV.1999.791201": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/iccv.1999.791201",
+    "author": [
+     {
+      "family": "Moore",
+      "given": "D.J."
+     },
+     {
+      "family": "Essa",
+      "given": "I.A."
+     },
+     {
+      "family": "Hayes",
+      "given": "M.H."
+     }
+    ],
+    "container-title": [
+     "Proceedings of the Seventh IEEE International Conference on Computer Vision"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       1999
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       1999
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       1999
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Exploiting human actions and object context for recognition tasks"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/ICCV.2017.331": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/iccv.2017.331",
+    "author": [
+     {
+      "family": "He",
+      "given": "Pan"
+     },
+     {
+      "family": "Huang",
+      "given": "Weilin"
+     },
+     {
+      "family": "He",
+      "given": "Tong"
+     },
+     {
+      "family": "Zhu",
+      "given": "Qile"
+     },
+     {
+      "family": "Qiao",
+      "given": "Yu"
+     },
+     {
+      "family": "Li",
+      "given": "Xiaolin"
+     }
+    ],
+    "container-title": [
+     "2017 IEEE International Conference on Computer Vision (ICCV)"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2017,
+       10
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2017,
+       10
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2017,
+       10
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Single Shot Text Detector with Regional Attention"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/ICCV.2017.333": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/iccv.2017.333",
+    "author": [
+     {
+      "family": "Hadji",
+      "given": "Isma"
+     },
+     {
+      "family": "Wildes",
+      "given": "Richard P."
+     }
+    ],
+    "container-title": [
+     "2017 IEEE International Conference on Computer Vision (ICCV)"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2017,
+       10
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2017,
+       10
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2017,
+       10
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "A Spatiotemporal Oriented Energy Network for Dynamic Texture Recognition"
     ]
    }
   },
@@ -13381,6 +15371,113 @@
     "subtitle": [],
     "title": [
      "Explaining Deep Neural Networks and Beyond: A Review of Methods and Applications"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/MPRV.2016.49": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/mprv.2016.49",
+    "author": [
+     {
+      "family": "Tentori",
+      "given": "Monica"
+     },
+     {
+      "family": "Escobedo",
+      "given": "Lizbeth"
+     },
+     {
+      "family": "Hernandez",
+      "given": "Carlos"
+     },
+     {
+      "family": "Matic",
+      "given": "Aleksandar"
+     },
+     {
+      "family": "Hayes",
+      "given": "Gillian R."
+     }
+    ],
+    "container-title": [
+     "IEEE Pervasive Computing"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2016,
+       7
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2016,
+       7
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2016,
+       7
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Pervasive Displays in Classrooms of Children with Severe Autism"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1109/PERCOM.2004.1276851": {
+  "data": {
+   "message": {
+    "DOI": "10.1109/percom.2004.1276851",
+    "author": [
+     {
+      "family": "Fretzagias",
+      "given": "C."
+     },
+     {
+      "family": "Papadopouli",
+      "given": "M."
+     }
+    ],
+    "container-title": [
+     "Second IEEE Annual Conference on Pervasive Computing and Communications, 2004. Proceedings of the"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2004
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2004
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2004
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Cooperative location-sensing for wireless networks"
     ]
    }
   },
@@ -14507,6 +16604,118 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1126/science.1085046": {
+  "data": {
+   "message": {
+    "DOI": "10.1126/science.1085046",
+    "author": [
+     {
+      "family": "Hughes",
+      "given": "T. P."
+     },
+     {
+      "family": "Baird",
+      "given": "A. H."
+     },
+     {
+      "family": "Bellwood",
+      "given": "D. R."
+     },
+     {
+      "family": "Card",
+      "given": "M."
+     },
+     {
+      "family": "Connolly",
+      "given": "S. R."
+     },
+     {
+      "family": "Folke",
+      "given": "C."
+     },
+     {
+      "family": "Grosberg",
+      "given": "R."
+     },
+     {
+      "family": "Hoegh-Guldberg",
+      "given": "O."
+     },
+     {
+      "family": "Jackson",
+      "given": "J. B. C."
+     },
+     {
+      "family": "Kleypas",
+      "given": "J."
+     },
+     {
+      "family": "Lough",
+      "given": "J. M."
+     },
+     {
+      "family": "Marshall",
+      "given": "P."
+     },
+     {
+      "family": "Nyström",
+      "given": "M."
+     },
+     {
+      "family": "Palumbi",
+      "given": "S. R."
+     },
+     {
+      "family": "Pandolfi",
+      "given": "J. M."
+     },
+     {
+      "family": "Rosen",
+      "given": "B."
+     },
+     {
+      "family": "Roughgarden",
+      "given": "J."
+     }
+    ],
+    "container-title": [
+     "Science"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2003,
+       8,
+       15
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2003,
+       8,
+       15
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2003,
+       8,
+       15
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Climate Change, Human Impacts, and the Resilience of Coral Reefs"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1126/science.1097396": {
   "data": {
    "message": {
@@ -14782,6 +16991,54 @@
     "subtitle": [],
     "title": [
      "Genomic determinants of coral heat tolerance across latitudes"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1126/science.181.4096.223": {
+  "data": {
+   "message": {
+    "DOI": "10.1126/science.181.4096.223",
+    "author": [
+     {
+      "family": "Anfinsen",
+      "given": "Christian B."
+     }
+    ],
+    "container-title": [
+     "Science"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       1973,
+       7,
+       20
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       1973,
+       7,
+       20
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       1973,
+       7,
+       20
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Principles that Govern the Folding of Protein Chains"
     ]
    }
   },
@@ -15851,6 +18108,77 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1145/2470654.2470734": {
+  "data": {
+   "message": {
+    "DOI": "10.1145/2470654.2470734",
+    "author": [
+     {
+      "family": "Bailly",
+      "given": "Gilles"
+     },
+     {
+      "family": "Pietrzak",
+      "given": "Thomas"
+     },
+     {
+      "family": "Deber",
+      "given": "Jonathan"
+     },
+     {
+      "family": "Wigdor",
+      "given": "Daniel J."
+     }
+    ],
+    "container-title": [
+     "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2013,
+       4,
+       27
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2013,
+       4,
+       27
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2013,
+       4,
+       27
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2013,
+       4,
+       27
+      ]
+     ]
+    },
+    "subtitle": [
+     "augmenting hotkey usage with actuated keys"
+    ],
+    "title": [
+     "Métamorphe"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1145/2660267.2660348": {
   "data": {
    "message": {
@@ -16873,6 +19201,87 @@
     "subtitle": [],
     "title": [
      "Adversarial Sensor Attack on LiDAR-based Perception in Autonomous Driving"
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works/10.1145/3338501.3357370": {
+  "data": {
+   "message": {
+    "DOI": "10.1145/3338501.3357370",
+    "author": [
+     {
+      "family": "Truex",
+      "given": "Stacey"
+     },
+     {
+      "family": "Baracaldo",
+      "given": "Nathalie"
+     },
+     {
+      "family": "Anwar",
+      "given": "Ali"
+     },
+     {
+      "family": "Steinke",
+      "given": "Thomas"
+     },
+     {
+      "family": "Ludwig",
+      "given": "Heiko"
+     },
+     {
+      "family": "Zhang",
+      "given": "Rui"
+     },
+     {
+      "family": "Zhou",
+      "given": "Yi"
+     }
+    ],
+    "container-title": [
+     "Proceedings of the 12th ACM Workshop on Artificial Intelligence and Security"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       11
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       11
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       11
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2019,
+       11,
+       11
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "A Hybrid Approach to Privacy-Preserving Federated Learning"
     ]
    }
   },
@@ -18364,6 +20773,78 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1177/0956797620939054": {
+  "data": {
+   "message": {
+    "DOI": "10.1177/0956797620939054",
+    "author": [
+     {
+      "family": "Pennycook",
+      "given": "Gordon"
+     },
+     {
+      "family": "McPhetres",
+      "given": "Jonathon"
+     },
+     {
+      "family": "Zhang",
+      "given": "Yunhao"
+     },
+     {
+      "family": "Lu",
+      "given": "Jackson G."
+     },
+     {
+      "family": "Rand",
+      "given": "David G."
+     }
+    ],
+    "container-title": [
+     "Psychological Science"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2020,
+       6,
+       30
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2020,
+       6,
+       30
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2020,
+       6,
+       30
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2020,
+       7
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Fighting COVID-19 Misinformation on Social Media: Experimental Evidence for a Scalable Accuracy-Nudge Intervention"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1177/1529100612451018": {
   "data": {
    "message": {
@@ -18608,6 +21089,81 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.1186/s12911-020-01332-6": {
+  "data": {
+   "message": {
+    "DOI": "10.1186/s12911-020-01332-6",
+    "author": [
+     {
+      "name": "the Precise4Q consortium"
+     },
+     {
+      "family": "Amann",
+      "given": "Julia"
+     },
+     {
+      "family": "Blasimme",
+      "given": "Alessandro"
+     },
+     {
+      "family": "Vayena",
+      "given": "Effy"
+     },
+     {
+      "family": "Frey",
+      "given": "Dietmar"
+     },
+     {
+      "family": "Madai",
+      "given": "Vince I."
+     }
+    ],
+    "container-title": [
+     "BMC Medical Informatics and Decision Making"
+    ],
+    "issued": {
+     "date-parts": [
+      [
+       2020,
+       11,
+       30
+      ]
+     ]
+    },
+    "published": {
+     "date-parts": [
+      [
+       2020,
+       11,
+       30
+      ]
+     ]
+    },
+    "published-online": {
+     "date-parts": [
+      [
+       2020,
+       11,
+       30
+      ]
+     ]
+    },
+    "published-print": {
+     "date-parts": [
+      [
+       2020,
+       12
+      ]
+     ]
+    },
+    "subtitle": [],
+    "title": [
+     "Explainability for artificial intelligence in healthcare: a multidisciplinary perspective"
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works/10.1186/s13054-023-04393-x": {
   "data": {
    "message": {
@@ -18815,6 +21371,10 @@
    }
   },
   "status": 200
+ },
+ "https://api.crossref.org/works/10.1289/ehp.7619": {
+  "data": null,
+  "status": 404
  },
  "https://api.crossref.org/works/10.1371/journal.pcbi.1005324": {
   "data": {
@@ -20173,6 +22733,10 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works/10.7907/06k1-1x84": {
+  "data": null,
+  "status": 404
+ },
  "https://api.crossref.org/works/arXiv:1312.6199": {
   "data": null,
   "status": 404
@@ -20194,6 +22758,10 @@
   "status": 404
  },
  "https://api.crossref.org/works/arXiv:1602.05629": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.crossref.org/works/arXiv:1605.02065": {
   "data": null,
   "status": 404
  },
@@ -20237,6 +22805,10 @@
   "data": null,
   "status": 404
  },
+ "https://api.crossref.org/works/arXiv:1706.09911": {
+  "data": null,
+  "status": 404
+ },
  "https://api.crossref.org/works/arXiv:1710.06963": {
   "data": null,
   "status": 404
@@ -20246,6 +22818,10 @@
   "status": 404
  },
  "https://api.crossref.org/works/arXiv:1712.07557": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.crossref.org/works/arXiv:1712.09923": {
   "data": null,
   "status": 404
  },
@@ -20265,11 +22841,19 @@
   "data": null,
   "status": 404
  },
+ "https://api.crossref.org/works/arXiv:1806.02973": {
+  "data": null,
+  "status": 404
+ },
  "https://api.crossref.org/works/arXiv:1806.10293": {
   "data": null,
   "status": 404
  },
  "https://api.crossref.org/works/arXiv:1810.00826": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.crossref.org/works/arXiv:1812.01053": {
   "data": null,
   "status": 404
  },
@@ -20282,6 +22866,10 @@
   "status": 404
  },
  "https://api.crossref.org/works/arXiv:1910.11006": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.crossref.org/works/arXiv:2003.00950": {
   "data": null,
   "status": 404
  },
@@ -20314,6 +22902,10 @@
   "status": 404
  },
  "https://api.crossref.org/works/arXiv:2104.07567": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.crossref.org/works/arXiv:2207.05221": {
   "data": null,
   "status": 404
  },
@@ -20354,6 +22946,10 @@
   "status": 404
  },
  "https://api.crossref.org/works/arXiv:2309.09979": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.crossref.org/works/arXiv:2310.06271": {
   "data": null,
   "status": 404
  },
@@ -21643,6 +24239,478 @@
       },
       "title": [
        "Response to Kenny et al.’s Commentary"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Acharya%2C+R.%2C+Aleiner%2C+I.%2C+Andersen%2C+T.+I.%2C+et+al.+%282025%29.+Quantum+error+correction+below+the+surface+code+threshold.+Nature.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1016/j.xinn.2025.100942",
+      "author": [
+       {
+        "family": "Jin",
+        "given": "Yirong"
+       }
+      ],
+      "container-title": [
+       "The Innovation"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         7
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         7
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         7
+        ]
+       ]
+      },
+      "title": [
+       "Google’s “Willow” quantum processor: New RCS record and first error correction below the surface code threshold"
+      ]
+     },
+     {
+      "DOI": "10.1093/ptep/ptaf130",
+      "author": [
+       {
+        "family": "Haruna",
+        "given": "Junichi"
+       },
+       {
+        "family": "Fujii",
+        "given": "Keisuke"
+       }
+      ],
+      "container-title": [
+       "Progress of Theoretical and Experimental Physics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         23
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         23
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         23
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         10,
+         3
+        ]
+       ]
+      },
+      "title": [
+       "Hierarchical Quantum Error Correction with Hypergraph Product Code and Rotated Surface Code"
+      ]
+     },
+     {
+      "DOI": "10.1017/9781009639651.030",
+      "container-title": [
+       "Quantum Algorithms"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         24
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         24
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         24
+        ]
+       ]
+      },
+      "title": [
+       "Quantum error correction with the surface code"
+      ]
+     },
+     {
+      "DOI": "10.1109/qce65121.2025.00270",
+      "author": [
+       {
+        "family": "Hu",
+        "given": "Tianjie"
+       },
+       {
+        "family": "Wu",
+        "given": "Jindi"
+       },
+       {
+        "family": "Li",
+        "given": "Qun"
+       }
+      ],
+      "container-title": [
+       "2025 IEEE International Conference on Quantum Computing and Engineering (QCE)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         8,
+         30
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         8,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         8,
+         30
+        ]
+       ]
+      },
+      "title": [
+       "Disparity Surface Code: Optimizing Error Correction in Quantum Networks"
+      ]
+     },
+     {
+      "DOI": "10.1103/physrevresearch.4.043065",
+      "author": [
+       {
+        "family": "Hastrup",
+        "given": "Jacob"
+       },
+       {
+        "family": "Andersen",
+        "given": "Ulrik Lund"
+       }
+      ],
+      "container-title": [
+       "Physical Review Research"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2022,
+         10,
+         31
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2022,
+         10,
+         31
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2022,
+         10,
+         31
+        ]
+       ]
+      },
+      "title": [
+       "All-optical cat-code quantum error correction"
+      ]
+     },
+     {
+      "DOI": "10.18576/amis/190216",
+      "container-title": [
+       "Applied Mathematics &amp; Information Sciences"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         3,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         3,
+         1
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         3,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         3,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Quantum Error Correction with Surface Code Analysis on Quantum Computing platform"
+      ]
+     },
+     {
+      "DOI": "10.1109/qce65121.2025.00074",
+      "author": [
+       {
+        "family": "Zhou",
+        "given": "Zeyuan"
+       },
+       {
+        "family": "Ji",
+        "given": "Andrew"
+       },
+       {
+        "family": "Ding",
+        "given": "Yongshan"
+       }
+      ],
+      "container-title": [
+       "2025 IEEE International Conference on Quantum Computing and Engineering (QCE)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         8,
+         30
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         8,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         8,
+         30
+        ]
+       ]
+      },
+      "title": [
+       "Surface Code Error Correction with Crosstalk Noise"
+      ]
+     },
+     {
+      "DOI": "10.1103/prxquantum.6.020326",
+      "author": [
+       {
+        "family": "Sahay",
+        "given": "Kaavya"
+       },
+       {
+        "family": "Lin",
+        "given": "Yingjia"
+       },
+       {
+        "family": "Huang",
+        "given": "Shilin"
+       },
+       {
+        "family": "Brown",
+        "given": "Kenneth R."
+       },
+       {
+        "family": "Puri",
+        "given": "Shruti"
+       }
+      ],
+      "container-title": [
+       "PRX Quantum"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         7
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         7
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         7
+        ]
+       ]
+      },
+      "title": [
+       "Error Correction of Transversal cnot Gates for Scalable Surface-Code Computation"
+      ]
+     },
+     {
+      "DOI": "10.21203/rs.3.rs-5704833/v1",
+      "author": [
+       {
+        "family": "Tian",
+        "given": "Cewen"
+       },
+       {
+        "family": "Fan",
+        "given": "Zaixu"
+       },
+       {
+        "family": "Guo",
+        "given": "Xiaoxuan"
+       },
+       {
+        "family": "Song",
+        "given": "Xinying"
+       },
+       {
+        "family": "Tian",
+        "given": "Yanbing"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         15
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         15
+        ]
+       ]
+      },
+      "title": [
+       "Transformer-Based Quantum Error Decoding Enhanced by QGANs: Towards Scalable Surface Code Correction Algorithms"
+      ]
+     },
+     {
+      "DOI": "10.21203/rs.3.rs-8897316/v1",
+      "author": [
+       {
+        "family": "Nyirahafashimana",
+        "given": "Valentine"
+       },
+       {
+        "family": "Shah",
+        "given": "Nurisya Mohd"
+       },
+       {
+        "family": "Ntahompagaze",
+        "given": "Joseph"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2026,
+         3,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2026,
+         3,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Scalable simulation of surface-code quantum error correction with coherent noise"
       ]
      }
     ]
@@ -25505,6 +28573,553 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works?query.bibliographic=Bai%2C+J.%2C+Lian%2C+S.%2C+Liu%2C+Z.%2C+Wang%2C+K.%2C+%26+Liu%2C+D.+%282017%29.+Smart+guiding+glasses+for+visually+impaired+people+in+indoor+environment.+IEEE+Transactions+on+Consumer+Electronics%2C+63%283%29%2C+258%E2%80%93266.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1109/tce.2017.014980",
+      "author": [
+       {
+        "family": "Bai",
+        "given": "Jinqiang"
+       },
+       {
+        "family": "Lian",
+        "given": "Shiguo"
+       },
+       {
+        "family": "Liu",
+        "given": "Zhaoxiang"
+       },
+       {
+        "family": "Wang",
+        "given": "Kai"
+       },
+       {
+        "family": "Liu",
+        "given": "Dijun"
+       }
+      ],
+      "container-title": [
+       "IEEE Transactions on Consumer Electronics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2017,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2017,
+         8
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2017,
+         8
+        ]
+       ]
+      },
+      "title": [
+       "Smart guiding glasses for visually impaired people in indoor environment"
+      ]
+     },
+     {
+      "DOI": "10.3390/electronics8060697",
+      "author": [
+       {
+        "family": "Bai",
+        "given": "Jinqiang"
+       },
+       {
+        "family": "Liu",
+        "given": "Zhaoxiang"
+       },
+       {
+        "family": "Lin",
+        "given": "Yimin"
+       },
+       {
+        "family": "Li",
+        "given": "Ye"
+       },
+       {
+        "family": "Lian",
+        "given": "Shiguo"
+       },
+       {
+        "family": "Liu",
+        "given": "Dijun"
+       }
+      ],
+      "container-title": [
+       "Electronics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2019,
+         6,
+         20
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2019,
+         6,
+         20
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2019,
+         6,
+         20
+        ]
+       ]
+      },
+      "title": [
+       "Wearable Travel Aid for Environment Perception and Navigation of Visually Impaired People"
+      ]
+     },
+     {
+      "DOI": "10.1109/tce.2018.2812498",
+      "author": [
+       {
+        "family": "Bai",
+        "given": "Jinqiang"
+       },
+       {
+        "family": "Lian",
+        "given": "Shiguo"
+       },
+       {
+        "family": "Liu",
+        "given": "Zhaoxiang"
+       },
+       {
+        "family": "Wang",
+        "given": "Kai"
+       },
+       {
+        "family": "Liu",
+        "given": "Dijun"
+       }
+      ],
+      "container-title": [
+       "IEEE Transactions on Consumer Electronics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018,
+         2
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018,
+         2
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2018,
+         2
+        ]
+       ]
+      },
+      "title": [
+       "Virtual-Blind-Road Following-Based Wearable Navigation Device for Blind People"
+      ]
+     },
+     {
+      "DOI": "10.1109/icce-taiwan49838.2020.9258014",
+      "author": [
+       {
+        "family": "Chen",
+        "given": "Ching-Han"
+       },
+       {
+        "family": "Shiu",
+        "given": "Ming-Fang"
+       }
+      ],
+      "container-title": [
+       "2020 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2020,
+         9,
+         28
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2020,
+         9,
+         28
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2020,
+         9,
+         28
+        ]
+       ]
+      },
+      "title": [
+       "Smart guiding glasses with descriptive video service and spoken dialogue system for visually impaired"
+      ]
+     },
+     {
+      "DOI": "10.1109/ic-nidc54101.2021.9660558",
+      "author": [
+       {
+        "family": "Liu",
+        "given": "Da"
+       },
+       {
+        "family": "Zhang",
+        "given": "Wenjun"
+       },
+       {
+        "family": "Qi",
+        "given": "Yonggang"
+       },
+       {
+        "family": "Liu",
+        "given": "Fang"
+       },
+       {
+        "family": "Liu",
+        "given": "Jun"
+       },
+       {
+        "family": "Ren",
+        "given": "Junlong"
+       },
+       {
+        "family": "Wang",
+        "given": "Yu"
+       },
+       {
+        "family": "Wang",
+        "given": "Zehao"
+       }
+      ],
+      "container-title": [
+       "2021 7th IEEE International Conference on Network Intelligence and Digital Content (IC-NIDC)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2021,
+         11,
+         17
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2021,
+         11,
+         17
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2021,
+         11,
+         17
+        ]
+       ]
+      },
+      "title": [
+       "Auxiliary Smart Glasses for Visually Impaired People Based on Two-dimensional Code Positioning"
+      ]
+     },
+     {
+      "DOI": "10.1109/iros58592.2024.10801813",
+      "author": [
+       {
+        "family": "Chen",
+        "given": "Zezhou"
+       },
+       {
+        "family": "Liu",
+        "given": "Zhaoxiang"
+       },
+       {
+        "family": "Wang",
+        "given": "Kai"
+       },
+       {
+        "family": "Wang",
+        "given": "Kohou"
+       },
+       {
+        "family": "Lian",
+        "given": "Shiguo"
+       }
+      ],
+      "container-title": [
+       "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         14
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         14
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         14
+        ]
+       ]
+      },
+      "title": [
+       "A Large Vision-Language Model based Environment Perception System for Visually Impaired People"
+      ]
+     },
+     {
+      "DOI": "10.1109/tce.2018.2859629",
+      "author": [
+       {
+        "family": "Bai",
+        "given": "Jinqiang"
+       },
+       {
+        "family": "Lian",
+        "given": "Shiguo"
+       },
+       {
+        "family": "Liu",
+        "given": "Zhaoxiang"
+       },
+       {
+        "family": "Wang",
+        "given": "Kai"
+       },
+       {
+        "family": "Liu",
+        "given": "Dijun"
+       }
+      ],
+      "container-title": [
+       "IEEE Transactions on Consumer Electronics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018,
+         8
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2018,
+         8
+        ]
+       ]
+      },
+      "title": [
+       "Deep Learning Based Robot for Automatically Picking Up Garbage on the Grass"
+      ]
+     },
+     {
+      "DOI": "10.1109/tce.2015.7064104",
+      "author": [
+       {
+        "family": "Wang",
+        "given": "Kai"
+       },
+       {
+        "family": "Lian",
+        "given": "Shiguo"
+       },
+       {
+        "family": "Liu",
+        "given": "Zhaoxiang"
+       }
+      ],
+      "container-title": [
+       "IEEE Transactions on Consumer Electronics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015,
+         2
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015,
+         2
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2015,
+         2
+        ]
+       ]
+      },
+      "title": [
+       "An intelligent screen system for context-related scenery viewing in smart home"
+      ]
+     },
+     {
+      "DOI": "10.1109/tce.2012.6311360",
+      "author": [
+       {
+        "family": "Battaglia",
+        "given": "Filippo"
+       },
+       {
+        "family": "Iannizzotto",
+        "given": "Giancarlo"
+       }
+      ],
+      "container-title": [
+       "IEEE Transactions on Consumer Electronics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2012,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2012,
+         8
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2012,
+         8
+        ]
+       ]
+      },
+      "title": [
+       "An open architecture to develop a handheld device for helping visually impaired people"
+      ]
+     },
+     {
+      "DOI": "10.1109/gcce.2014.7031094",
+      "author": [
+       {
+        "family": "Ohtsuka",
+        "given": "Satoshi"
+       },
+       {
+        "family": "Usami",
+        "given": "Tetsuya"
+       },
+       {
+        "family": "Sasaki",
+        "given": "Nobuyuki"
+       }
+      ],
+      "container-title": [
+       "2014 IEEE 3rd Global Conference on Consumer Electronics (GCCE)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2014,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2014,
+         10
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2014,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "A vibration watch using a smart phone for visually impaired people"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works?query.bibliographic=Battaglia%2C+P.+W.%2C+Hamrick%2C+J.+B.%2C+Bapst%2C+V.%2C+Sanchez-Gonzalez%2C+A.%2C+Zambaldi%2C+V.%2C+Malinowski%2C+M.%2C+et+al.+%282018%29.+Relational+inductive+biases%2C+deep+learning%2C+and+graph+networks.+arXiv+preprint.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
   "data": {
    "message": {
@@ -26473,6 +30088,1667 @@
       },
       "title": [
        "Social Security Policy in a Changing Environment"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Beshears%2C+J.%2C+Choi%2C+J.+J.%2C+Laibson%2C+D.%2C+%26+Madrian%2C+B.+C.+%282009%29.+The+importance+of+default+options+for+retirement+saving+outcomes%3A+Evidence+from+the+United+States.+Social+Security+Policy+at+the+Crossroads%2C+59-87.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.3386/w12009",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2006,
+         2
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2006,
+         2
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2006,
+         2
+        ]
+       ]
+      },
+      "title": [
+       "The Importance of Default Options for Retirement Savings Outcomes: Evidence from the United States"
+      ]
+     },
+     {
+      "DOI": "10.7208/chicago/9780226076508.003.0006",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James J."
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte C."
+       }
+      ],
+      "container-title": [
+       "Social Security Policy in a Changing Environment"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2009
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2009
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2009
+        ]
+       ]
+      },
+      "title": [
+       "The Importance of Default Options for Retirement Saving Outcomes"
+      ]
+     },
+     {
+      "DOI": "10.1093/acprof:oso/9780199226801.003.0004",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James J."
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte C."
+       }
+      ],
+      "container-title": [
+       "Lessons from Pension Reform in the Americas"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2007,
+         11,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2007,
+         11,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2007,
+         11,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Chapter 3 The Importance of Default Options for Retirement Saving Outcomes: Evidence from the USA"
+      ]
+     },
+     {
+      "DOI": "10.3386/w12659",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2006,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2006,
+         10
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2006,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "Simplification and Saving"
+      ]
+     },
+     {
+      "DOI": "10.3386/w31601",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Guo",
+        "given": "Ruofei"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2023,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2023,
+         8
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2023,
+         8
+        ]
+       ]
+      },
+      "title": [
+       "Automatic Enrollment with a 12% Default Contribution Rate"
+      ]
+     },
+     {
+      "DOI": "10.4159/9780674054622-013",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte C."
+       },
+       {
+        "family": "Weller",
+        "given": "Brian"
+       }
+      ],
+      "container-title": [
+       "Better Living through Economics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2010,
+         12,
+         31
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2010,
+         12,
+         31
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2010,
+         12,
+         31
+        ]
+       ]
+      },
+      "title": [
+       "12. Public Policy and Saving for Retirement: The Autosave Features of the Pension Protection Act of 2006"
+      ]
+     },
+     {
+      "DOI": "10.3386/w21168",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Hurwitz",
+        "given": "Joshua"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015,
+         5
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2015,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Liquidity in Retirement Savings Systems: An International Comparison"
+      ]
+     },
+     {
+      "DOI": "10.3386/w17345",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       },
+       {
+        "family": "Milkman",
+        "given": "Katherine"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2011,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2011,
+         8
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2011,
+         8
+        ]
+       ]
+      },
+      "title": [
+       "The Effect of Providing Peer Information on Retirement Savings Decisions"
+      ]
+     },
+     {
+      "DOI": "10.3386/w24854",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018,
+         7
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018,
+         7
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2018,
+         7
+        ]
+       ]
+      },
+      "title": [
+       "Behavioral Household Finance"
+      ]
+     },
+     {
+      "DOI": "10.3386/w20738",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2014,
+         12
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2014,
+         12
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2014,
+         12
+        ]
+       ]
+      },
+      "title": [
+       "Does Front-Loading Taxation Increase Savings? Evidence from Roth 401(k) Introductions"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Beshears%2C+J.%2C+Choi%2C+J.+J.%2C+Laibson%2C+D.%2C+Madrian%2C+B.+C.%2C+%26+Milkman%2C+K.+L.+%282015%29.+The+effect+of+providing+peer+information+on+retirement+savings+decisions.+The+Journal+of+Finance%2C+70%283%29%2C+1161%E2%80%931201.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1111/jofi.12258",
+      "author": [
+       {
+        "family": "BESHEARS",
+        "given": "JOHN"
+       },
+       {
+        "family": "CHOI",
+        "given": "JAMES J."
+       },
+       {
+        "family": "LAIBSON",
+        "given": "DAVID"
+       },
+       {
+        "family": "MADRIAN",
+        "given": "BRIGITTE C."
+       },
+       {
+        "family": "MILKMAN",
+        "given": "KATHERINE L."
+       }
+      ],
+      "container-title": [
+       "The Journal of Finance"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015,
+         5,
+         11
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015,
+         5,
+         11
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2015,
+         5,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2015,
+         6
+        ]
+       ]
+      },
+      "title": [
+       "The Effect of Providing Peer Information on Retirement Savings Decisions"
+      ]
+     },
+     {
+      "DOI": "10.3386/w17345",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       },
+       {
+        "family": "Milkman",
+        "given": "Katherine"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2011,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2011,
+         8
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2011,
+         8
+        ]
+       ]
+      },
+      "title": [
+       "The Effect of Providing Peer Information on Retirement Savings Decisions"
+      ]
+     },
+     {
+      "DOI": "10.3386/w21168",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Hurwitz",
+        "given": "Joshua"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015,
+         5
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2015,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Liquidity in Retirement Savings Systems: An International Comparison"
+      ]
+     },
+     {
+      "DOI": "10.3386/w12009",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2006,
+         2
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2006,
+         2
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2006,
+         2
+        ]
+       ]
+      },
+      "title": [
+       "The Importance of Default Options for Retirement Savings Outcomes: Evidence from the United States"
+      ]
+     },
+     {
+      "DOI": "10.2139/ssrn.2613646",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John Leonard"
+       },
+       {
+        "family": "Choi",
+        "given": "James J."
+       },
+       {
+        "family": "Hurwitz",
+        "given": "Joshua"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte C."
+       }
+      ],
+      "container-title": [
+       "SSRN Electronic Journal"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015
+        ]
+       ]
+      },
+      "title": [
+       "Liquidity in Retirement Savings Systems: An International Comparison"
+      ]
+     },
+     {
+      "DOI": "10.3386/w24854",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018,
+         7
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018,
+         7
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2018,
+         7
+        ]
+       ]
+      },
+      "title": [
+       "Behavioral Household Finance"
+      ]
+     },
+     {
+      "DOI": "10.3386/w17183",
+      "author": [
+       {
+        "family": "Milkman",
+        "given": "Katherine"
+       },
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2011,
+         6
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2011,
+         6
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2011,
+         6
+        ]
+       ]
+      },
+      "title": [
+       "Using Implementation Intentions Prompts to Enhance Influenza Vaccination Rates"
+      ]
+     },
+     {
+      "DOI": "10.1257/aer.p20151004",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James J."
+       },
+       {
+        "family": "Hurwitz",
+        "given": "Joshua"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte C."
+       }
+      ],
+      "container-title": [
+       "American Economic Review"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015,
+         5,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015,
+         5,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2015,
+         5,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Liquidity in Retirement Savings Systems: An International Comparison"
+      ]
+     },
+     {
+      "DOI": "10.3386/w11920",
+      "author": [
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2006,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2006,
+         1
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2006,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Early Decisions: A Regulatory Framework"
+      ]
+     },
+     {
+      "DOI": "10.3386/w17995",
+      "author": [
+       {
+        "family": "Milkman",
+        "given": "Katherine"
+       },
+       {
+        "family": "Beshears",
+        "given": "John"
+       },
+       {
+        "family": "Choi",
+        "given": "James"
+       },
+       {
+        "family": "Laibson",
+        "given": "David"
+       },
+       {
+        "family": "Madrian",
+        "given": "Brigitte"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2012,
+         4
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2012,
+         4
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2012,
+         4
+        ]
+       ]
+      },
+      "title": [
+       "Following Through on Good Intentions: The Power of Planning Prompts"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Breyer%2C+M.%2C+Furrer%2C+F.%2C+Novkovic%2C+T.%2C+Siegwart%2C+R.%2C+%26+Nieto%2C+J.+%282019%29.+Comparing+task+simplifications+to+learn+closed-loop+object+picking+using+deep+reinforcement+learning.+IEEE+Robotics+and+Automation+Letters%2C+4%282%29%2C+1549%E2%80%931556.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1109/lra.2019.2896467",
+      "author": [
+       {
+        "family": "Breyer",
+        "given": "Michel"
+       },
+       {
+        "family": "Furrer",
+        "given": "Fadri"
+       },
+       {
+        "family": "Novkovic",
+        "given": "Tonci"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       }
+      ],
+      "container-title": [
+       "IEEE Robotics and Automation Letters"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2019,
+         4
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2019,
+         4
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2019,
+         4
+        ]
+       ]
+      },
+      "title": [
+       "Comparing Task Simplifications to Learn Closed-Loop Object Picking Using Deep Reinforcement Learning"
+      ]
+     },
+     {
+      "DOI": "10.1109/icra40945.2020.9197101",
+      "author": [
+       {
+        "family": "Novkovic",
+        "given": "Tonci"
+       },
+       {
+        "family": "Pautrat",
+        "given": "Remi"
+       },
+       {
+        "family": "Furrer",
+        "given": "Fadri"
+       },
+       {
+        "family": "Breyer",
+        "given": "Michel"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       }
+      ],
+      "container-title": [
+       "2020 IEEE International Conference on Robotics and Automation (ICRA)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2020,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2020,
+         5
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2020,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Object Finding in Cluttered Scenes Using Interactive Perception"
+      ]
+     },
+     {
+      "DOI": "10.1109/lra.2019.2923960",
+      "author": [
+       {
+        "family": "Grinvald",
+        "given": "Margarita"
+       },
+       {
+        "family": "Furrer",
+        "given": "Fadri"
+       },
+       {
+        "family": "Novkovic",
+        "given": "Tonci"
+       },
+       {
+        "family": "Chung",
+        "given": "Jen Jen"
+       },
+       {
+        "family": "Cadena",
+        "given": "Cesar"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       }
+      ],
+      "container-title": [
+       "IEEE Robotics and Automation Letters"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2019,
+         7
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2019,
+         7
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2019,
+         7
+        ]
+       ]
+      },
+      "title": [
+       "Volumetric Instance-Aware Semantic Mapping and 3D Object Discovery"
+      ]
+     },
+     {
+      "DOI": "10.1109/icra48506.2021.9560869",
+      "author": [
+       {
+        "family": "Zhang",
+        "given": "Weixuan"
+       },
+       {
+        "family": "Tognon",
+        "given": "Marco"
+       },
+       {
+        "family": "Ott",
+        "given": "Lionel"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       }
+      ],
+      "container-title": [
+       "2021 IEEE International Conference on Robotics and Automation (ICRA)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2021,
+         5,
+         30
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2021,
+         5,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2021,
+         5,
+         30
+        ]
+       ]
+      },
+      "title": [
+       "Active Model Learning using Informative Trajectories for Improved Closed-Loop Control on Real Robots"
+      ]
+     },
+     {
+      "DOI": "10.1109/icra.2017.7989675",
+      "author": [
+       {
+        "family": "Gawel",
+        "given": "Abel"
+       },
+       {
+        "family": "Kamel",
+        "given": "Mina"
+       },
+       {
+        "family": "Novkovic",
+        "given": "Tonci"
+       },
+       {
+        "family": "Widauer",
+        "given": "Jakob"
+       },
+       {
+        "family": "Schindler",
+        "given": "Dominik"
+       },
+       {
+        "family": "von Altishofen",
+        "given": "Benjamin Pfyffer"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       }
+      ],
+      "container-title": [
+       "2017 IEEE International Conference on Robotics and Automation (ICRA)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2017,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2017,
+         5
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2017,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Aerial picking and delivery of magnetic objects with MAVs"
+      ]
+     },
+     {
+      "DOI": "10.1109/infcomw.2019.8845222",
+      "author": [
+       {
+        "family": "Zhou",
+        "given": "Zhu"
+       },
+       {
+        "family": "Zhang",
+        "given": "Tong"
+       },
+       {
+        "family": "Kwatra",
+        "given": "Atul"
+       }
+      ],
+      "container-title": [
+       "IEEE INFOCOM 2019 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2019,
+         4
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2019,
+         4
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2019,
+         4
+        ]
+       ]
+      },
+      "title": [
+       "NFV Closed-loop Automation Experiments using Deep Reinforcement Learning"
+      ]
+     },
+     {
+      "DOI": "10.1109/icra48506.2021.9561047",
+      "author": [
+       {
+        "family": "Holzherr",
+        "given": "Luc"
+       },
+       {
+        "family": "Forster",
+        "given": "Julian"
+       },
+       {
+        "family": "Breyer",
+        "given": "Michel"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Chung",
+        "given": "Jen Jen"
+       }
+      ],
+      "container-title": [
+       "2021 IEEE International Conference on Robotics and Automation (ICRA)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2021,
+         5,
+         30
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2021,
+         5,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2021,
+         5,
+         30
+        ]
+       ]
+      },
+      "title": [
+       "Efficient Multi-scale POMDPs for Robotic Object Search and Delivery"
+      ]
+     },
+     {
+      "DOI": "10.1177/02783649231166977",
+      "author": [
+       {
+        "family": "Furrer",
+        "given": "Fadri"
+       },
+       {
+        "family": "Novkovic",
+        "given": "Tonci"
+       },
+       {
+        "family": "Fehr",
+        "given": "Marius"
+       },
+       {
+        "family": "Grinvald",
+        "given": "Margarita"
+       },
+       {
+        "family": "Cadena",
+        "given": "Cesar"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       }
+      ],
+      "container-title": [
+       "The International Journal of Robotics Research"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2023,
+         3
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2023,
+         3
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2023,
+         4,
+         19
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2023,
+         3
+        ]
+       ]
+      },
+      "title": [
+       "Modelify: An approach to incrementally build 3D object models for map completion"
+      ]
+     },
+     {
+      "DOI": "10.1109/lra.2022.3146903",
+      "author": [
+       {
+        "family": "Centurelli",
+        "given": "Andrea"
+       },
+       {
+        "family": "Arleo",
+        "given": "Luca"
+       },
+       {
+        "family": "Rizzo",
+        "given": "Alessandro"
+       },
+       {
+        "family": "Tolu",
+        "given": "Silvia"
+       },
+       {
+        "family": "Laschi",
+        "given": "Cecilia"
+       },
+       {
+        "family": "Falotico",
+        "given": "Egidio"
+       }
+      ],
+      "container-title": [
+       "IEEE Robotics and Automation Letters"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2022,
+         4
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2022,
+         4
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2022,
+         4
+        ]
+       ]
+      },
+      "title": [
+       "Closed-Loop Dynamic Control of a Soft Manipulator Using Deep Reinforcement Learning"
+      ]
+     },
+     {
+      "DOI": "10.1109/lra.2018.2869644",
+      "author": [
+       {
+        "family": "Pfeiffer",
+        "given": "Mark"
+       },
+       {
+        "family": "Shukla",
+        "given": "Samarth"
+       },
+       {
+        "family": "Turchetta",
+        "given": "Matteo"
+       },
+       {
+        "family": "Cadena",
+        "given": "Cesar"
+       },
+       {
+        "family": "Krause",
+        "given": "Andreas"
+       },
+       {
+        "family": "Siegwart",
+        "given": "Roland"
+       },
+       {
+        "family": "Nieto",
+        "given": "Juan"
+       }
+      ],
+      "container-title": [
+       "IEEE Robotics and Automation Letters"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018,
+         10
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2018,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "Reinforced Imitation: Sample Efficient Deep Reinforcement Learning for Mapless Navigation by Leveraging Prior Demonstrations"
       ]
      }
     ]
@@ -35400,6 +40676,411 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works?query.bibliographic=Golledge%2C+R.+G.%2C+Klatzky%2C+R.+L.%2C+%26+Loomis%2C+J.+M.+%281996%29.+Cognitive+mapping+and+wayfinding+by+adults+without+vision.+In+J.+Portugali+%28Ed.%29%2C+The+construction+of+cognitive+maps+%28pp.+215%E2%80%93246%29.+Springer.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1007/978-0-585-33485-1_10",
+      "author": [
+       {
+        "family": "Golledge",
+        "given": "Reginald G."
+       },
+       {
+        "family": "Klatzky",
+        "given": "Roberta L."
+       },
+       {
+        "family": "Loomis",
+        "given": "Jack M."
+       }
+      ],
+      "container-title": [
+       "GeoJournal Library",
+       "The Construction of Cognitive Maps"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         null
+        ]
+       ]
+      },
+      "title": [
+       "Cognitive Mapping and Wayfinding by Adults Without Vision"
+      ]
+     },
+     {
+      "DOI": "10.4324/9781003064350-7",
+      "author": [
+       {
+        "family": "Loomis",
+        "given": "Jack M."
+       },
+       {
+        "family": "Golledge",
+        "given": "Reginald G."
+       },
+       {
+        "family": "Klatzky",
+        "given": "Roberta L."
+       },
+       {
+        "family": "Marston",
+        "given": "James R."
+       }
+      ],
+      "container-title": [
+       "Applied Spatial Cognition: From Research to Cognitive Technology"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2020,
+         7,
+         13
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2020,
+         7,
+         13
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2020,
+         7,
+         13
+        ]
+       ]
+      },
+      "title": [
+       "Assisting Wayfinding in Visually Impaired Travelers"
+      ]
+     },
+     {
+      "DOI": "10.1037/e537102012-189",
+      "author": [
+       {
+        "family": "Klatzky",
+        "given": "Roberta L."
+       },
+       {
+        "family": "Loomis",
+        "given": "Jack M."
+       },
+       {
+        "family": "Golledge",
+        "given": "Reginald G."
+       }
+      ],
+      "container-title": [
+       "PsycEXTRA Dataset"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2001
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2001
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2001
+        ]
+       ]
+      },
+      "subtitle": [
+       "(537102012-189)"
+      ],
+      "title": [
+       "Navigation without vision in blind and sighted"
+      ]
+     },
+     {
+      "DOI": "10.1007/978-0-585-33485-1",
+      "container-title": [
+       "GeoJournal Library"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         1996
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         1996
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         1996
+        ]
+       ]
+      },
+      "title": [
+       "The Construction of Cognitive Maps"
+      ]
+     },
+     {
+      "DOI": "10.1007/978-0-585-33485-1_1",
+      "author": [
+       {
+        "family": "Portugali",
+        "given": "Juval"
+       }
+      ],
+      "container-title": [
+       "GeoJournal Library",
+       "The Construction of Cognitive Maps"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         null
+        ]
+       ]
+      },
+      "title": [
+       "The Construction of Cognitive Maps: An Introduction"
+      ]
+     },
+     {
+      "DOI": "10.1007/978-0-585-33485-1_2",
+      "author": [
+       {
+        "family": "Portugali",
+        "given": "Juval"
+       }
+      ],
+      "container-title": [
+       "GeoJournal Library",
+       "The Construction of Cognitive Maps"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         null
+        ]
+       ]
+      },
+      "title": [
+       "Inter-Representation Networks and Cognitive Maps"
+      ]
+     },
+     {
+      "DOI": "10.1007/978-0-585-33485-1_3",
+      "author": [
+       {
+        "family": "Haken",
+        "given": "Hermann"
+       },
+       {
+        "family": "Portugali",
+        "given": "Juval"
+       }
+      ],
+      "container-title": [
+       "GeoJournal Library",
+       "The Construction of Cognitive Maps"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         null
+        ]
+       ]
+      },
+      "title": [
+       "Synergetics, Inter-Representation Networks and Cognitive Maps"
+      ]
+     },
+     {
+      "DOI": "10.1097/00006324-200105000-00011",
+      "author": [
+       {
+        "family": "LOOMIS",
+        "given": "JACK M."
+       },
+       {
+        "family": "KLATZKY",
+        "given": "ROBERTA L."
+       },
+       {
+        "family": "GOLLEDGE",
+        "given": "and REGINALD G."
+       }
+      ],
+      "container-title": [
+       "Optometry and Vision Science"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2001,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2001,
+         5
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2001,
+         5
+        ]
+       ]
+      },
+      "subtitle": [
+       ""
+      ],
+      "title": [
+       "Navigating without Vision: Basic and Applied Research"
+      ]
+     },
+     {
+      "DOI": "10.1037/1076-898x.12.4.223",
+      "author": [
+       {
+        "family": "Klatzky",
+        "given": "Roberta L."
+       },
+       {
+        "family": "Marston",
+        "given": "James R."
+       },
+       {
+        "family": "Giudice",
+        "given": "Nicholas A."
+       },
+       {
+        "family": "Golledge",
+        "given": "Reginald G."
+       },
+       {
+        "family": "Loomis",
+        "given": "Jack M."
+       }
+      ],
+      "container-title": [
+       "Journal of Experimental Psychology: Applied"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2006,
+         12
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2006,
+         12
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2006,
+         12
+        ]
+       ]
+      },
+      "title": [
+       "Cognitive load of navigating without vision when guided by virtual sound versus spatial language."
+      ]
+     },
+     {
+      "DOI": "10.1002/j.1538-9235.2001.tb01259.x",
+      "author": [
+       {
+        "family": "Loomis",
+        "given": "Jack M."
+       },
+       {
+        "family": "Klatzky",
+        "given": "Roberta L."
+       },
+       {
+        "family": "Golledge",
+        "given": "Reginald G."
+       }
+      ],
+      "container-title": [
+       "Optometry and Vision Science"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2001,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2001,
+         5
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2001,
+         5,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2001,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Navigating without Vision: Basic and Applied Research"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works?query.bibliographic=Goodfellow%2C+I.+J.%2C+Shlens%2C+J.%2C+%26+Szegedy%2C+C.+%282015%29.+Explaining+and+harnessing+adversarial+examples.+In+International+Conference+on+Learning+Representations+%28ICLR%29.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
   "data": {
    "message": {
@@ -39368,6 +45049,529 @@
       },
       "title": [
        "Temporal Graph Benchmark for Machine Learning on Temporal Graphs"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Hampshire%2C+A.%2C+Atchison%2C+C.%2C+Brien%2C+P.%2C+et+al.+%282024%29.+Cognition+and+memory+after+Covid-19+in+a+large+community+sample.+The+New+England+Journal+of+Medicine.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1056/nejmc2403996",
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         6
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         6
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         6
+        ]
+       ]
+      },
+      "title": [
+       "Cognition and Memory after Covid-19 in a Large Community Sample"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejmoa2311330",
+      "author": [
+       {
+        "family": "Hampshire",
+        "given": "Adam"
+       },
+       {
+        "family": "Azor",
+        "given": "Adriana"
+       },
+       {
+        "family": "Atchison",
+        "given": "Christina"
+       },
+       {
+        "family": "Trender",
+        "given": "William"
+       },
+       {
+        "family": "Hellyer",
+        "given": "Peter J."
+       },
+       {
+        "family": "Giunchiglia",
+        "given": "Valentina"
+       },
+       {
+        "family": "Husain",
+        "given": "Masud"
+       },
+       {
+        "family": "Cooke",
+        "given": "Graham S."
+       },
+       {
+        "family": "Cooper",
+        "given": "Emily"
+       },
+       {
+        "family": "Lound",
+        "given": "Adam"
+       },
+       {
+        "family": "Donnelly",
+        "given": "Christl A."
+       },
+       {
+        "family": "Chadeau-Hyam",
+        "given": "Marc"
+       },
+       {
+        "family": "Ward",
+        "given": "Helen"
+       },
+       {
+        "family": "Elliott",
+        "given": "Paul"
+       }
+      ],
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "title": [
+       "Cognition and Memory after Covid-19 in a Large Community Sample"
+      ]
+     },
+     {
+      "DOI": "10.1101/2023.04.24.23289043",
+      "author": [
+       {
+        "family": "Atchison",
+        "given": "Christina J"
+       },
+       {
+        "family": "Davies",
+        "given": "Bethan"
+       },
+       {
+        "family": "Cooper",
+        "given": "Emily"
+       },
+       {
+        "family": "Lound",
+        "given": "Adam"
+       },
+       {
+        "family": "Whitaker",
+        "given": "Matthew"
+       },
+       {
+        "family": "Hampshire",
+        "given": "Adam"
+       },
+       {
+        "family": "Azor",
+        "given": "Adriana"
+       },
+       {
+        "family": "Donnelly",
+        "given": "Christl"
+       },
+       {
+        "family": "Chadeau-Hyam",
+        "given": "Marc"
+       },
+       {
+        "family": "Cooke",
+        "given": "Graham S"
+       },
+       {
+        "family": "Ward",
+        "given": "Helen"
+       },
+       {
+        "family": "Elliott",
+        "given": "Paul"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2023,
+         4,
+         24
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2023,
+         4,
+         24
+        ]
+       ]
+      },
+      "title": [
+       "LONG-TERM PHYSICAL AND MENTAL HEALTH IMPACT OF COVID-19 ON ADULTS IN ENGLAND: FOLLOW UP OF A LARGE RANDOM COMMUNITY SAMPLE"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejmc2311200",
+      "author": [
+       {
+        "family": "Ellingjord-Dale",
+        "given": "Merete"
+       },
+       {
+        "family": "Brunvoll",
+        "given": "Sonja H."
+       },
+       {
+        "family": "Søraas",
+        "given": "Arne"
+       }
+      ],
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "title": [
+       "Prospective Memory Assessment before and after Covid-19"
+      ]
+     },
+     {
+      "DOI": "10.1038/s44294-026-00132-z",
+      "author": [
+       {
+        "family": "Naysmith",
+        "given": "Laura F."
+       },
+       {
+        "family": "Ward",
+        "given": "Helen"
+       },
+       {
+        "family": "Elliott",
+        "given": "Paul"
+       },
+       {
+        "family": "Atchison",
+        "given": "Christina"
+       },
+       {
+        "family": "Hellyer",
+        "given": "Peter"
+       },
+       {
+        "family": "Denno",
+        "given": "Peter"
+       },
+       {
+        "family": "Williams",
+        "given": "Steven C. R."
+       },
+       {
+        "family": "Hampshire",
+        "given": "Adam"
+       }
+      ],
+      "container-title": [
+       "npj Women's Health"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2026,
+         3,
+         16
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2026,
+         3,
+         16
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2026,
+         3,
+         16
+        ]
+       ]
+      },
+      "title": [
+       "Cognition and the menopause transition: cross-sectional evidence from a large community cohort"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejme2400189",
+      "author": [
+       {
+        "family": "Al-Aly",
+        "given": "Ziyad"
+       },
+       {
+        "family": "Rosen",
+        "given": "Clifford J."
+       }
+      ],
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         2,
+         29
+        ]
+       ]
+      },
+      "title": [
+       "Long Covid and Impaired Cognition — More Evidence and More Work to Do"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejm193001022020107",
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         1930,
+         1,
+         2
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         1930,
+         1,
+         2
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         1930,
+         1,
+         2
+        ]
+       ]
+      },
+      "title": [
+       "New Hampshire Medical Society"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejm193105072041910",
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         1931,
+         5,
+         7
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         1931,
+         5,
+         7
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         1931,
+         5,
+         7
+        ]
+       ]
+      },
+      "title": [
+       "New Hampshire Medical Society"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejm193011062031908",
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         1930,
+         11,
+         6
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         1930,
+         11,
+         6
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         1930,
+         11,
+         6
+        ]
+       ]
+      },
+      "title": [
+       "New Hampshire Medical Society"
+      ]
+     },
+     {
+      "DOI": "10.1056/nejm193001022020106",
+      "container-title": [
+       "New England Journal of Medicine"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         1930,
+         1,
+         2
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         1930,
+         1,
+         2
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         1930,
+         1,
+         2
+        ]
+       ]
+      },
+      "title": [
+       "New Hampshire Medical Society"
       ]
      }
     ]
@@ -43777,6 +49981,616 @@
       },
       "title": [
        "Automated Disentangled Sequential Recommendation with Large Language Models"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Huang%2C+L.%2C+Yu%2C+W.%2C+Ma%2C+W.%2C+et+al.+%282025%29.+A+survey+on+hallucination+in+large+language+models%3A+Principles%2C+taxonomy%2C+challenges%2C+and+open+questions.+ACM+Transactions+on+Information+Systems.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1145/3703155",
+      "author": [
+       {
+        "family": "Huang",
+        "given": "Lei"
+       },
+       {
+        "family": "Yu",
+        "given": "Weijiang"
+       },
+       {
+        "family": "Ma",
+        "given": "Weitao"
+       },
+       {
+        "family": "Zhong",
+        "given": "Weihong"
+       },
+       {
+        "family": "Feng",
+        "given": "Zhangyin"
+       },
+       {
+        "family": "Wang",
+        "given": "Haotian"
+       },
+       {
+        "family": "Chen",
+        "given": "Qianglong"
+       },
+       {
+        "family": "Peng",
+        "given": "Weihua"
+       },
+       {
+        "family": "Feng",
+        "given": "Xiaocheng"
+       },
+       {
+        "family": "Qin",
+        "given": "Bing"
+       },
+       {
+        "family": "Liu",
+        "given": "Ting"
+       }
+      ],
+      "container-title": [
+       "ACM Transactions on Information Systems"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         1,
+         24
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         1,
+         24
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         1,
+         24
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         3,
+         31
+        ]
+       ]
+      },
+      "title": [
+       "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions"
+      ]
+     },
+     {
+      "DOI": "10.1145/3729422",
+      "author": [
+       {
+        "family": "Huang",
+        "given": "Sirui"
+       },
+       {
+        "family": "Li",
+        "given": "Qian"
+       },
+       {
+        "family": "Yang",
+        "given": "Haoran"
+       },
+       {
+        "family": "Yu",
+        "given": "Dianer"
+       },
+       {
+        "family": "Li",
+        "given": "Qing"
+       },
+       {
+        "family": "Xu",
+        "given": "Guandong"
+       }
+      ],
+      "container-title": [
+       "ACM Transactions on Information Systems"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         11
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         11
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         11,
+         30
+        ]
+       ]
+      },
+      "title": [
+       "Causal Time-aware News Recommendations with Large Language Models"
+      ]
+     },
+     {
+      "DOI": "10.1145/3744238",
+      "author": [
+       {
+        "family": "Shorinwa",
+        "given": "Ola"
+       },
+       {
+        "family": "Mei",
+        "given": "Zhiting"
+       },
+       {
+        "family": "Lidard",
+        "given": "Justin"
+       },
+       {
+        "family": "Ren",
+        "given": "Allen Z."
+       },
+       {
+        "family": "Majumdar",
+        "given": "Anirudha"
+       }
+      ],
+      "container-title": [
+       "ACM Computing Surveys"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         9
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         9
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         9,
+         9
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2026,
+         2,
+         28
+        ]
+       ]
+      },
+      "title": [
+       "A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions"
+      ]
+     },
+     {
+      "DOI": "10.1007/978-3-031-92285-5_5",
+      "author": [
+       {
+        "family": "Bianchini",
+        "given": "Filippo"
+       },
+       {
+        "family": "Marinacci",
+        "given": "Matteo"
+       }
+      ],
+      "container-title": [
+       "Engineering Information Systems with Large Language Models"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         7,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025
+        ]
+       ]
+      },
+      "title": [
+       "Exploring Large Language Models in Information Systems: A Survey"
+      ]
+     },
+     {
+      "DOI": "10.1145/3763789",
+      "author": [
+       {
+        "family": "Zhou",
+        "given": "Huachi"
+       },
+       {
+        "family": "Yu",
+        "given": "Kaijing"
+       },
+       {
+        "family": "Zhang",
+        "given": "Qinggang"
+       },
+       {
+        "family": "Chen",
+        "given": "Hao"
+       },
+       {
+        "family": "Zha",
+        "given": "Daochen"
+       },
+       {
+        "family": "Pei",
+        "given": "Wenqi"
+       },
+       {
+        "family": "Kong",
+        "given": "Anthony"
+       },
+       {
+        "family": "Huang",
+        "given": "Xiao"
+       }
+      ],
+      "container-title": [
+       "ACM Transactions on Information Systems"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         10,
+         14
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         10,
+         14
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         10,
+         14
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2026,
+         1,
+         31
+        ]
+       ]
+      },
+      "title": [
+       "Self-Monitoring Large Language Models for Click-Through Rate Prediction"
+      ]
+     },
+     {
+      "DOI": "10.21203/rs.3.rs-4566507/v1",
+      "author": [
+       {
+        "family": "Zhao",
+        "given": "Jiajing"
+       },
+       {
+        "family": "Huang",
+        "given": "Cheng"
+       },
+       {
+        "family": "Li",
+        "given": "Xian"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         12
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         12
+        ]
+       ]
+      },
+      "title": [
+       "A Comparative Study of Cultural Hallucination in Large Language Models on Culturally Specific Ethical Questions"
+      ]
+     },
+     {
+      "DOI": "10.1145/3768156",
+      "author": [
+       {
+        "family": "Ke",
+        "given": "Wenjun"
+       },
+       {
+        "family": "Zheng",
+        "given": "Yifan"
+       },
+       {
+        "family": "Li",
+        "given": "Yining"
+       },
+       {
+        "family": "Xu",
+        "given": "Hengyuan"
+       },
+       {
+        "family": "Nie",
+        "given": "Dong"
+       },
+       {
+        "family": "Wang",
+        "given": "Peng"
+       },
+       {
+        "family": "He",
+        "given": "Yao"
+       }
+      ],
+      "container-title": [
+       "ACM Transactions on Information Systems"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         11,
+         14
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         11,
+         14
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         11,
+         14
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2026,
+         1,
+         31
+        ]
+       ]
+      },
+      "title": [
+       "Large Language Models in Document Intelligence: A Comprehensive Survey, Recent Advances, Challenges, and Future Trends"
+      ]
+     },
+     {
+      "DOI": "10.1145/3727144",
+      "author": [
+       {
+        "family": "Wang",
+        "given": "Huili"
+       },
+       {
+        "family": "Wu",
+        "given": "Chuhan"
+       },
+       {
+        "family": "Huang",
+        "given": "Yongfeng"
+       },
+       {
+        "family": "Qi",
+        "given": "Tao"
+       }
+      ],
+      "container-title": [
+       "ACM Transactions on Information Systems"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         9
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         9
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         9
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2025,
+         7,
+         31
+        ]
+       ]
+      },
+      "title": [
+       "Learning Human Feedback from Large Language Models for Content Quality-aware Recommendation"
+      ]
+     },
+     {
+      "DOI": "10.20944/preprints202504.1236.v2",
+      "author": [
+       {
+        "family": "Ahadian",
+        "given": "Pegah"
+       },
+       {
+        "family": "Guan",
+        "given": "Qiang"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         13
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         5,
+         13
+        ]
+       ]
+      },
+      "title": [
+       "A Survey on Hallucination in Large Language and Foundation Models"
+      ]
+     },
+     {
+      "DOI": "10.20944/preprints202504.1236.v1",
+      "author": [
+       {
+        "family": "Ahadian",
+        "given": "Pegah"
+       },
+       {
+        "family": "Guan",
+        "given": "Qiang"
+       }
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         15
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2025,
+         4,
+         15
+        ]
+       ]
+      },
+      "title": [
+       "A Survey on Hallucination in Large Language and Foundation Models"
       ]
      }
     ]
@@ -71732,6 +78546,988 @@
   },
   "status": 200
  },
+ "https://api.crossref.org/works?query.bibliographic=Tapu%2C+R.%2C+Mocanu%2C+B.%2C+%26+Zaharia%2C+T.+%282018%29.+Wearable+assistive+devices+for+visually+impaired%3A+A+state+of+the+art+survey.+Pattern+Recognition+Letters%2C+137%2C+37%E2%80%9352.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1016/j.patrec.2018.10.031",
+      "author": [
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "Pattern Recognition Letters"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2020,
+         9
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2020,
+         9
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2020,
+         9
+        ]
+       ]
+      },
+      "title": [
+       "Wearable assistive devices for visually impaired: A state of the art survey"
+      ]
+     },
+     {
+      "DOI": "10.1109/sitis.2018.00030",
+      "author": [
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "2018 14th International Conference on Signal-Image Technology &amp; Internet-Based Systems (SITIS)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018,
+         11
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2018,
+         11
+        ]
+       ]
+      },
+      "title": [
+       "Face Recognition in Video Streams for Mobile Assistive Devices Dedicated to Visually Impaired"
+      ]
+     },
+     {
+      "DOI": "10.1109/access.2018.2870334",
+      "author": [
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "IEEE Access"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2018
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2018
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2018
+        ]
+       ]
+      },
+      "title": [
+       "DEEP-SEE FACE: A Mobile Face Recognition System Dedicated to Visually Impaired People"
+      ]
+     },
+     {
+      "DOI": "10.3390/s17112473",
+      "author": [
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "Sensors"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2017,
+         10,
+         28
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2017,
+         10,
+         28
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2017,
+         10,
+         28
+        ]
+       ]
+      },
+      "title": [
+       "DEEP-SEE: Joint Object Detection, Tracking and Recognition with Application to Visually Impaired Navigational Assistance"
+      ]
+     },
+     {
+      "DOI": "10.1109/icce.2014.6776055",
+      "author": [
+       {
+        "family": "Tapu",
+        "given": "R."
+       },
+       {
+        "family": "Mocanu",
+        "given": "B."
+       },
+       {
+        "family": "Zaharia",
+        "given": "T."
+       }
+      ],
+      "container-title": [
+       "2014 IEEE International Conference on Consumer Electronics (ICCE)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2014,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2014,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2014,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Real time static/dynamic obstacle detection for visually impaired persons"
+      ]
+     },
+     {
+      "DOI": "10.1109/isetc.2014.7010793",
+      "author": [
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Tapu",
+        "given": "Ermina"
+       }
+      ],
+      "container-title": [
+       "2014 11th International Symposium on Electronics and Telecommunications (ISETC)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2014,
+         11
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2014,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2014,
+         11
+        ]
+       ]
+      },
+      "title": [
+       "A survey on wearable devices used to assist the visual impaired user navigation in outdoor environments"
+      ]
+     },
+     {
+      "DOI": "10.1109/sitis.2015.58",
+      "author": [
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "2015 11th International Conference on Signal-Image Technology &amp; Internet-Based Systems (SITIS)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2015,
+         11
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2015,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2015,
+         11
+        ]
+       ]
+      },
+      "title": [
+       "An Obstacle Categorization System for Visually Impaired People"
+      ]
+     },
+     {
+      "DOI": "10.1016/j.patrec.2022.03.002",
+      "author": [
+       {
+        "family": "Maiorana",
+        "given": "Emanuele"
+       }
+      ],
+      "container-title": [
+       "Pattern Recognition Letters"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2022,
+         4
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2022,
+         4
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2022,
+         4
+        ]
+       ]
+      },
+      "title": [
+       "A survey on biometric recognition using wearable devices"
+      ]
+     },
+     {
+      "DOI": "10.1109/iccvw.2013.65",
+      "author": [
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Bursuc",
+        "given": "Andrei"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "2013 IEEE International Conference on Computer Vision Workshops"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2013,
+         12
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2013,
+         12
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2013,
+         12
+        ]
+       ]
+      },
+      "title": [
+       "A Smartphone-Based Obstacle Detection and Classification System for Assisting Visually Impaired People"
+      ]
+     },
+     {
+      "DOI": "10.1109/iccvw.2017.172",
+      "author": [
+       {
+        "family": "Mocanu",
+        "given": "Bogdan"
+       },
+       {
+        "family": "Tapu",
+        "given": "Ruxandra"
+       },
+       {
+        "family": "Zaharia",
+        "given": "Titus"
+       }
+      ],
+      "container-title": [
+       "2017 IEEE International Conference on Computer Vision Workshops (ICCVW)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2017,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2017,
+         10
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2017,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "Seeing Without Sight — An Automatic Cognition System Dedicated to Blind and Visually Impaired People"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Thaler%2C+R.+H.%2C+%26+Sunstein%2C+C.+R.+%282008%29.+Nudge%3A+Improving+decisions+about+health%2C+wealth%2C+and+happiness.+Yale+University+Press.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1007/s10602-008-9056-2",
+      "author": [
+       {
+        "family": "Leonard",
+        "given": "Thomas C."
+       }
+      ],
+      "container-title": [
+       "Constitutional Political Economy"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2008,
+         8,
+         22
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2008,
+         8,
+         22
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2008,
+         8,
+         22
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2008,
+         12
+        ]
+       ]
+      },
+      "subtitle": [
+       "Yale University Press, New Haven, CT, 2008, 293 pp, $26.00"
+      ],
+      "title": [
+       "Richard H. Thaler, Cass R. Sunstein, Nudge: Improving decisions about health, wealth, and happiness"
+      ]
+     },
+     {
+      "DOI": "10.1086/592313",
+      "author": [
+       {
+        "family": "Frank",
+        "given": "Robert H."
+       }
+      ],
+      "container-title": [
+       "Ethics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2008,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2008,
+         10
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2008,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "Book ReviewsRichard H., Thaler,  and Cass R. Sunstein,  <i>Nudge: Improving Decisions about Health, Wealth, and Happiness</i>.New Haven, CT: Yale University Press, 2008. Pp. 308. $26.00 (cloth); $16.00 (paper)."
+      ]
+     },
+     {
+      "DOI": "10.1002/bdm.652",
+      "author": [
+       {
+        "family": "Baron",
+        "given": "Jonathan"
+       }
+      ],
+      "container-title": [
+       "Journal of Behavioral Decision Making"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2010,
+         3,
+         26
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2010,
+         3,
+         26
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2010,
+         3,
+         26
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2010,
+         4
+        ]
+       ]
+      },
+      "title": [
+       "Nudge: Improving decisions about health, wealth, and happiness. Thaler, Richard H. &amp; Sunstein, Cass R. (Eds.), Yale University Press: New Haven, CT, 2008)"
+      ]
+     },
+     {
+      "DOI": "10.1007/s11138-009-0094-4",
+      "author": [
+       {
+        "family": "Padilla",
+        "given": "Alexandre"
+       }
+      ],
+      "container-title": [
+       "The Review of Austrian Economics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2009,
+         10,
+         3
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2009,
+         10,
+         3
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2009,
+         10,
+         3
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2009,
+         12
+        ]
+       ]
+      },
+      "subtitle": [
+       "New Haven, CT: Yale University Press, 2008, 293+x pages."
+      ],
+      "title": [
+       "Review of Richard H. Thaler and Cass R. Sunstein, Nudge: Improving decisions about health, wealth, and happiness"
+      ]
+     },
+     {
+      "DOI": "10.1007/s10640-010-9363-8",
+      "author": [
+       {
+        "family": "Fisher",
+        "given": "Brendan"
+       }
+      ],
+      "container-title": [
+       "Environmental and Resource Economics"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2010,
+         4,
+         8
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2010,
+         4,
+         8
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2010,
+         4,
+         8
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2010,
+         9
+        ]
+       ]
+      },
+      "subtitle": [
+       "Yale University Press, New Haven, 2008, ISBN 978-0-300-12223-7"
+      ],
+      "title": [
+       "Richard H. Thaler and Cass R. Sunstein: Nudge: Improving Decisions About Health, Wealth, and Happiness"
+      ]
+     },
+     {
+      "DOI": "10.1017/s0266267110000301",
+      "author": [
+       {
+        "family": "Anderson",
+        "given": "Joel"
+       }
+      ],
+      "container-title": [
+       "Economics and Philosophy"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2010,
+         10,
+         12
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2010,
+         10,
+         12
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2010,
+         10,
+         12
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2010,
+         11
+        ]
+       ]
+      },
+      "title": [
+       "Nudge: Improving Decisions about Health, Wealth, and Happiness, Richard H. Thaler and Cass R. Sunstein. Yale University Press, 2008. x + 293 pages. [Paperback edition, Penguin, 2009, 320 pages.]"
+      ]
+     },
+     {
+      "DOI": "10.1007/s11158-008-9078-7",
+      "author": [
+       {
+        "family": "Wilkinson",
+        "given": "T. M."
+       }
+      ],
+      "container-title": [
+       "Res Publica"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2009,
+         2,
+         4
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2009,
+         2,
+         4
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2009,
+         2,
+         4
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2009,
+         5
+        ]
+       ]
+      },
+      "subtitle": [
+       "Sunstein, Cass R. 2007. Worst-case scenarios. Cambridge, Massachusetts and London: Harvard University Press, 340pp. Thaler, Richard, and Cass R. Sunstein. 2008. Nudge: Improving decisions about health, wealth, and happiness. New Haven and London: Yale University Press, 293pp + x"
+      ],
+      "title": [
+       "Reason, Paternalism, and Disaster"
+      ]
+     },
+     {
+      "DOI": "10.1002/ieam.5630040426",
+      "author": [
+       {
+        "family": "Suter",
+        "given": "Glenn"
+       }
+      ],
+      "container-title": [
+       "Integrated Environmental Assessment and Management"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2008,
+         10,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2008,
+         10,
+         1
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2008,
+         10,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2008,
+         10,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Nudge: Improving decisions about health, wealth, and happiness: By Richard H. Thaler, Cass R. Sunstein"
+      ]
+     },
+     {
+      "DOI": "10.1017/s0047279409990158",
+      "author": [
+       {
+        "family": "KING",
+        "given": "PETER"
+       }
+      ],
+      "container-title": [
+       "Journal of Social Policy"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2009,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2009,
+         10
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2009,
+         10,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2009,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "Richard H. Thaler and Cass R. Sunstein (2008), Nudge: Improving Decisions about Health, Wealth and Happiness. London: Yale. £18, pp. 293, hbk."
+      ]
+     },
+     {
+      "DOI": "10.1017/s1474747209990175",
+      "author": [
+       {
+        "family": "Iyengar",
+        "given": "Sheena"
+       }
+      ],
+      "container-title": [
+       "Journal of Pension Economics and Finance"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2010,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2010,
+         1
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2010,
+         1,
+         19
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2010,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Nudge: Improving Decisions about Health, Wealth, and Happiness. By Richard H. Thaler and Cass R. Sunstein. Yale University Press, 2008, ISBN 978-0-30012-223-7, 304 pages."
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
  "https://api.crossref.org/works?query.bibliographic=Tu%2C+J.%2C+Ren%2C+M.%2C+Manivasagam%2C+S.%2C+Liang%2C+M.%2C+Yang%2C+B.%2C+Du%2C+R.%2C+Cheng%2C+F.%2C+%26+Urtasun%2C+R.+%282020%29.+Physically+realizable+adversarial+examples+for+LiDAR+object+detection.+In+Proceedings+of+the+IEEE%2FCVF+Conference+on+Computer+Vision+and+Pattern+Recognition+%28CVPR%29%2C+13716-13725.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
   "data": {
    "message": {
@@ -74488,6 +82284,593 @@
       },
       "title": [
        "Automatic Inference of Cross-Modal Connection Topologies for X-CNNs"
+      ]
+     }
+    ]
+   }
+  },
+  "status": 200
+ },
+ "https://api.crossref.org/works?query.bibliographic=Wang%2C+J.%2C+Yuan%2C+Y.%2C+Che%2C+H.%2C+Qi%2C+H.%2C+Ma%2C+Y.%2C+Malik%2C+J.%2C+%26+Wang%2C+X.+%282024%29.+Lessons+from+learning+to+spin+%22pens%22.+In+Conference+on+Robot+Learning+%28CoRL+2024%29.&rows=10&select=DOI%2Ctitle%2Csubtitle%2Cauthor%2Ccontainer-title%2Cpublished-print%2Cpublished-online%2Cissued%2Cpublished": {
+  "data": {
+   "message": {
+    "items": [
+     {
+      "DOI": "10.1109/ijcnn60899.2024.10651264",
+      "author": [
+       {
+        "family": "Yuan",
+        "given": "Wenhao"
+       },
+       {
+        "family": "Wang",
+        "given": "Xuehe"
+       }
+      ],
+      "container-title": [
+       "2024 International Joint Conference on Neural Networks (IJCNN)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         30
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         6,
+         30
+        ]
+       ]
+      },
+      "title": [
+       "QI-DPFL: Quality-Aware and Incentive-Boosted Federated Learning with Differential Privacy"
+      ]
+     },
+     {
+      "DOI": "10.1137/1.9781611978032.30",
+      "author": [
+       {
+        "family": "Chi",
+        "given": "Hongliang"
+       },
+       {
+        "family": "Qi",
+        "given": "Cong"
+       },
+       {
+        "family": "Wang",
+        "given": "Suhang"
+       },
+       {
+        "family": "Ma",
+        "given": "Yao"
+       }
+      ],
+      "container-title": [
+       "Proceedings of the 2024 SIAM International Conference on Data Mining (SDM)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         1
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2024,
+         4,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "Active Learning for Graphs with Noisy Structures"
+      ]
+     },
+     {
+      "DOI": "10.1117/12.3038372",
+      "author": [
+       {
+        "family": "Pan",
+        "given": "Chenyue"
+       },
+       {
+        "family": "Zhou",
+        "given": "Yushi"
+       },
+       {
+        "family": "Wang",
+        "given": "Wenyang"
+       },
+       {
+        "family": "Qi",
+        "given": "Hang"
+       },
+       {
+        "family": "Yuan",
+        "given": "Yunhao"
+       }
+      ],
+      "container-title": [
+       "Sixteenth International Conference on Digital Image Processing (ICDIP 2024)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         22
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         22
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         22
+        ]
+       ]
+      },
+      "title": [
+       "Partial least squares feature learning via general covariance matrices"
+      ]
+     },
+     {
+      "DOI": "10.1109/icct62411.2024.10946630",
+      "author": [
+       {
+        "family": "Wang",
+        "given": "Yingshu"
+       },
+       {
+        "family": "Ma",
+        "given": "Binyao"
+       },
+       {
+        "family": "Wei",
+        "given": "Shuo"
+       },
+       {
+        "family": "Zhang",
+        "given": "Juanjuan"
+       },
+       {
+        "family": "Yuan",
+        "given": "Shu"
+       },
+       {
+        "family": "Ren",
+        "given": "Weizhi"
+       },
+       {
+        "family": "Wang",
+        "given": "Bin"
+       }
+      ],
+      "container-title": [
+       "2024 IEEE 24th International Conference on Communication Technology (ICCT)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         18
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         18
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         18
+        ]
+       ]
+      },
+      "title": [
+       "Distributed Partial Collaborative Deep Learning for Spectrum Sensing"
+      ]
+     },
+     {
+      "DOI": "10.1109/robio64047.2024.10907419",
+      "author": [
+       {
+        "family": "Ma",
+        "given": "Baoping"
+       },
+       {
+        "family": "Wang",
+        "given": "Yuanxiang"
+       },
+       {
+        "family": "Wang",
+        "given": "Wenrui"
+       },
+       {
+        "family": "Chen",
+        "given": "Feng"
+       },
+       {
+        "family": "Kan",
+        "given": "Hongwei"
+       },
+       {
+        "family": "Tang",
+        "given": "Qirong"
+       }
+      ],
+      "container-title": [
+       "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         12,
+         10
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         12,
+         10
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         12,
+         10
+        ]
+       ]
+      },
+      "title": [
+       "MGL4QGR: Multi-Gait Locomotion of Quadruped Guide Robot via Teacher-Student Learning"
+      ]
+     },
+     {
+      "DOI": "10.55092/rl20240001",
+      "author": [
+       {
+        "family": "Wang",
+        "given": "Hesheng"
+       },
+       {
+        "family": "Yang",
+        "given": "Chenguang"
+       }
+      ],
+      "container-title": [
+       "Robot Learning"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024
+        ]
+       ]
+      },
+      "title": [
+       "Learning enabled intelligent robot new era"
+      ]
+     },
+     {
+      "DOI": "10.1145/3686490.3686501",
+      "author": [
+       {
+        "family": "Gao",
+        "given": "Yujie"
+       },
+       {
+        "family": "Yuan",
+        "given": "Baoxi"
+       },
+       {
+        "family": "Zhu",
+        "given": "Qing"
+       },
+       {
+        "family": "Zhao",
+        "given": "Jiyuan"
+       },
+       {
+        "family": "Ma",
+        "given": "Xiangyang"
+       },
+       {
+        "family": "Chen",
+        "given": "Jialu"
+       },
+       {
+        "family": "Wang",
+        "given": "Feng"
+       },
+       {
+        "family": "Chu",
+        "given": "Peng"
+       },
+       {
+        "family": "Wang",
+        "given": "Chunlan"
+       }
+      ],
+      "container-title": [
+       "Proceedings of the 2024 7th International Conference on Signal Processing and Machine Learning"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         12
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         12
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         11
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         12
+        ]
+       ]
+      },
+      "title": [
+       "Deep Learning Based Jujube Quality Assessment: An Automated Surface Defect Detection Approach"
+      ]
+     },
+     {
+      "DOI": "10.1109/iros58592.2024.10801743",
+      "author": [
+       {
+        "family": "Zhou",
+        "given": "Yizhi"
+       },
+       {
+        "family": "Jin",
+        "given": "Wanxin"
+       },
+       {
+        "family": "Wang",
+        "given": "Xuan"
+       }
+      ],
+      "container-title": [
+       "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         14
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         14
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         10,
+         14
+        ]
+       ]
+      },
+      "title": [
+       "D3G: Learning Multi-robot Coordination from Demonstrations"
+      ]
+     },
+     {
+      "DOI": "10.1145/3674399.3674469",
+      "author": [
+       {
+        "family": "Qi",
+        "given": "Zhixin"
+       },
+       {
+        "family": "Wang",
+        "given": "Hongzhi"
+       }
+      ],
+      "container-title": [
+       "ACM Turing Award Celebration Conference 2024"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         5
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         5
+        ]
+       ]
+      },
+      "published-online": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         30
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         7,
+         5
+        ]
+       ]
+      },
+      "title": [
+       "Access Structure Selection for Knowledge Graphs Based on Machine Learning"
+      ]
+     },
+     {
+      "DOI": "10.1109/mlbdbi63974.2024.10823722",
+      "author": [
+       {
+        "family": "Wang",
+        "given": "Huizhe"
+       },
+       {
+        "family": "Ma",
+        "given": "Zongmin"
+       },
+       {
+        "family": "Qi",
+        "given": "Wei"
+       },
+       {
+        "family": "Zhang",
+        "given": "Nan"
+       },
+       {
+        "family": "Zhuang",
+        "given": "Hongwei"
+       }
+      ],
+      "container-title": [
+       "2024 6th International Conference on Machine Learning, Big Data and Business Intelligence (MLBDBI)"
+      ],
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         11,
+         1
+        ]
+       ]
+      },
+      "published": {
+       "date-parts": [
+        [
+         2024,
+         11,
+         1
+        ]
+       ]
+      },
+      "published-print": {
+       "date-parts": [
+        [
+         2024,
+         11,
+         1
+        ]
+       ]
+      },
+      "title": [
+       "A Research Review of the Stacking Classification Model"
       ]
      }
     ]
@@ -84529,7 +92912,19 @@
   },
   "status": 200
  },
+ "https://api.datacite.org/dois/10.1038/s41592-021-01319-5": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.datacite.org/dois/10.1086/tpe.16.20061896": {
+  "data": null,
+  "status": 404
+ },
  "https://api.datacite.org/dois/10.1145/3219819.3220138": {
+  "data": null,
+  "status": 404
+ },
+ "https://api.datacite.org/dois/10.1289/ehp.7619": {
   "data": null,
   "status": 404
  },
@@ -84744,6 +93139,33 @@
      "titles": [
       {
        "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
+ "https://api.datacite.org/dois/10.48550/arXiv.1605.02065": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Bun",
+       "name": "Bun, Mark"
+      },
+      {
+       "familyName": "Steinke",
+       "name": "Steinke, Thomas"
+      }
+     ],
+     "doi": "10.48550/arxiv.1605.02065",
+     "publicationYear": 2016,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "Concentrated Differential Privacy: Simplifications, Extensions, and Lower Bounds"
       }
      ]
     }
@@ -85101,6 +93523,41 @@
   },
   "status": 200
  },
+ "https://api.datacite.org/dois/10.48550/arXiv.1706.09911": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Pas",
+       "name": "Pas, Andreas ten"
+      },
+      {
+       "familyName": "Gualtieri",
+       "name": "Gualtieri, Marcus"
+      },
+      {
+       "familyName": "Saenko",
+       "name": "Saenko, Kate"
+      },
+      {
+       "familyName": "Platt",
+       "name": "Platt, Robert"
+      }
+     ],
+     "doi": "10.48550/arxiv.1706.09911",
+     "publicationYear": 2017,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "Grasp Pose Detection in Point Clouds"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
  "https://api.datacite.org/dois/10.48550/arXiv.1710.06963": {
   "data": {
    "data": {
@@ -85203,6 +93660,41 @@
      "titles": [
       {
        "title": "Differentially Private Federated Learning: A Client Level Perspective"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
+ "https://api.datacite.org/dois/10.48550/arXiv.1712.09923": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Holzinger",
+       "name": "Holzinger, Andreas"
+      },
+      {
+       "familyName": "Biemann",
+       "name": "Biemann, Chris"
+      },
+      {
+       "familyName": "Pattichis",
+       "name": "Pattichis, Constantinos S."
+      },
+      {
+       "familyName": "Kell",
+       "name": "Kell, Douglas B."
+      }
+     ],
+     "doi": "10.48550/arxiv.1712.09923",
+     "publicationYear": 2017,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "What do we need to build explainable AI systems for the medical domain?"
       }
      ]
     }
@@ -85454,6 +93946,33 @@
   },
   "status": 200
  },
+ "https://api.datacite.org/dois/10.48550/arXiv.1806.02973": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Park",
+       "name": "Park, Eunji"
+      },
+      {
+       "familyName": "Lee",
+       "name": "Lee, Byungjoo"
+      }
+     ],
+     "doi": "10.48550/arxiv.1806.02973",
+     "publicationYear": 2018,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "An Intermittent Click Planning Model"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
  "https://api.datacite.org/dois/10.48550/arXiv.1806.10293": {
   "data": {
    "data": {
@@ -85545,6 +94064,33 @@
      "titles": [
       {
        "title": "How Powerful are Graph Neural Networks?"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
+ "https://api.datacite.org/dois/10.48550/arXiv.1812.01053": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Joze",
+       "name": "Joze, Hamid Reza Vaezi"
+      },
+      {
+       "familyName": "Koller",
+       "name": "Koller, Oscar"
+      }
+     ],
+     "doi": "10.48550/arxiv.1812.01053",
+     "publicationYear": 2018,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "MS-ASL: A Large-Scale Data Set and Benchmark for Understanding American Sign Language"
       }
      ]
     }
@@ -85666,6 +94212,33 @@
      "titles": [
       {
        "title": "Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
+ "https://api.datacite.org/dois/10.48550/arXiv.2003.00950": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Hur",
+       "name": "Hur, Vera Mikyoung"
+      },
+      {
+       "familyName": "Vanden-Broeck",
+       "name": "Vanden-Broeck, Jean-Marc"
+      }
+     ],
+     "doi": "10.48550/arxiv.2003.00950",
+     "publicationYear": 2020,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "A new application of Crapper's exact solution to waves in constant vorticity flows"
       }
      ]
     }
@@ -86090,6 +94663,169 @@
      "titles": [
       {
        "title": "Retrieval Augmentation Reduces Hallucination in Conversation"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
+ "https://api.datacite.org/dois/10.48550/arXiv.2207.05221": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Kadavath",
+       "name": "Kadavath, Saurav"
+      },
+      {
+       "familyName": "Conerly",
+       "name": "Conerly, Tom"
+      },
+      {
+       "familyName": "Askell",
+       "name": "Askell, Amanda"
+      },
+      {
+       "familyName": "Henighan",
+       "name": "Henighan, Tom"
+      },
+      {
+       "familyName": "Drain",
+       "name": "Drain, Dawn"
+      },
+      {
+       "familyName": "Perez",
+       "name": "Perez, Ethan"
+      },
+      {
+       "familyName": "Schiefer",
+       "name": "Schiefer, Nicholas"
+      },
+      {
+       "familyName": "Hatfield-Dodds",
+       "name": "Hatfield-Dodds, Zac"
+      },
+      {
+       "familyName": "DasSarma",
+       "name": "DasSarma, Nova"
+      },
+      {
+       "familyName": "Tran-Johnson",
+       "name": "Tran-Johnson, Eli"
+      },
+      {
+       "familyName": "Johnston",
+       "name": "Johnston, Scott"
+      },
+      {
+       "familyName": "El-Showk",
+       "name": "El-Showk, Sheer"
+      },
+      {
+       "familyName": "Jones",
+       "name": "Jones, Andy"
+      },
+      {
+       "familyName": "Elhage",
+       "name": "Elhage, Nelson"
+      },
+      {
+       "familyName": "Hume",
+       "name": "Hume, Tristan"
+      },
+      {
+       "familyName": "Chen",
+       "name": "Chen, Anna"
+      },
+      {
+       "familyName": "Bai",
+       "name": "Bai, Yuntao"
+      },
+      {
+       "familyName": "Bowman",
+       "name": "Bowman, Sam"
+      },
+      {
+       "familyName": "Fort",
+       "name": "Fort, Stanislav"
+      },
+      {
+       "familyName": "Ganguli",
+       "name": "Ganguli, Deep"
+      },
+      {
+       "familyName": "Hernandez",
+       "name": "Hernandez, Danny"
+      },
+      {
+       "familyName": "Jacobson",
+       "name": "Jacobson, Josh"
+      },
+      {
+       "familyName": "Kernion",
+       "name": "Kernion, Jackson"
+      },
+      {
+       "familyName": "Kravec",
+       "name": "Kravec, Shauna"
+      },
+      {
+       "familyName": "Lovitt",
+       "name": "Lovitt, Liane"
+      },
+      {
+       "familyName": "Ndousse",
+       "name": "Ndousse, Kamal"
+      },
+      {
+       "familyName": "Olsson",
+       "name": "Olsson, Catherine"
+      },
+      {
+       "familyName": "Ringer",
+       "name": "Ringer, Sam"
+      },
+      {
+       "familyName": "Amodei",
+       "name": "Amodei, Dario"
+      },
+      {
+       "familyName": "Brown",
+       "name": "Brown, Tom"
+      },
+      {
+       "familyName": "Clark",
+       "name": "Clark, Jack"
+      },
+      {
+       "familyName": "Joseph",
+       "name": "Joseph, Nicholas"
+      },
+      {
+       "familyName": "Mann",
+       "name": "Mann, Ben"
+      },
+      {
+       "familyName": "McCandlish",
+       "name": "McCandlish, Sam"
+      },
+      {
+       "familyName": "Olah",
+       "name": "Olah, Chris"
+      },
+      {
+       "familyName": "Kaplan",
+       "name": "Kaplan, Jared"
+      }
+     ],
+     "doi": "10.48550/arxiv.2207.05221",
+     "publicationYear": 2022,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "Language Models (Mostly) Know What They Know"
       }
      ]
     }
@@ -86583,6 +95319,49 @@
   },
   "status": 200
  },
+ "https://api.datacite.org/dois/10.48550/arXiv.2310.06271": {
+  "data": {
+   "data": {
+    "attributes": {
+     "creators": [
+      {
+       "familyName": "Ji",
+       "name": "Ji, Ziwei"
+      },
+      {
+       "familyName": "Yu",
+       "name": "Yu, Tiezheng"
+      },
+      {
+       "familyName": "Xu",
+       "name": "Xu, Yan"
+      },
+      {
+       "familyName": "Lee",
+       "name": "Lee, Nayeon"
+      },
+      {
+       "familyName": "Ishii",
+       "name": "Ishii, Etsuko"
+      },
+      {
+       "familyName": "Fung",
+       "name": "Fung, Pascale"
+      }
+     ],
+     "doi": "10.48550/arxiv.2310.06271",
+     "publicationYear": 2023,
+     "publisher": "arXiv",
+     "titles": [
+      {
+       "title": "Towards Mitigating Hallucination in Large Language Models via Self-Reflection"
+      }
+     ]
+    }
+   }
+  },
+  "status": 200
+ },
  "https://api.datacite.org/dois/10.48550/arXiv.2311.05232": {
   "data": {
    "data": {
@@ -86892,7 +95671,27 @@
   },
   "status": 200
  },
+ "https://api.datacite.org/dois/10.7907/06k1-1x84": {
+  "data": null,
+  "status": 404
+ },
+ "https://doi.org/api/handles/10.1038/s41592-021-01319-5": {
+  "data": null,
+  "status": 404
+ },
+ "https://doi.org/api/handles/10.1086/tpe.16.20061896": {
+  "data": null,
+  "status": 404
+ },
  "https://doi.org/api/handles/10.1145/3219819.3220138": {
+  "data": null,
+  "status": 404
+ },
+ "https://doi.org/api/handles/10.1289/ehp.7619": {
+  "data": null,
+  "status": 404
+ },
+ "https://doi.org/api/handles/10.7907/06k1-1x84": {
   "data": null,
   "status": 404
  },
@@ -86960,8 +95759,16 @@
   "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><id>http://arxiv.org/abs/1710.06963v3</id><title>Learning Differentially Private Recurrent Language Models</title><published>2017-10-18T23:46:57Z</published><author><name>H. Brendan McMahan</name></author><author><name>Daniel Ramage</name></author><author><name>Kunal Talwar</name></author><author><name>Li Zhang</name></author></entry></feed>",
   "status": 200
  },
+ "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Alessons+AND+ti%3Alearning+AND+ti%3Aspin+AND+ti%3Apens": {
+  "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><id>http://arxiv.org/abs/2407.18902v2</id><title>Lessons from Learning to Spin \"Pens\"</title><published>2024-07-26T17:56:01Z</published><author><name>Jun Wang</name></author><author><name>Ying Yuan</name></author><author><name>Haichuan Che</name></author><author><name>Haozhi Qi</name></author><author><name>Yi Ma</name></author><author><name>Jitendra Malik</name></author><author><name>Xiaolong Wang</name></author></entry></feed>",
+  "status": 200
+ },
  "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Aneural+AND+ti%3Amessage+AND+ti%3Apassing+AND+ti%3Aquantum+AND+ti%3Achemistry": {
   "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><id>http://arxiv.org/abs/1704.01212v2</id><title>Neural Message Passing for Quantum Chemistry</title><published>2017-04-04T23:00:44Z</published><author><name>Justin Gilmer</name></author><author><name>Samuel S. Schoenholz</name></author><author><name>Patrick F. Riley</name></author><author><name>Oriol Vinyals</name></author><author><name>George E. Dahl</name></author></entry></feed>",
+  "status": 200
+ },
+ "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Anudge+AND+ti%3Aimproving+AND+ti%3Adecisions+AND+ti%3Aabout+AND+ti%3Ahealth+AND+ti%3Awealth+AND+ti%3Ahappiness": {
+  "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\" />",
   "status": 200
  },
  "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Aobfuscated+AND+ti%3Agradients+AND+ti%3Agive+AND+ti%3Afalse+AND+ti%3Asense+AND+ti%3Asecurity+AND+ti%3Acircumventing+AND+ti%3Adefenses": {
@@ -86970,6 +95777,10 @@
  },
  "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Aopt+AND+ti%3Ascalable+AND+ti%3Adeep+AND+ti%3Areinforcement+AND+ti%3Alearning+AND+ti%3Avision+AND+ti%3Abased+AND+ti%3Arobotic": {
   "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><id>http://arxiv.org/abs/1806.10293v3</id><title>QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation</title><published>2018-06-27T04:34:30Z</published><author><name>Dmitry Kalashnikov</name></author><author><name>Alex Irpan</name></author><author><name>Peter Pastor</name></author><author><name>Julian Ibarz</name></author><author><name>Alexander Herzog</name></author><author><name>Eric Jang</name></author><author><name>Deirdre Quillen</name></author><author><name>Ethan Holly</name></author><author><name>Mrinal Kalakrishnan</name></author><author><name>Vincent Vanhoucke</name></author><author><name>Sergey Levine</name></author></entry></feed>",
+  "status": 200
+ },
+ "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Aquantum+AND+ti%3Aerror+AND+ti%3Acorrection+AND+ti%3Abelow+AND+ti%3Asurface+AND+ti%3Acode+AND+ti%3Athreshold": {
+  "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><id>http://arxiv.org/abs/2408.13687v1</id><title>Quantum error correction below the surface code threshold</title><published>2024-08-24T23:08:50Z</published><author><name>Rajeev Acharya</name></author><author><name>Laleh Aghababaie-Beni</name></author><author><name>Igor Aleiner</name></author><author><name>Trond I. Andersen</name></author><author><name>Markus Ansmann</name></author><author><name>Frank Arute</name></author><author><name>Kunal Arya</name></author><author><name>Abraham Asfaw</name></author><author><name>Nikita Astrakhantsev</name></author><author><name>Juan Atalaya</name></author><author><name>Ryan Babbush</name></author><author><name>Dave Bacon</name></author><author><name>Brian Ballard</name></author><author><name>Joseph C. Bardin</name></author><author><name>Johannes Bausch</name></author><author><name>Andreas Bengtsson</name></author><author><name>Alexander Bilmes</name></author><author><name>Sam Blackwell</name></author><author><name>Sergio Boixo</name></author><author><name>Gina Bortoli</name></author><author><name>Alexandre Bourassa</name></author><author><name>Jenna Bovaird</name></author><author><name>Leon Brill</name></author><author><name>Michael Broughton</name></author><author><name>David A. Browne</name></author><author><name>Brett Buchea</name></author><author><name>Bob B. Buckley</name></author><author><name>David A. Buell</name></author><author><name>Tim Burger</name></author><author><name>Brian Burkett</name></author><author><name>Nicholas Bushnell</name></author><author><name>Anthony Cabrera</name></author><author><name>Juan Campero</name></author><author><name>Hung-Shen Chang</name></author><author><name>Yu Chen</name></author><author><name>Zijun Chen</name></author><author><name>Ben Chiaro</name></author><author><name>Desmond Chik</name></author><author><name>Charina Chou</name></author><author><name>Jahan Claes</name></author><author><name>Agnetta Y. Cleland</name></author><author><name>Josh Cogan</name></author><author><name>Roberto Collins</name></author><author><name>Paul Conner</name></author><author><name>William Courtney</name></author><author><name>Alexander L. Crook</name></author><author><name>Ben Curtin</name></author><author><name>Sayan Das</name></author><author><name>Alex Davies</name></author><author><name>Laura De Lorenzo</name></author><author><name>Dripto M. Debroy</name></author><author><name>Sean Demura</name></author><author><name>Michel Devoret</name></author><author><name>Agustin Di Paolo</name></author><author><name>Paul Donohoe</name></author><author><name>Ilya Drozdov</name></author><author><name>Andrew Dunsworth</name></author><author><name>Clint Earle</name></author><author><name>Thomas Edlich</name></author><author><name>Alec Eickbusch</name></author><author><name>Aviv Moshe Elbag</name></author><author><name>Mahmoud Elzouka</name></author><author><name>Catherine Erickson</name></author><author><name>Lara Faoro</name></author><author><name>Edward Farhi</name></author><author><name>Vinicius S. Ferreira</name></author><author><name>Leslie Flores Burgos</name></author><author><name>Ebrahim Forati</name></author><author><name>Austin G. Fowler</name></author><author><name>Brooks Foxen</name></author><author><name>Suhas Ganjam</name></author><author><name>Gonzalo Garcia</name></author><author><name>Robert Gasca</name></author><author><name>Élie Genois</name></author><author><name>William Giang</name></author><author><name>Craig Gidney</name></author><author><name>Dar Gilboa</name></author><author><name>Raja Gosula</name></author><author><name>Alejandro Grajales Dau</name></author><author><name>Dietrich Graumann</name></author><author><name>Alex Greene</name></author><author><name>Jonathan A. Gross</name></author><author><name>Steve Habegger</name></author><author><name>John Hall</name></author><author><name>Michael C. Hamilton</name></author><author><name>Monica Hansen</name></author><author><name>Matthew P. Harrigan</name></author><author><name>Sean D. Harrington</name></author><author><name>Francisco J. H. Heras</name></author><author><name>Stephen Heslin</name></author><author><name>Paula Heu</name></author><author><name>Oscar Higgott</name></author><author><name>Gordon Hill</name></author><author><name>Jeremy Hilton</name></author><author><name>George Holland</name></author><author><name>Sabrina Hong</name></author><author><name>Hsin-Yuan Huang</name></author><author><name>Ashley Huff</name></author><author><name>William J. Huggins</name></author><author><name>Lev B. Ioffe</name></author><author><name>Sergei V. Isakov</name></author><author><name>Justin Iveland</name></author><author><name>Evan Jeffrey</name></author><author><name>Zhang Jiang</name></author><author><name>Cody Jones</name></author><author><name>Stephen Jordan</name></author><author><name>Chaitali Joshi</name></author><author><name>Pavol Juhas</name></author><author><name>Dvir Kafri</name></author><author><name>Hui Kang</name></author><author><name>Amir H. Karamlou</name></author><author><name>Kostyantyn Kechedzhi</name></author><author><name>Julian Kelly</name></author><author><name>Trupti Khaire</name></author><author><name>Tanuj Khattar</name></author><author><name>Mostafa Khezri</name></author><author><name>Seon Kim</name></author><author><name>Paul V. Klimov</name></author><author><name>Andrey R. Klots</name></author><author><name>Bryce Kobrin</name></author><author><name>Pushmeet Kohli</name></author><author><name>Alexander N. Korotkov</name></author><author><name>Fedor Kostritsa</name></author><author><name>Robin Kothari</name></author><author><name>Borislav Kozlovskii</name></author><author><name>John Mark Kreikebaum</name></author><author><name>Vladislav D. Kurilovich</name></author><author><name>Nathan Lacroix</name></author><author><name>David Landhuis</name></author><author><name>Tiano Lange-Dei</name></author><author><name>Brandon W. Langley</name></author><author><name>Pavel Laptev</name></author><author><name>Kim-Ming Lau</name></author><author><name>Loïck Le Guevel</name></author><author><name>Justin Ledford</name></author><author><name>Kenny Lee</name></author><author><name>Yuri D. Lensky</name></author><author><name>Shannon Leon</name></author><author><name>Brian J. Lester</name></author><author><name>Wing Yan Li</name></author><author><name>Yin Li</name></author><author><name>Alexander T. Lill</name></author><author><name>Wayne Liu</name></author><author><name>William P. Livingston</name></author><author><name>Aditya Locharla</name></author><author><name>Erik Lucero</name></author><author><name>Daniel Lundahl</name></author><author><name>Aaron Lunt</name></author><author><name>Sid Madhuk</name></author><author><name>Fionn D. Malone</name></author><author><name>Ashley Maloney</name></author><author><name>Salvatore Mandrá</name></author><author><name>Leigh S. Martin</name></author><author><name>Steven Martin</name></author><author><name>Orion Martin</name></author><author><name>Cameron Maxfield</name></author><author><name>Jarrod R. McClean</name></author><author><name>Matt McEwen</name></author><author><name>Seneca Meeks</name></author><author><name>Anthony Megrant</name></author><author><name>Xiao Mi</name></author><author><name>Kevin C. Miao</name></author><author><name>Amanda Mieszala</name></author><author><name>Reza Molavi</name></author><author><name>Sebastian Molina</name></author><author><name>Shirin Montazeri</name></author><author><name>Alexis Morvan</name></author><author><name>Ramis Movassagh</name></author><author><name>Wojciech Mruczkiewicz</name></author><author><name>Ofer Naaman</name></author><author><name>Matthew Neeley</name></author><author><name>Charles Neill</name></author><author><name>Ani Nersisyan</name></author><author><name>Hartmut Neven</name></author><author><name>Michael Newman</name></author><author><name>Jiun How Ng</name></author><author><name>Anthony Nguyen</name></author><author><name>Murray Nguyen</name></author><author><name>Chia-Hung Ni</name></author><author><name>Thomas E. O'Brien</name></author><author><name>William D. Oliver</name></author><author><name>Alex Opremcak</name></author><author><name>Kristoffer Ottosson</name></author><author><name>Andre Petukhov</name></author><author><name>Alex Pizzuto</name></author><author><name>John Platt</name></author><author><name>Rebecca Potter</name></author><author><name>Orion Pritchard</name></author><author><name>Leonid P. Pryadko</name></author><author><name>Chris Quintana</name></author><author><name>Ganesh Ramachandran</name></author><author><name>Matthew J. Reagor</name></author><author><name>David M. Rhodes</name></author><author><name>Gabrielle Roberts</name></author><author><name>Eliott Rosenberg</name></author><author><name>Emma Rosenfeld</name></author><author><name>Pedram Roushan</name></author><author><name>Nicholas C. Rubin</name></author><author><name>Negar Saei</name></author><author><name>Daniel Sank</name></author><author><name>Kannan Sankaragomathi</name></author><author><name>Kevin J. Satzinger</name></author><author><name>Henry F. Schurkus</name></author><author><name>Christopher Schuster</name></author><author><name>Andrew W. Senior</name></author><author><name>Michael J. Shearn</name></author><author><name>Aaron Shorter</name></author><author><name>Noah Shutty</name></author><author><name>Vladimir Shvarts</name></author><author><name>Shraddha Singh</name></author><author><name>Volodymyr Sivak</name></author><author><name>Jindra Skruzny</name></author><author><name>Spencer Small</name></author><author><name>Vadim Smelyanskiy</name></author><author><name>W. Clarke Smith</name></author><author><name>Rolando D. Somma</name></author><author><name>Sofia Springer</name></author><author><name>George Sterling</name></author><author><name>Doug Strain</name></author><author><name>Jordan Suchard</name></author><author><name>Aaron Szasz</name></author><author><name>Alex Sztein</name></author><author><name>Douglas Thor</name></author><author><name>Alfredo Torres</name></author><author><name>M. Mert Torunbalci</name></author><author><name>Abeer Vaishnav</name></author><author><name>Justin Vargas</name></author><author><name>Sergey Vdovichev</name></author><author><name>Guifre Vidal</name></author><author><name>Benjamin Villalonga</name></author><author><name>Catherine Vollgraff Heidweiller</name></author><author><name>Steven Waltman</name></author><author><name>Shannon X. Wang</name></author><author><name>Brayden Ware</name></author><author><name>Kate Weber</name></author><author><name>Theodore White</name></author><author><name>Kristi Wong</name></author><author><name>Bryan W. K. Woo</name></author><author><name>Cheng Xing</name></author><author><name>Z. Jamie Yao</name></author><author><name>Ping Yeh</name></author><author><name>Bicheng Ying</name></author><author><name>Juhwan Yoo</name></author><author><name>Noureldin Yosri</name></author><author><name>Grayson Young</name></author><author><name>Adam Zalcman</name></author><author><name>Yaxing Zhang</name></author><author><name>Ningfeng Zhu</name></author><author><name>Nicholas Zobrist</name></author></entry></feed>",
   "status": 200
  },
  "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Arelational+AND+ti%3Ainductive+AND+ti%3Abiases+AND+ti%3Adeep+AND+ti%3Alearning+AND+ti%3Agraph+AND+ti%3Anetworks": {
@@ -87014,6 +95825,10 @@
  },
  "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Aunified+AND+ti%3Aapproach+AND+ti%3Ainterpreting+AND+ti%3Amodel+AND+ti%3Apredictions": {
   "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><id>http://arxiv.org/abs/1705.07874v2</id><title>A Unified Approach to Interpreting Model Predictions</title><published>2017-05-22T17:38:10Z</published><author><name>Scott Lundberg</name></author><author><name>Su-In Lee</name></author></entry></feed>",
+  "status": 200
+ },
+ "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Awearable+AND+ti%3Aassistive+AND+ti%3Adevices+AND+ti%3Avisually+AND+ti%3Aimpaired+AND+ti%3Astate+AND+ti%3Aart+AND+ti%3Asurvey": {
+  "data": "<feed xmlns=\"http://www.w3.org/2005/Atom\" />",
   "status": 200
  },
  "https://export.arxiv.org/api/query?max_results=5&search_query=ti%3Ayou+AND+ti%3Acan+AND+ti%3Asee+AND+ti%3Aphysical+AND+ti%3Aremoval+AND+ti%3Aattacks+AND+ti%3Alidar+AND+ti%3Abased": {

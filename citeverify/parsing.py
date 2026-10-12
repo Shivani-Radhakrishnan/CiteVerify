@@ -280,6 +280,8 @@ def parse_citation(text: str) -> ParsedCitation:
 
     qm = _QUOTED_TITLE.search(body)
     apa = re.search(rf"\(\s*{_YEAR}[a-z]?\s*\)\.?", body)
+    if apa and qm and apa.start() < qm.start():
+        qm = None  # APA with a quoted phrase inside the title (Defining "fake news": ...)
     if qm:  # IEEE / Chicago: authors, "Title," venue, year.
         style = "ieee"
         authors = parse_authors(body[:qm.start()].strip(" ,"))

@@ -128,54 +128,77 @@ date.
 
 ## Citations written by language models
 
-**Collection.** Three Claude models (Haiku, Sonnet, Opus) answered two prompts from
-memory, told not to use any lookup tool: a general reading list of 8 references for each of
-20 topics ([`prompt_general.txt`](../data/llm_citations/prompt_general.txt), 480
-references) and narrow, recent-work requests for 15 topics
-([`prompt_niche.txt`](../data/llm_citations/prompt_niche.txt), 125 references; the
-models chose to give fewer than asked rather than invent). The prompts do not mention
-evaluation. Raw outputs are in [`data/llm_citations/raw/`](../data/llm_citations/raw).
+**Collection.**
+- *ChatGPT and Gemini* (held out): the general reading-list prompt
+  ([`prompt_general.txt`](../data/llm_citations/prompt_general.txt)) in each web app with
+  browsing off, on 2026-10-12. ChatGPT gave 160 references; Gemini chose to give 2 per
+  topic (40). Transcribed as given; a DOI the model told the reader to verify is left empty.
+- *Claude Haiku, Sonnet and Opus*: the same prompt (480 references) and narrow, recent-work
+  requests for 15 topics ([`prompt_niche.txt`](../data/llm_citations/prompt_niche.txt), 125
+  references; the models gave fewer than asked rather than invent), as subagents with all
+  lookup tools disabled. The prompts do not mention evaluation.
+
+Raw outputs are in [`data/llm_citations/raw/`](../data/llm_citations/raw).
 
 **Labelling** ([`label_llm_citations.py`](label_llm_citations.py)). Ground truth comes
 from OpenAlex, which CiteVerify does not use, with doi.org for DOI existence and the arXiv
 API for arXiv IDs. A citation is real when a work exists with a matching title (or the
 same main title when the registry drops the subtitle), the cited first author among its
-authors, and a year within two of the cited one; a given DOI or arXiv ID must point to
-that work. Everything else is fabricated. While writing the labeller, every item it called
-fabricated was checked by hand; that check found parser and name-matching bugs in the
-labeller, which were fixed by changing its rules, never individual labels. Four items
-remain hand-decided, with their sources, in
-[`manual_labels.csv`](../data/llm_citations/manual_labels.csv). The labels were
-committed before CiteVerify was run on the set. Result: 600 real, 5 fabricated (4 DOIs
-or arXiv IDs pointing to another paper, 1 non-existent DOI).
+authors (when the record lists any), and a year within two of the cited one; a given DOI
+or arXiv ID must point to that work. Venue and pages are not checked. Everything else is
+fabricated. Every item the labeller called fabricated was checked by hand; that found
+bugs in the labeller (title parsing, hyphenated names, online-first years, quotes), fixed
+by changing its rules, never by editing labels. Six items are decided by hand, with
+sources, in [`manual_labels.csv`](../data/llm_citations/manual_labels.csv). Each batch's
+labels were committed before CiteVerify was run on it.
 
-**Results** ([`results/llm.md`](results/llm.md); the run before the fixes is
-[`results/llm_frozen.md`](results/llm_frozen.md)):
+Result: 782 real, 23 fabricated. All 23 fabrications are identifiers: 18 DOIs or arXiv
+IDs that resolve to a different paper and 5 DOIs that do not exist.
 
-| System | Real flagged HALLUCINATED | Real UNCERTAIN | Fabricated caught (strict) |
-|---|---|---|---|
-| v1 | 110 / 600 (18.3%) | 25 | 5 / 5 |
-| v2 (frozen) | 4 / 600 (0.7%) | 41 | 4 / 5 |
-| v2.1 | 1 / 600 (0.2%) | 7 | 5 / 5 |
+**Versions and what is held out.**
 
-**What v2's errors were, and the fixes in v2.1:**
+| Version | Changed after seeing | Held out on |
+|---|---|---|
+| v2 | benchmark dev split | benchmark test split, Claude set |
+| v2.1 | Claude set errors | ChatGPT + Gemini |
+| v2.2 | ChatGPT + Gemini errors | nothing new |
 
-| Citation | v2 (frozen) | Cause | Fix |
-|---|---|---|---|
-| Cao et al. (2023), arXiv ID of a different paper | missed (UNCERTAIN) | an arXiv ID in the DOI field was discarded as "not a DOI" | arXiv IDs in the DOI field (new and old style) are resolved |
-| Gottesman (1997), `quant-ph/9705052` | false alarm | same, plus "[Doctoral dissertation]" read as part of the title | same; bracketed notes are dropped from titles |
-| Chetty et al. (2014), "Active vs. passive decisions ..." (×2) | false alarm | the title was cut at "vs." | "vs.", "e.g.", "i.e." and "U.S."-style abbreviations don't end a title |
-| 43 real citations of arXiv papers by their venue year | UNCERTAIN once arXiv IDs were resolved | a year after the arXiv preprint counted as a mismatch | a cited year up to 3 years after an arXiv preprint matches |
-| Tapu et al. (2018), Pattern Recognition Letters 137 | false alarm | volume 137 is 2020; 2018 is the online-first year | not changed: flagging this is defensible |
+**Held-out results on ChatGPT + Gemini** (200: 182 real, 18 fabricated;
+[`results/llm_heldout_v2.1.md`](results/llm_heldout_v2.1.md)):
 
-v2.1 leaves both original benchmark splits' strict results unchanged and verifies one more
-real dev citation (SciPy 1.0). Because v2.1 was changed after looking at this set, only
-the v1 and frozen v2 rows are held-out results on it.
+| System | Precision | Recall | F1 | Real flagged | Review mode: caught / real sent for review |
+|---|---|---|---|---|---|
+| v1 | 37.5% | 18/18 | 54.5% | 30/182 | 18/18 / 40 |
+| v2.1 | 85.0% | 17/18 | 89.5% | 3/182 | 18/18 / 5 |
+
+**Held-out results on the Claude set** (605: 600 real, 5 fabricated;
+[`results/llm_frozen.md`](results/llm_frozen.md)): v1 wrongly flags 110 of 600, v2 flags 4
+and catches 4 of 5.
+
+**Current version on all 805** ([`results/llm.md`](results/llm.md)): v2.2 wrongly flags 2
+of 782 and catches 22 of 23 (23 of 23 in review mode); v1 wrongly flags 140 of 782.
+
+**Every error, and what was done about it:**
+
+| Citation | Version | Result | Cause | Fix |
+|---|---|---|---|---|
+| Cao et al. (2023), arXiv ID of a different paper | v2 | missed (UNCERTAIN) | an arXiv ID in the DOI field was discarded as "not a DOI" | v2.1: arXiv IDs in the DOI field (new and old style) are resolved |
+| Gottesman (1997), `quant-ph/9705052` | v2 | false alarm | same, plus "[Doctoral dissertation]" read as part of the title | v2.1: same; bracketed notes dropped from titles |
+| Chetty et al. (2014), "Active vs. passive decisions ..." (×2) | v2 | false alarm | title cut at "vs." | v2.1: "vs.", "e.g.", "i.e." and "U.S." don't end a title |
+| 43 citations of arXiv papers by their venue year | v2 | UNCERTAIN once arXiv IDs were resolved | a later year than the preprint counted as a mismatch | v2.1: up to 3 years after an arXiv preprint matches |
+| Graham et al. (2021), ... COVID-19 "long haulers" | v2.1 | false alarm | a quoted phrase in an APA title was read as an IEEE quoted title | v2.2: APA layout wins when the year comes first |
+| Tandoc et al. (2018), Defining "fake news" ... | v2.1 | false alarm | same | v2.2: same |
+| Tapu et al. (2018), Pattern Recognition Letters 137 (Claude Haiku and ChatGPT) | all | false alarm | volume 137 is 2020; 2018 is the online-first year | not changed: flagging this is defensible |
+| Ji et al. (2023), "Towards mitigating LLM hallucination via self reflection" | all | UNCERTAIN | real paper and correct arXiv ID, paraphrased title (labelled fabricated by the title rule) | not changed: sent for review, which is the right outcome |
+
+None of these fixes changes the benchmark test split; v2.1 additionally verifies one more
+real dev citation (SciPy 1.0).
 
 ## Limitations
 
-- The language-model citations come from one model family (Claude) and contain only 5
-  fabrications, so they measure false alarms well and recall hardly at all.
+- The language-model set has 23 fabrications, so recall is measured coarsely (one item is
+  about 5 points on the held-out 18). Model versions of the ChatGPT and Gemini web apps
+  were not recorded, and each answered one prompt once.
 - The fabricated class is synthetic. Real hallucinations from language models can be
   subtler (plausible titles, real co-author groups) and this benchmark does not measure
   that distribution.

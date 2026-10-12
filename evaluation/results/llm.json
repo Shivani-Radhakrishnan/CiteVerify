@@ -1,87 +1,241 @@
 {
- "n_items": 605,
- "n_fabricated": 5,
+ "n_items": 805,
+ "n_fabricated": 23,
  "systems": {
   "v1": {
    "overall": {
-    "n": 605,
-    "accuracy": 0.8181818181818182,
-    "precision": 0.043478260869565216,
+    "n": 805,
+    "accuracy": 0.8260869565217391,
+    "precision": 0.1411042944785276,
     "recall": 1.0,
-    "f1": 0.08333333333333333,
-    "false_positive_rate": 0.18333333333333332,
+    "f1": 0.24731182795698922,
+    "false_positive_rate": 0.17902813299232737,
     "confusion": {
-     "tp": 5,
-     "fp": 110,
+     "tp": 23,
+     "fp": 140,
      "fn": 0,
-     "tn": 490
+     "tn": 642
     }
    },
    "review_mode": {
-    "n": 605,
-    "accuracy": 0.7768595041322314,
-    "precision": 0.03571428571428571,
+    "n": 805,
+    "accuracy": 0.782608695652174,
+    "precision": 0.11616161616161616,
     "recall": 1.0,
-    "f1": 0.0689655172413793,
-    "false_positive_rate": 0.225,
+    "f1": 0.2081447963800905,
+    "false_positive_rate": 0.2237851662404092,
     "confusion": {
-     "tp": 5,
-     "fp": 135,
+     "tp": 23,
+     "fp": 175,
      "fn": 0,
-     "tn": 465
+     "tn": 607
     }
    },
    "labels": {
     "real": {
-     "VERIFIED": 465,
-     "HALLUCINATED": 110,
-     "UNCERTAIN": 25
+     "VERIFIED": 607,
+     "HALLUCINATED": 140,
+     "UNCERTAIN": 35
     },
     "fabricated": {
-     "HALLUCINATED": 5
+     "HALLUCINATED": 23
     }
    },
    "by_tier": {
     "DOI registry": {
-     "n": 580,
-     "real": 575,
-     "fabricated": 5,
-     "correct": 470
+     "n": 770,
+     "real": 747,
+     "fabricated": 23,
+     "correct": 630
     },
     "Plausibility heuristics": {
-     "n": 25,
-     "real": 25,
+     "n": 35,
+     "real": 35,
      "fabricated": 0,
-     "correct": 25
+     "correct": 35
     }
    },
    "by_category": {
     "doi_mismatch": {
-     "n": 4,
+     "n": 18,
      "label": 1,
-     "flagged": 4,
-     "correct": 4
+     "flagged": 18,
+     "correct": 18
     },
     "doi_nonexistent": {
-     "n": 1,
+     "n": 5,
      "label": 1,
-     "flagged": 1,
-     "correct": 1
+     "flagged": 5,
+     "correct": 5
     },
     "real_text_only": {
-     "n": 25,
+     "n": 35,
      "label": 0,
      "flagged": 0,
-     "correct": 25
+     "correct": 35
     },
     "real_with_id": {
-     "n": 575,
+     "n": 747,
      "label": 0,
-     "flagged": 110,
-     "correct": 465
+     "flagged": 140,
+     "correct": 607
     }
    },
    "errors": [
+    {
+     "id": "chatgpt-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-006",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-020",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-021",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-068",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-070",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-086",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-087",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-118",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-125",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-127",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-137",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-139",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-143",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
     {
      "id": "claude-haiku-niche-007",
      "category": "real_with_id",
@@ -847,6 +1001,62 @@
     },
     {
      "id": "claude-sonnet-155",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-018",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-022",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-035",
      "category": "real_with_id",
      "label": 0,
      "pred_score": 0.01,
@@ -856,84 +1066,238 @@
   },
   "v1_no_table": {
    "overall": {
-    "n": 605,
-    "accuracy": 0.8181818181818182,
-    "precision": 0.043478260869565216,
+    "n": 805,
+    "accuracy": 0.8260869565217391,
+    "precision": 0.1411042944785276,
     "recall": 1.0,
-    "f1": 0.08333333333333333,
-    "false_positive_rate": 0.18333333333333332,
+    "f1": 0.24731182795698922,
+    "false_positive_rate": 0.17902813299232737,
     "confusion": {
-     "tp": 5,
-     "fp": 110,
+     "tp": 23,
+     "fp": 140,
      "fn": 0,
-     "tn": 490
+     "tn": 642
     }
    },
    "review_mode": {
-    "n": 605,
-    "accuracy": 0.7768595041322314,
-    "precision": 0.03571428571428571,
+    "n": 805,
+    "accuracy": 0.782608695652174,
+    "precision": 0.11616161616161616,
     "recall": 1.0,
-    "f1": 0.0689655172413793,
-    "false_positive_rate": 0.225,
+    "f1": 0.2081447963800905,
+    "false_positive_rate": 0.2237851662404092,
     "confusion": {
-     "tp": 5,
-     "fp": 135,
+     "tp": 23,
+     "fp": 175,
      "fn": 0,
-     "tn": 465
+     "tn": 607
     }
    },
    "labels": {
     "real": {
-     "VERIFIED": 465,
-     "HALLUCINATED": 110,
-     "UNCERTAIN": 25
+     "VERIFIED": 607,
+     "HALLUCINATED": 140,
+     "UNCERTAIN": 35
     },
     "fabricated": {
-     "HALLUCINATED": 5
+     "HALLUCINATED": 23
     }
    },
    "by_tier": {
     "DOI registry": {
-     "n": 580,
-     "real": 575,
-     "fabricated": 5,
-     "correct": 470
+     "n": 770,
+     "real": 747,
+     "fabricated": 23,
+     "correct": 630
     },
     "Plausibility heuristics": {
-     "n": 25,
-     "real": 25,
+     "n": 35,
+     "real": 35,
      "fabricated": 0,
-     "correct": 25
+     "correct": 35
     }
    },
    "by_category": {
     "doi_mismatch": {
-     "n": 4,
+     "n": 18,
      "label": 1,
-     "flagged": 4,
-     "correct": 4
+     "flagged": 18,
+     "correct": 18
     },
     "doi_nonexistent": {
-     "n": 1,
+     "n": 5,
      "label": 1,
-     "flagged": 1,
-     "correct": 1
+     "flagged": 5,
+     "correct": 5
     },
     "real_text_only": {
-     "n": 25,
+     "n": 35,
      "label": 0,
      "flagged": 0,
-     "correct": 25
+     "correct": 35
     },
     "real_with_id": {
-     "n": 575,
+     "n": 747,
      "label": 0,
-     "flagged": 110,
-     "correct": 465
+     "flagged": 140,
+     "correct": 607
     }
    },
    "errors": [
+    {
+     "id": "chatgpt-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-006",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-020",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-021",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-068",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-070",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-086",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-087",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-118",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-125",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-127",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-137",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-139",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "chatgpt-143",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
     {
      "id": "claude-haiku-niche-007",
      "category": "real_with_id",
@@ -1703,95 +2067,160 @@
      "label": 0,
      "pred_score": 0.01,
      "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-018",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-022",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "gemini-035",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
     }
    ]
   },
   "v2": {
    "overall": {
-    "n": 605,
-    "accuracy": 0.9983471074380166,
-    "precision": 0.8333333333333334,
-    "recall": 1.0,
-    "f1": 0.9090909090909091,
-    "false_positive_rate": 0.0016666666666666668,
+    "n": 805,
+    "accuracy": 0.9962732919254659,
+    "precision": 0.9166666666666666,
+    "recall": 0.9565217391304348,
+    "f1": 0.9361702127659574,
+    "false_positive_rate": 0.0025575447570332483,
     "confusion": {
-     "tp": 5,
-     "fp": 1,
-     "fn": 0,
-     "tn": 599
+     "tp": 22,
+     "fp": 2,
+     "fn": 1,
+     "tn": 780
     }
    },
    "review_mode": {
-    "n": 605,
-    "accuracy": 0.9867768595041322,
-    "precision": 0.38461538461538464,
+    "n": 805,
+    "accuracy": 0.986335403726708,
+    "precision": 0.6764705882352942,
     "recall": 1.0,
-    "f1": 0.5555555555555556,
-    "false_positive_rate": 0.013333333333333334,
+    "f1": 0.8070175438596492,
+    "false_positive_rate": 0.014066496163682864,
     "confusion": {
-     "tp": 5,
-     "fp": 8,
+     "tp": 23,
+     "fp": 11,
      "fn": 0,
-     "tn": 592
+     "tn": 771
     }
    },
    "labels": {
     "real": {
-     "VERIFIED": 592,
-     "UNCERTAIN": 7,
-     "HALLUCINATED": 1
+     "VERIFIED": 771,
+     "UNCERTAIN": 9,
+     "HALLUCINATED": 2
     },
     "fabricated": {
-     "HALLUCINATED": 5
+     "HALLUCINATED": 22,
+     "UNCERTAIN": 1
     }
    },
    "by_tier": {
     "DOI registry": {
-     "n": 580,
-     "real": 575,
-     "fabricated": 5,
-     "correct": 579
-    },
-    "Plausibility heuristics": {
-     "n": 1,
-     "real": 1,
-     "fabricated": 0,
-     "correct": 1
+     "n": 770,
+     "real": 747,
+     "fabricated": 23,
+     "correct": 768
     },
     "Registry search": {
-     "n": 24,
-     "real": 24,
+     "n": 35,
+     "real": 35,
      "fabricated": 0,
-     "correct": 24
+     "correct": 34
     }
    },
    "by_category": {
     "doi_mismatch": {
-     "n": 4,
+     "n": 18,
      "label": 1,
-     "flagged": 4,
-     "correct": 4
+     "flagged": 17,
+     "correct": 17
     },
     "doi_nonexistent": {
-     "n": 1,
+     "n": 5,
      "label": 1,
-     "flagged": 1,
-     "correct": 1
+     "flagged": 5,
+     "correct": 5
     },
     "real_text_only": {
-     "n": 25,
-     "label": 0,
-     "flagged": 0,
-     "correct": 25
-    },
-    "real_with_id": {
-     "n": 575,
+     "n": 35,
      "label": 0,
      "flagged": 1,
-     "correct": 574
+     "correct": 34
+    },
+    "real_with_id": {
+     "n": 747,
+     "label": 0,
+     "flagged": 1,
+     "correct": 746
     }
    },
    "errors": [
+    {
+     "id": "chatgpt-055",
+     "category": "real_text_only",
+     "label": 0,
+     "pred_score": 0.1,
+     "tier": "Registry search"
+    },
+    {
+     "id": "chatgpt-085",
+     "category": "doi_mismatch",
+     "label": 1,
+     "pred_score": 0.5,
+     "tier": "DOI registry"
+    },
     {
      "id": "claude-haiku-054",
      "category": "real_with_id",
@@ -1803,84 +2232,92 @@
   },
   "v2_no_search": {
    "overall": {
-    "n": 605,
-    "accuracy": 0.9983471074380166,
-    "precision": 0.8333333333333334,
-    "recall": 1.0,
-    "f1": 0.9090909090909091,
-    "false_positive_rate": 0.0016666666666666668,
+    "n": 805,
+    "accuracy": 0.9975155279503105,
+    "precision": 0.9565217391304348,
+    "recall": 0.9565217391304348,
+    "f1": 0.9565217391304348,
+    "false_positive_rate": 0.0012787723785166241,
     "confusion": {
-     "tp": 5,
+     "tp": 22,
      "fp": 1,
-     "fn": 0,
-     "tn": 599
+     "fn": 1,
+     "tn": 781
     }
    },
    "review_mode": {
-    "n": 605,
-    "accuracy": 0.9520661157024793,
-    "precision": 0.14705882352941177,
+    "n": 805,
+    "accuracy": 0.9490683229813665,
+    "precision": 0.359375,
     "recall": 1.0,
-    "f1": 0.25641025641025644,
-    "false_positive_rate": 0.04833333333333333,
+    "f1": 0.5287356321839081,
+    "false_positive_rate": 0.052429667519181586,
     "confusion": {
-     "tp": 5,
-     "fp": 29,
+     "tp": 23,
+     "fp": 41,
      "fn": 0,
-     "tn": 571
+     "tn": 741
     }
    },
    "labels": {
     "real": {
-     "VERIFIED": 571,
-     "UNCERTAIN": 28,
+     "VERIFIED": 741,
+     "UNCERTAIN": 40,
      "HALLUCINATED": 1
     },
     "fabricated": {
-     "HALLUCINATED": 5
+     "HALLUCINATED": 22,
+     "UNCERTAIN": 1
     }
    },
    "by_tier": {
     "DOI registry": {
-     "n": 580,
-     "real": 575,
-     "fabricated": 5,
-     "correct": 579
+     "n": 770,
+     "real": 747,
+     "fabricated": 23,
+     "correct": 768
     },
     "Plausibility heuristics": {
-     "n": 25,
-     "real": 25,
+     "n": 35,
+     "real": 35,
      "fabricated": 0,
-     "correct": 25
+     "correct": 35
     }
    },
    "by_category": {
     "doi_mismatch": {
-     "n": 4,
+     "n": 18,
      "label": 1,
-     "flagged": 4,
-     "correct": 4
+     "flagged": 17,
+     "correct": 17
     },
     "doi_nonexistent": {
-     "n": 1,
+     "n": 5,
      "label": 1,
-     "flagged": 1,
-     "correct": 1
+     "flagged": 5,
+     "correct": 5
     },
     "real_text_only": {
-     "n": 25,
+     "n": 35,
      "label": 0,
      "flagged": 0,
-     "correct": 25
+     "correct": 35
     },
     "real_with_id": {
-     "n": 575,
+     "n": 747,
      "label": 0,
      "flagged": 1,
-     "correct": 574
+     "correct": 746
     }
    },
    "errors": [
+    {
+     "id": "chatgpt-085",
+     "category": "doi_mismatch",
+     "label": 1,
+     "pred_score": 0.5,
+     "tier": "DOI registry"
+    },
     {
      "id": "claude-haiku-054",
      "category": "real_with_id",
@@ -1892,6 +2329,12 @@
   }
  },
  "by_model": {
+  "chatgpt": {
+   "real": 147,
+   "fabricated": 13,
+   "fp": 1,
+   "tp": 12
+  },
   "claude-haiku": {
    "real": 157,
    "fabricated": 3,
@@ -1927,6 +2370,12 @@
    "fabricated": 2,
    "fp": 0,
    "tp": 2
+  },
+  "gemini": {
+   "real": 35,
+   "fabricated": 5,
+   "fp": 0,
+   "tp": 5
   }
  }
 }
