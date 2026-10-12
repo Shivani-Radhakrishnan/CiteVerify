@@ -141,9 +141,9 @@ def _surname_from_piece(piece: str) -> Optional[str]:
 def parse_authors(segment: str) -> tuple[str, ...]:
     """Family names from an author list in APA, IEEE, Vancouver or lower-case form."""
     seg = re.sub(r"\bet\s+al\b\.?", "", segment or "", flags=re.I)
-    seg = re.sub(r"\s*(?:&|\band\b)\s*", ", ", seg)
     if seg.islower() and "," not in seg:  # "vaswani a shazeer n"
-        return tuple(t for t in seg.split() if len(t) > 1 and t.isalpha())
+        return _lowercase_authors(seg.split())[0]
+    seg = re.sub(r"\s*(?:&|\band\b)\s*", ", ", seg)
     pieces = [p.strip() for p in seg.split(",") if p.strip()]
     names: list[str] = []
     for piece in pieces:
@@ -155,6 +155,66 @@ def parse_authors(segment: str) -> tuple[str, ...]:
         if name:
             names.append(name)
     return tuple(names)
+
+
+_LC_STOP = {"of", "in", "on", "to", "is", "as", "at", "by", "for", "the", "and", "or", "via", "with", "we"}
+
+
+def _lowercase_authors(tokens: list[str]) -> tuple[tuple[str, ...], int]:
+    """Greedy author list at the start of lower-case, punctuation-free text.
+
+    Tries "surname initials" pairs (``devlin j chang mw``) and "initials surname" pairs
+    (``n reimers and i gurevych``) and keeps whichever explains more tokens. Returns the
+    surnames and the index of the first token after the author list.
+    """
+    def is_initials(t: str) -> bool:
+        return bool(re.fullmatch(r"[a-z]{1,3}", t)) and t not in _LC_STOP
+
+    def is_surname(t: str) -> bool:
+        return len(t) >= 2 and t.isalpha() and t not in _LC_STOP
+
+    def run(surname_first: bool) -> tuple[list[str], int]:
+        names, i = [], 0
+        while i + 1 < len(tokens):
+            if tokens[i] in {"and", "et"}:
+                i += 2 if tokens[i] == "et" and tokens[i + 1] == "al" else 1
+                continue
+            a, b = tokens[i], tokens[i + 1]
+            if surname_first and is_surname(a) and is_initials(b):
+                names.append(a)
+            elif not surname_first and is_initials(a) and is_surname(b) and not is_initials(b):
+                names.append(b)
+            else:
+                break
+            i += 2
+            if i < len(tokens) and tokens[i] == "and":
+                i += 1
+        return names, i
+
+    best = max(run(True), run(False), key=lambda r: (r[1], len(r[0])))
+    return tuple(best[0]), best[1]
+
+
+_LC_VENUE = re.compile(
+    r"\b(?:in proceedings|proceedings|proc|journal|transactions|advances in|conference|"
+    r"workshop|arxiv|preprint|nature|science)\b"
+)
+
+
+def _parse_lowercase(body: str, year: Optional[int]) -> tuple[tuple[str, ...], str, str]:
+    """(authors, title, venue) for the lower-case, punctuation-free study format."""
+    tokens = body.split()
+    authors, i = _lowercase_authors(tokens)
+    rest = tokens[i:]
+    if rest and year and rest[0].startswith(str(year)):
+        rest = rest[1:]  # "vaswani a 2017 attention is all you need"
+    text = " ".join(rest)
+    if year:
+        text = re.sub(rf"\s*\b{year}[a-z]?\b\s*$", "", text)
+    m = _LC_VENUE.search(text)
+    if m and m.start() > 0:
+        return authors, _clean_title(text[:m.start()]), _clean_venue(text[m.start():])
+    return authors, _clean_title(text), ""
 
 
 # ── full parse ────────────────────────────────────────────────────────────────
@@ -219,11 +279,9 @@ def parse_citation(text: str) -> ParsedCitation:
         if rest:
             title = _clean_title(rest[0])
             venue = _clean_venue(" ".join(rest[1:]))
-    elif body.islower() and year:  # study format: "vaswani a shazeer n 2017 attention ..."
+    elif body.islower() and "," not in body:  # study format: "vaswani a shazeer n 2017 attention ..."
         style = "lowercase"
-        m = re.search(rf"\b{year}[a-z]?\b", body)
-        authors = parse_authors(body[:m.start()]) if m else ()
-        title = _clean_title(body[m.end():]) if m else ""
+        authors, title, venue = _parse_lowercase(body, year)
     else:
         sentences = _split_sentences(body)
         if len(sentences) >= 2 and _looks_like_author_list(sentences[0]):
@@ -244,7 +302,7 @@ def parse_citation(text: str) -> ParsedCitation:
 
 def _looks_like_author_list(segment: str) -> bool:
     """Vancouver author list: 'He K, Zhang X, Ren S' — surnames followed by initials."""
-    pieces = [p.strip() for p in re.sub(r"\bet\s+al\b", "", segment).split(",") if p.strip()]
+    pieces = [p.strip(" .") for p in re.sub(r"\bet\s+al\b", "", segment).split(",") if p.strip(" .")]
     if not pieces:
         return False
     hits = sum(bool(re.fullmatch(r"[^\W\d_][\w'’\- ]*\s[A-Z]{1,3}", p)) for p in pieces)

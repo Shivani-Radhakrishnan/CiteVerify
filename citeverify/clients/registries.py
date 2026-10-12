@@ -87,8 +87,12 @@ class CrossrefClient:
             raise HttpError(f"Crossref returned HTTP {resp.status}")
         return _crossref_record(resp.data["message"])
 
-    def search(self, citation: str, rows: int = 5) -> list[WorkRecord]:
-        """Best bibliographic matches for a free-text citation."""
+    def search(self, citation: str, rows: int = 10) -> list[WorkRecord]:
+        """Best bibliographic matches for a free-text citation.
+
+        Ten rows rather than a handful: errata, reviews and corrections often outrank
+        the original work and are filtered out downstream.
+        """
         resp = self.http.get(
             self.BASE,
             params={
@@ -189,6 +193,19 @@ def _parse_arxiv_feed(xml_text: str) -> list[WorkRecord]:
     return records
 
 
+_QUERY_STOP = {"the", "and", "for", "with", "from", "into", "via", "using", "towards", "toward", "are", "its"}
+
+
+def query_terms(title: str, limit: int = 8) -> list[str]:
+    """Distinctive search terms of a title: words of 3+ letters, minus stop words."""
+    words = [w.lower() for w in re.findall(r"[A-Za-z][A-Za-z0-9]{2,}", title or "")]
+    seen: list[str] = []
+    for w in words:
+        if w not in _QUERY_STOP and w not in seen:
+            seen.append(w)
+    return seen[:limit]
+
+
 class ArxivClient:
     """arXiv export API (https://info.arxiv.org/help/api). Asks for 3 s between calls."""
 
@@ -210,11 +227,16 @@ class ArxivClient:
         return records[0] if records else None
 
     def search_title(self, title: str, max_results: int = 5) -> list[WorkRecord]:
-        words = re.findall(r"[A-Za-z0-9]+", title)
-        if not words:
+        """Works whose title contains every distinctive word of ``title``.
+
+        An AND of title terms is used instead of a quoted phrase because arXiv's phrase
+        search is brittle with punctuation and numbers ("SciPy 1.0:").
+        """
+        terms = query_terms(title)
+        if not terms:
             return []
-        phrase = " ".join(words[:20])
-        return self._query({"search_query": f'ti:"{phrase}"', "max_results": max_results})
+        query = " AND ".join(f"ti:{t}" for t in terms)
+        return self._query({"search_query": query, "max_results": max_results})
 
 
 # ── doi.org handle API ────────────────────────────────────────────────────────

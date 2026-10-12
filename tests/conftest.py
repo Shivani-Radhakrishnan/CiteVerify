@@ -38,7 +38,7 @@ class FakeRegistry:
     def crossref_search(self, query: str, items: list[dict]) -> None:
         from citeverify.clients.registries import _CR_KEEP
         self.put("https://api.crossref.org/works", {"message": {"items": items}},
-                 params={"query.bibliographic": query[:500], "rows": 5, "select": ",".join(_CR_KEEP)})
+                 params={"query.bibliographic": query[:500], "rows": 10, "select": ",".join(_CR_KEEP)})
 
     # DataCite / doi.org / arXiv ────────────────────────────────────────────
     def datacite_work(self, doi: str, title: str, family: list[str], year: int) -> None:
@@ -58,10 +58,10 @@ class FakeRegistry:
             self.put(url, None, 404)
 
     def arxiv_search(self, title: str, feed: str) -> None:
-        import re
-        phrase = " ".join(re.findall(r"[A-Za-z0-9]+", title)[:20])
+        from citeverify.clients.registries import query_terms
+        query = " AND ".join(f"ti:{t}" for t in query_terms(title))
         self.put("https://export.arxiv.org/api/query", feed,
-                 params={"search_query": f'ti:"{phrase}"', "max_results": 5})
+                 params={"search_query": query, "max_results": 5})
 
     def arxiv_id(self, arxiv_id: str, feed: str) -> None:
         self.put("https://export.arxiv.org/api/query", feed,

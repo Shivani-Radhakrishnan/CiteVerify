@@ -8,7 +8,7 @@ from citeverify.detectors import (
     ACTION_NONE, ACTION_REMOVE, ACTION_REVIEW, HALLUCINATED, LIKELY_REAL, NEEDS_REVIEW, VERIFIED,
     Decision,
 )
-from citeverify.matching import TITLE_MATCH, TITLE_MISMATCH, content_tokens, best_match, check_first_author, check_year
+from citeverify.matching import TITLE_MATCH, TITLE_MISMATCH, best_match, content_tokens
 from citeverify.models import ParsedCitation, Signal
 
 #: Titles with fewer content words are too generic to search for reliably.
@@ -42,21 +42,22 @@ class RegistrySearch:
         if not self.applicable(parsed):
             return None
         candidates = self.crossref.search(parsed.cleaned)
-        best, sim = best_match(parsed, candidates)
+        match = best_match(parsed, candidates)
         sources = "Crossref"
-        if sim < TITLE_MATCH:
-            arxiv_best, arxiv_sim = best_match(parsed, self.arxiv.search_title(parsed.title))
+        if not match.consistent:
+            candidates += self.arxiv.search_title(parsed.title)
+            match = best_match(parsed, candidates)
             sources = "Crossref and arXiv"
-            if arxiv_sim > sim:
-                best, sim = arxiv_best, arxiv_sim
+        best, sim = match.record, match.similarity
 
         if best is None or sim < TITLE_MISMATCH:
             closest = f' Closest title: "{best.title[:80]}" ({sim:.2f}).' if best else ""
+            flag = self.not_found_score < 0.2
             return Decision(
-                score=self.not_found_score, verdict=HALLUCINATED if self.not_found_score < 0.2 else NEEDS_REVIEW,
+                score=self.not_found_score, verdict=HALLUCINATED if flag else NEEDS_REVIEW,
                 sub="No matching record found",
                 explanation=f"No work with this title was found in {sources}.{closest}",
-                action=ACTION_REMOVE if self.not_found_score < 0.2 else ACTION_REVIEW,
+                action=ACTION_REMOVE if flag else ACTION_REVIEW,
                 signals=[Signal("Registry search", "fail", f"No similar title in {sources}.")],
             )
         title_sig = Signal("Title", "pass" if sim >= TITLE_MATCH else "warn",
@@ -68,7 +69,7 @@ class RegistrySearch:
                 signals=[Signal("Registry search", "warn", "Only a partial match."), title_sig], record=best,
             )
 
-        checks = [check_year(parsed, best), check_first_author(parsed, best)]
+        checks = list(match.checks)
         signals = [Signal("Registry search", "pass", f"Found in {best.source}."), title_sig] + [
             c.to_signal() for c in checks
         ]
@@ -92,7 +93,7 @@ class RegistrySearch:
         where = f" (DOI {best.doi})" if best.doi else ""
         return Decision(
             score=0.9, verdict=VERIFIED, sub=f"Found in {best.source}",
-            explanation=f"A {best.source} record{where} matches the title"
-                        + (", year and first author." if all(c.status == "match" for c in checks) else "."),
+            explanation=f"Matching {best.source} record{where}: title"
+                        + (", year and first author agree." if all(c.status == "match" for c in checks) else " agrees."),
             action=ACTION_NONE, signals=signals, record=best,
         )

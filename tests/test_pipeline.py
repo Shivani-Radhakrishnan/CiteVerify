@@ -159,6 +159,8 @@ def test_search_finds_nothing(make_auditor, registry):
 def test_search_detects_misattributed_title(make_auditor, registry):
     text = "Breiman, L. (2001). Deep residual learning for image recognition. CVPR."
     registry.crossref_search(text, [CR_HE])
+    # an inconsistent Crossref match triggers an arXiv search before concluding
+    registry.arxiv_search("Deep residual learning for image recognition", atom_feed())
     r = make_auditor().audit(text)
     assert r.label == "HALLUCINATED" and r.sub == "Title exists but is credited differently"
 

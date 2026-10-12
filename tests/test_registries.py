@@ -77,6 +77,13 @@ def test_arxiv_client_get_and_search(registry):
     assert registry.http.min_interval["export.arxiv.org"] == 3.0
 
 
+def test_query_terms():
+    from citeverify.clients.registries import query_terms
+    assert query_terms("SciPy 1.0: Fundamental algorithms for scientific computing in Python") == [
+        "scipy", "fundamental", "algorithms", "scientific", "computing", "python"]
+    assert query_terms("") == []
+
+
 def test_doi_org_handles(registry):
     registry.handle("10.1/yes", True)
     registry.handle("10.1/no", False)
