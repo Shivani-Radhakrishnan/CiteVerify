@@ -169,6 +169,45 @@ of 782 and catches 22 of 23 (23 of 23 in review mode); v1 wrongly flags 140 of 7
 None of these fixes changes the benchmark test split; v2.1 additionally verifies one more
 real dev citation (SciPy 1.0).
 
+## Learned risk model
+
+[`train_risk.py`](train_risk.py) trains it; [`results/risk.md`](results/risk.md) has every
+number below plus the model-selection table and feature weights.
+
+- **Features** ([`citeverify/risk.py`](../citeverify/risk.py)): 27 numbers per citation
+  taken from the pipeline's evidence: deciding tier, identifier given / arXiv / not
+  registered, record found and its registry, title similarity, year agreement and gap,
+  first-author agreement, title length, number of authors, venue present, citation
+  style, registry error, and the rule score.
+- **Data.** Train: benchmark dev split + Claude-written citations (739, 61 fabricated).
+  Test: benchmark test split + ChatGPT- and Gemini-written citations (336, 74 fabricated).
+- **Selection.** 5-fold out-of-fold predictions on the training data, stratified and
+  grouped by source paper. Logistic regression (C in 0.03–3) against gradient boosting;
+  C = 0.3 had the lowest out-of-fold log-loss (gradient boosting matched it on log-loss
+  but ranked worse, average precision 0.947 against 0.987).
+- **Calibration.** Platt scaling fitted on the chosen model's out-of-fold scores. Isotonic
+  calibration was tried first and dropped after the first test run: with 61 fabricated
+  training examples it collapsed into four steps and assigned some fabricated citations
+  a risk of exactly 0. Model weights and the flag threshold rule were unchanged.
+- **Threshold.** Flag at the lowest risk where out-of-fold precision is at least 95%
+  (0.305).
+
+| Test set | System | ROC-AUC | Brier | ECE | Precision | Recall | F1 | Real flagged |
+|---|---|---|---|---|---|---|---|---|
+| Benchmark test (136) | rules | 0.986 | 0.025 | 0.073 | 100.0% | 47/56 | 91.3% | 0/80 |
+| | learned risk | 0.999 | 0.019 | 0.031 | 98.2% | 54/56 | 97.3% | 1/80 |
+| ChatGPT + Gemini (200) | rules | 0.999 | 0.011 | 0.036 | 94.4% | 17/18 | 94.4% | 1/182 |
+| | learned risk | 0.999 | 0.006 | 0.011 | 100.0% | 17/18 | 97.1% | 0/182 |
+| All (336) | rules | 0.990 | 0.017 | 0.043 | 98.5% | 64/74 | 92.1% | 1/262 |
+| | learned risk | 0.999 | 0.011 | 0.017 | 98.6% | 71/74 | 97.3% | 1/262 |
+
+Counting the rules' UNCERTAIN as flagged ("review mode") catches 73 of 74 but flags 6 real
+citations and sends 14 for review; the learned risk catches 71 with 1 real flagged and no
+review queue. The features come from the v2.2 pipeline, whose parser was fixed after
+looking at errors on the ChatGPT and Gemini citations, so those rows are not fully
+independent of that set for either system. Most predicted risks are near 0 or 1; the
+middle of the calibration curve rests on a handful of citations.
+
 ## Limitations
 
 - The language-model set has 23 fabrications, so recall is measured coarsely (one item is

@@ -1,2 +1,5 @@
 -r requirements.txt
 pytest==9.1.1
+# Training the risk model (evaluation/train_risk.py); not needed at runtime
+scikit-learn==1.7.2
+matplotlib==3.10.7

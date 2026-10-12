@@ -1,0 +1,198 @@
+{
+ "cv": {
+  "logreg C=0.03": {
+   "log_loss": 0.04389645626451622,
+   "avg_precision": 0.9841163206605406
+  },
+  "logreg C=0.1": {
+   "log_loss": 0.030180993826206873,
+   "avg_precision": 0.9861188693988427
+  },
+  "logreg C=0.3": {
+   "log_loss": 0.025429755731692667,
+   "avg_precision": 0.9871757957220509
+  },
+  "logreg C=1.0": {
+   "log_loss": 0.025500788253528053,
+   "avg_precision": 0.9864407522180634
+  },
+  "logreg C=3.0": {
+   "log_loss": 0.028015421605792335,
+   "avg_precision": 0.98567732327471
+  },
+  "gradient boosting": {
+   "log_loss": 0.02560968690354483,
+   "avg_precision": 0.9468554963358242
+  }
+ },
+ "selected": "logreg C=0.3",
+ "thresholds": {
+  "flag_at": 0.30539182246506735
+ },
+ "n_train": 739,
+ "n_train_fabricated": 61,
+ "test": {
+  "benchmark test": {
+   "n": 136,
+   "fabricated": 56,
+   "model": {
+    "roc_auc": 0.9991071428571429,
+    "avg_precision": 0.9987124760855967,
+    "brier": 0.018715410558876284,
+    "ece": 0.03125394644596368,
+    "precision": 0.9818181818181818,
+    "recall": 0.9642857142857143,
+    "f1": 0.972972972972973,
+    "real_flagged": 1,
+    "real": 80,
+    "fake_caught": 54,
+    "fake": 56
+   },
+   "rules": {
+    "roc_auc": 0.9858258928571428,
+    "avg_precision": 0.9872636554621848,
+    "brier": 0.025379411764705883,
+    "ece": 0.07308823529411776,
+    "precision": 1.0,
+    "recall": 0.8392857142857143,
+    "f1": 0.912621359223301,
+    "real_flagged": 0,
+    "real": 80,
+    "fake_caught": 47,
+    "fake": 56
+   },
+   "rules_review_mode": {
+    "precision": 0.9649122807017544,
+    "recall": 0.9821428571428571,
+    "f1": 0.9734513274336283,
+    "real_flagged": 2,
+    "real": 80,
+    "fake_caught": 55,
+    "fake": 56,
+    "sent_for_review": 10
+   }
+  },
+  "ChatGPT + Gemini": {
+   "n": 200,
+   "fabricated": 18,
+   "model": {
+    "roc_auc": 0.9990842490842492,
+    "avg_precision": 0.9920634920634923,
+    "brier": 0.005859497014674253,
+    "ece": 0.011438043225059863,
+    "precision": 1.0,
+    "recall": 0.9444444444444444,
+    "f1": 0.9714285714285714,
+    "real_flagged": 0,
+    "real": 182,
+    "fake_caught": 17,
+    "fake": 18
+   },
+   "rules": {
+    "roc_auc": 0.9990842490842491,
+    "avg_precision": 0.98989898989899,
+    "brier": 0.010935500000000003,
+    "ece": 0.035850000000000014,
+    "precision": 0.9444444444444444,
+    "recall": 0.9444444444444444,
+    "f1": 0.9444444444444444,
+    "real_flagged": 1,
+    "real": 182,
+    "fake_caught": 17,
+    "fake": 18
+   },
+   "rules_review_mode": {
+    "precision": 0.8181818181818182,
+    "recall": 1.0,
+    "f1": 0.9,
+    "real_flagged": 4,
+    "real": 182,
+    "fake_caught": 18,
+    "fake": 18,
+    "sent_for_review": 4
+   }
+  },
+  "all test": {
+   "n": 336,
+   "fabricated": 74,
+   "model": {
+    "roc_auc": 0.9993294821539097,
+    "avg_precision": 0.9977098093625851,
+    "brier": 0.011063081068279837,
+    "ece": 0.01660273972102445,
+    "precision": 0.9861111111111112,
+    "recall": 0.9594594594594594,
+    "f1": 0.9726027397260274,
+    "real_flagged": 1,
+    "real": 262,
+    "fake_caught": 71,
+    "fake": 74
+   },
+   "rules": {
+    "roc_auc": 0.9903548586754692,
+    "avg_precision": 0.9817715392715394,
+    "brier": 0.016781845238095245,
+    "ece": 0.04336309523809524,
+    "precision": 0.9846153846153847,
+    "recall": 0.8648648648648649,
+    "f1": 0.920863309352518,
+    "real_flagged": 1,
+    "real": 262,
+    "fake_caught": 64,
+    "fake": 74
+   },
+   "rules_review_mode": {
+    "precision": 0.9240506329113924,
+    "recall": 0.9864864864864865,
+    "f1": 0.954248366013072,
+    "real_flagged": 6,
+    "real": 262,
+    "fake_caught": 73,
+    "fake": 74,
+    "sent_for_review": 14
+   }
+  }
+ },
+ "top_features": [
+  {
+   "feature": "rule_score",
+   "weight": -1.4652447258564378
+  },
+  {
+   "feature": "author_agree",
+   "weight": -0.9834722490856816
+  },
+  {
+   "feature": "year_gap",
+   "weight": 0.5177506791106624
+  },
+  {
+   "feature": "title_sim",
+   "weight": -0.43610735501770265
+  },
+  {
+   "feature": "author_unchecked",
+   "weight": -0.42782556759465246
+  },
+  {
+   "feature": "year_agree",
+   "weight": -0.3726392605638537
+  },
+  {
+   "feature": "style_ieee",
+   "weight": 0.3454553482105801
+  },
+  {
+   "feature": "tier_heuristic",
+   "weight": -0.32590041968489536
+  },
+  {
+   "feature": "style_apa",
+   "weight": -0.2457600342603407
+  },
+  {
+   "feature": "n_authors",
+   "weight": -0.21507835032826336
+  }
+ ]
+}

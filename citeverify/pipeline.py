@@ -22,6 +22,7 @@ from citeverify.detectors.doi import DoiVerifier
 from citeverify.detectors.search import RegistrySearch
 from citeverify.models import AuditResult, ParsedCitation, Signal, Stage, Tier
 from citeverify.parsing import arxiv_id_from_field, normalise_doi, parse_citation
+from citeverify.risk import load_model
 
 
 @dataclass(frozen=True)
@@ -34,6 +35,7 @@ class AuditConfig:
     threshold: float = 0.20         # scores below this are labelled HALLUCINATED
     not_found_score: float = 0.15   # score when a title search finds nothing
     current_year: Optional[int] = None  # for the temporal check; defaults to today
+    use_risk_model: bool = True     # add the learned, calibrated risk to every result
 
 
 class Auditor:
@@ -124,7 +126,7 @@ class Auditor:
     def _finish(self, parsed: ParsedCitation, d: Decision, tier: Tier,
                 trace: list[Stage], signals: list[Signal]) -> AuditResult:
         trace = trace + [Stage(tier, "decided")]
-        return AuditResult(
+        result = AuditResult(
             verdict=d.verdict, sub=d.sub, tier=tier.value, explanation=d.explanation,
             action=d.action, score=d.score, threshold=self.config.threshold,
             signals=signals + d.signals, trace=trace, parsed=parsed, record=d.record,
@@ -132,6 +134,10 @@ class Auditor:
             details={"real_title": d.record.title, "real_year": d.record.year,
                      "source": d.record.source} if d.record else {},
         )
+        model = load_model() if self.config.use_risk_model else None
+        if model is not None and not result.error:
+            result.risk = model.risk(result)
+        return result
 
 
 _default: Optional[Auditor] = None

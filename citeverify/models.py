@@ -101,6 +101,7 @@ class AuditResult:
     features: dict[str, Any] = field(default_factory=dict)
     details: dict[str, Any] = field(default_factory=dict)
     error: Optional[str] = None  # set when a registry could not be reached
+    risk: Optional[float] = None  # calibrated probability of fabrication (learned model), if loaded
 
     VERIFIED_AT = 0.70
 
@@ -136,6 +137,7 @@ class AuditResult:
             "tier": self.tier,
             "explanation": self.explanation,
             "action": self.action,
+            "risk": round(self.risk, 4) if self.risk is not None else "",
             "matched_doi": self.record.doi if self.record else "",
             "error": self.error or "",
         }

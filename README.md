@@ -121,6 +121,32 @@ method and every error in [`evaluation/README.md`](evaluation/README.md#citation
 The benchmark construction, dev/test protocol, ablations and per-category results are
 documented in [`evaluation/README.md`](evaluation/README.md).
 
+### Learned, calibrated risk
+
+On top of the rules, a logistic-regression model turns the evidence CiteVerify collects
+(which check decided, whether the identifier resolved, title similarity, year gap, first-
+author agreement, how well the citation parsed: 27 features) into a **calibrated
+probability that the citation is fabricated**. Every result carries it as `result.risk`,
+and the app shows it under the verdict.
+
+Trained on the benchmark dev split plus the Claude-written citations (739, 61 fabricated);
+model choice, calibration (Platt scaling) and the flag threshold were all picked on
+out-of-fold predictions within that data. Then scored once on the 336 held-out test
+citations (benchmark test split plus ChatGPT and Gemini):
+
+| On 336 held-out citations | ROC-AUC | Precision | Recall | F1 | Calibration error (ECE) |
+|---|---|---|---|---|---|
+| Rules, HALLUCINATED verdicts | 0.990 | 98.5% | 64 / 74 | 92.1% | 0.043 |
+| **Learned risk ≥ 0.31** | **0.999** | **98.6%** | **71 / 74** | **97.3%** | **0.017** |
+
+<p align="center"><img src="docs/risk_calibration.png" width="55%" alt="Calibration curve: predicted probability against observed share fabricated, for the rule score and the learned risk"></p>
+
+The model is stored as plain JSON (no pickle, no scikit-learn at runtime) and retrains
+deterministically with `python -m evaluation.train_risk`. The rules still give the
+three-way verdict and the explanation; the risk is a second, calibrated opinion that is
+better at ranking which citations to check first. Details, including the per-test-set
+numbers and feature weights, are in [`evaluation/results/risk.md`](evaluation/results/risk.md).
+
 ## Quick start
 
 ```bash
@@ -168,11 +194,12 @@ CiteVerify/
 │   ├── matching.py            # title similarity and field checks against a record
 │   ├── metrics.py             # accuracy / precision / recall / F1
 │   ├── models.py              # AuditResult, WorkRecord, Signal, ...
+│   ├── risk.py                # learned risk: features + JSON logistic model (data/risk_model.json)
 │   ├── clients/               # HTTP layer + Crossref, DataCite, arXiv, doi.org clients
 │   └── detectors/             # temporal, doi, search, heuristics, known_papers (legacy)
 ├── pages/                     # Streamlit pages
 ├── utils/                     # UI helpers, field highlighting, PDF report
-├── evaluation/                # benchmark builder, evaluation script, results, v1 baseline
+├── evaluation/                # benchmark builder, evaluation scripts, risk-model training, results
 ├── data/benchmark/            # benchmark CSVs, source paper lists, recorded API responses
 └── tests/                     # pytest suite (network fully mocked)
 ```
@@ -184,9 +211,9 @@ pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-134 tests cover DOI and citation parsing, title/year/author matching, the HTTP layer
+140 tests cover DOI and citation parsing, title/year/author matching, the HTTP layer
 (retries, backoff, caching, offline mode), every registry client, tier routing and
-verdicts of the full pipeline, the UI helpers, and the benchmark itself (no overlap with
+verdicts of the full pipeline, the risk model, the UI helpers, and the benchmark itself (no overlap with
 the legacy table, splits share no paper, published numbers reproduce from the recorded
 responses). GitHub Actions runs them on Python 3.10–3.12.
 

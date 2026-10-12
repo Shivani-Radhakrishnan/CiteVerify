@@ -149,6 +149,16 @@ def tier_stepper(result: AuditResult) -> None:
     st.markdown(f'<div class="cv-pipeline">{"".join(parts[:-1])}</div>', unsafe_allow_html=True)
 
 
+def _risk_line(result: AuditResult) -> str:
+    """One line with the learned model's calibrated risk, when it is available."""
+    if result.risk is None:
+        return ""
+    pct = result.risk * 100
+    shown = "<1%" if pct < 1 else (">99%" if pct > 99 else f"{pct:.0f}%")
+    return (f'<div class="cv-verdict-meta" style="margin-top:10px;">Learned risk of fabrication: '
+            f"<b>{shown}</b> (calibrated model over this evidence)</div>")
+
+
 def verdict_card(result: AuditResult) -> None:
     """Headline verdict: label, reason, score, explanation and recommended action."""
     color, bg, border = label_palette(result.label)
@@ -177,7 +187,7 @@ def verdict_card(result: AuditResult) -> None:
         f'<div class="cv-panel"><div class="cv-panel-label">Why</div><div>{esc(result.explanation)}</div></div>'
         f'<div class="cv-panel" style="background:{bg};border-color:{border};">'
         f'<div class="cv-panel-label">Recommended action</div><div style="font-weight:700;">{esc(result.action)}</div></div>'
-        f"</div>{error}</div>",
+        f"</div>{_risk_line(result)}{error}</div>",
         unsafe_allow_html=True,
     )
 
