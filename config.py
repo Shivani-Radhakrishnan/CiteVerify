@@ -47,42 +47,6 @@ NAV_ITEMS = [
     ("book-open", "Documentation", "docs"),
 ]
 
-# Feature descriptions
-FEATURE_DESCRIPTIONS = {
-    "doi_valid": "DOI resolves correctly",
-    "year_valid": "Year is within valid range",
-    "title_phrase": "Contains title phrase pattern",
-    "ends_venue": "Ends with venue name",
-    "ends_connective": "Ends with connective word",
-    "starts_context": "Starts with context marker",
-    "short_fragment": "Short author-year fragment",
-    "many_initials": "Many initial-style authors",
-    "long_entry": "Long entry (10+ words)",
-    "year_first": "Starts with year",
-    "initial_author": "Surname + initial pattern",
-    "multi_inline": "Multiple author-year pairs",
-    "year_suffix": "Year suffix (a/b)",
-}
-
-# Real vs fake signal classification
-REAL_FEATURES = [
-    "doi_valid",
-    "year_valid",
-    "ends_connective",
-    "starts_context",
-    "short_fragment",
-    "multi_inline",
-    "year_suffix",
-]
-FAKE_FEATURES = [
-    "title_phrase",
-    "ends_venue",
-    "many_initials",
-    "long_entry",
-    "year_first",
-    "initial_author",
-]
-
 # Complete CSS styles (IMPORTANT: all CSS braces must be doubled inside f-strings)
 CSS_STYLES = f"""
 <style>
@@ -485,6 +449,100 @@ hr {{
   border-bottom: 2px solid var(--cv-good);
   padding: 1px 2px;
   border-radius: 3px;
+}}
+
+/* ─────────────────────────────────────────────────────────────
+   COMPONENTS (hero, verdict card, evidence, sidebar, states)
+   ───────────────────────────────────────────────────────────── */
+.cv-hero {{ margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--cv-border-soft); }}
+.cv-hero-title {{ font-size:1.75rem; font-weight:800; letter-spacing:-0.6px; line-height:1.15; color:var(--cv-text); }}
+.cv-hero-sub {{ margin-top:8px; color:var(--cv-muted); font-size:13.5px; max-width:80ch; line-height:1.65; }}
+.cv-hero-badges {{ margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; }}
+
+.cv-section-label {{
+  font-family:{TOK['mono']}; font-size:10.5px; text-transform:uppercase; letter-spacing:1.2px;
+  color:var(--cv-muted); margin-bottom:8px; display:flex; align-items:center; gap:6px;
+}}
+.cv-section-label .cv-ico {{ color:var(--cv-accent); }}
+
+.cv-step-dot {{ font-weight:800; min-width:10px; text-align:center; }}
+
+.cv-pill {{
+  display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:6px 12px;
+  border:1px solid; font-weight:800; font-size:13px; letter-spacing:0.02em; margin-bottom:12px;
+}}
+.cv-verdict-top {{ display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }}
+.cv-verdict-title {{ font-size:1.05rem; font-weight:750; color:var(--cv-text); margin-bottom:6px; }}
+.cv-verdict-meta {{ color:var(--cv-muted); font-family:{TOK['mono']}; font-size:12px; }}
+.cv-score {{ text-align:right; min-width:120px; flex-shrink:0; }}
+.cv-score-label {{ font-family:{TOK['mono']}; font-size:11px; color:var(--cv-muted); text-transform:uppercase; letter-spacing:1px; }}
+.cv-score-value {{ font-family:{TOK['mono']}; font-weight:900; font-size:2.1rem; line-height:1.1; letter-spacing:-0.8px; }}
+.cv-progress-bar {{ height:6px; border-radius:999px; background:rgba(15,23,42,0.06); margin-top:16px; overflow:hidden; }}
+.cv-progress-bar > div {{ height:100%; border-radius:999px; transition:width 0.45s ease; }}
+.cv-verdict-grid {{ display:grid; grid-template-columns:1.25fr 0.95fr; gap:12px; margin-top:16px; }}
+@media (max-width: 900px) {{ .cv-verdict-grid {{ grid-template-columns:1fr; }} }}
+.cv-panel {{
+  background:rgba(15,23,42,0.02); border:1px solid var(--cv-border-soft); border-radius:14px; padding:14px;
+  color:var(--cv-subtext); line-height:1.65; font-size:13.5px;
+}}
+.cv-panel-label {{
+  font-size:10px; color:var(--cv-muted); font-family:{TOK['mono']}; text-transform:uppercase;
+  letter-spacing:1.2px; margin-bottom:8px;
+}}
+.cv-error {{
+  display:flex; gap:8px; align-items:center; margin-top:12px; padding:10px 12px; border-radius:10px;
+  background:rgba(180,83,9,0.07); border:1px solid rgba(180,83,9,0.3); color:var(--cv-warn); font-size:13px;
+}}
+
+.cv-signal {{
+  display:flex; gap:12px; align-items:flex-start; padding:10px 12px; margin-bottom:8px;
+  border:1px solid var(--cv-border-soft); border-radius:12px; background:var(--cv-card);
+}}
+.cv-signal-mark {{
+  width:22px; height:22px; flex-shrink:0; border-radius:50%; border:1.5px solid; display:flex;
+  align-items:center; justify-content:center; font-weight:900; font-size:12px; font-family:{TOK['mono']};
+}}
+.cv-signal-name {{ font-weight:700; color:var(--cv-text); font-size:13px; }}
+.cv-signal-detail {{ color:var(--cv-muted); font-size:12.5px; line-height:1.55; margin-top:2px; }}
+
+.cv-feat-grid {{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }}
+.cv-feat-col {{ display:flex; flex-direction:column; gap:6px; }}
+.cv-feat-head {{ font-family:{TOK['mono']}; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:1.2px; }}
+.cv-feat-chip {{
+  display:flex; gap:10px; align-items:center; padding:7px 10px; border-radius:10px; font-size:12.5px;
+  border:1px solid var(--cv-border-soft); color:var(--cv-muted); opacity:0.6;
+}}
+.cv-feat-chip.active {{ opacity:1; color:var(--cv-text); border-color:var(--cv-border); background:rgba(36,59,107,0.04); }}
+
+.cv-idle-state {{
+  display:flex; flex-direction:column; align-items:center; text-align:center; padding:40px 16px;
+  border:1px dashed var(--cv-border); border-radius:16px; background:var(--cv-card); margin-top:12px;
+}}
+.cv-idle-icon {{ color:var(--cv-accent); opacity:0.7; margin-bottom:12px; }}
+.cv-idle-title {{ font-weight:700; font-size:15px; color:var(--cv-subtext); margin-bottom:6px; }}
+.cv-idle-body {{ font-size:13px; color:var(--cv-muted); max-width:52ch; line-height:1.6; }}
+
+.cv-footer {{
+  text-align:center; color:var(--cv-muted); font-family:{TOK['mono']}; font-size:11px;
+  border-top:1px solid var(--cv-border-soft); margin-top:28px; padding-top:14px;
+}}
+
+.cv-brand {{ display:flex; align-items:center; gap:10px; padding:8px 4px 14px; border-bottom:1px solid var(--cv-border-soft); margin-bottom:12px; }}
+.cv-brand-mark {{
+  width:34px; height:34px; border-radius:12px; background:var(--cv-accent); color:#fff; font-weight:900;
+  display:flex; align-items:center; justify-content:center; letter-spacing:-0.5px;
+}}
+.cv-brand-name {{ font-size:1.18rem; font-weight:800; letter-spacing:-0.4px; color:var(--cv-text); }}
+.cv-brand-sub {{ font-size:11.5px; color:var(--cv-muted); font-family:{TOK['mono']}; }}
+.cv-side-label {{
+  font-size:10.5px; color:var(--cv-muted); font-family:{TOK['mono']}; text-transform:uppercase;
+  letter-spacing:1.2px; padding:0 2px 6px;
+}}
+.cv-nav-ico {{ margin-top:6px; display:flex; justify-content:center; color:var(--cv-accent); }}
+.cv-side-stage {{ display:flex; align-items:center; gap:8px; margin-bottom:6px; font-family:{TOK['mono']}; font-size:11.5px; color:var(--cv-subtext); }}
+.cv-side-num {{
+  width:22px; height:20px; border-radius:6px; background:rgba(36,59,107,0.08); border:1px solid rgba(36,59,107,0.18);
+  display:inline-flex; align-items:center; justify-content:center; font-size:10px; font-weight:800; color:var(--cv-accent);
 }}
 
 </style>

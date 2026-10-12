@@ -1,232 +1,130 @@
 """
-Study Mode Page - Advanced Evaluation
-(UI/evaluation-layer changes only: uses DOI column if present, verdict-aware prediction,
-fixes dataframe sizing parameters, and removes seaborn dependency.)
+Study mode: evaluate CiteVerify on your own labelled dataset.
 """
-import streamlit as st
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from utils.ui_helpers import hero, lucide
-from utils.auditor import audit_citation
-from config import TOK
+from __future__ import annotations
+
 from datetime import datetime
 
+import altair as alt
+import numpy as np
+import pandas as pd
+import streamlit as st
 
-def _clean_doi(val) -> str | None:
-    """Presentation/eval-layer helper: normalize DOI-like values from CSV."""
-    if val is None:
-        return None
-    s = str(val).strip()
-    if not s:
-        return None
-    if s.lower() in {"nan", "none", "null", "n/a", "na", "-"}:
-        return None
-    return s
+from citeverify.metrics import binary_metrics
+from config import TOK
+from pages.batch_audit import MAX_ROWS, _clean_doi, _run
+from utils.ui_helpers import footer, hero, idle_state
 
 
-def _predict_label(verdict: str, score: float, threshold: float) -> int:
-    """
-    Verdict-aware prediction:
-      - VERIFIED => Real (0)
-      - HALLUCINATED => Hallucination (1)
-      - UNCERTAIN => threshold on score
-    """
-    v = (verdict or "").strip().upper()
-    if v == "VERIFIED":
-        return 0
-    if v == "HALLUCINATED":
-        return 1
-    return int(float(score) < float(threshold))
-
-
-def render():
-    """Render the study mode page"""
+def render() -> None:
     hero(
-        "Study Mode - Advanced Evaluation",
-        "Upload a dataset with ground truth labels to generate classification reports, calibration plots, and threshold optimization.",
-        badges=["Ground truth evaluation", "Calibration plots", "Threshold sweep", "Precision-Recall curves"],
+        "Study Mode",
+        "Upload citations with ground-truth labels to measure accuracy, inspect the score distribution "
+        "and see how the threshold trades precision for recall on your data.",
+        badges=["Ground-truth metrics", "Confusion matrix", "Threshold sweep"],
     )
-
-    uploaded_file = st.file_uploader(
-        "Upload CSV with citations and human labels",
-        type=["csv"],
-        help="CSV should contain 'citation' and 'human_label' columns (0=real, 1=hallucinated). Optional: 'doi' column.",
+    st.markdown(
+        '<div class="cv-softnote" style="margin-bottom:16px;">'
+        "CSV columns: <b>citation</b> and <b>human_label</b> (0 = real, 1 = fabricated); optional <b>doi</b>. "
+        "The reference benchmark lives in <code>data/benchmark/benchmark.csv</code> and is scored offline by "
+        "<code>python -m evaluation.run</code>.</div>",
+        unsafe_allow_html=True,
     )
+    uploaded = st.file_uploader("Upload labelled CSV", type=["csv"])
+    if not uploaded:
+        idle_state("Study mode ready", "Upload a CSV with citation and human_label columns.", icon="graduation-cap")
+        footer("Study mode · bring your own labels")
+        return
 
-    if uploaded_file:
-        try:
-            df = pd.read_csv(uploaded_file)
+    try:
+        df = pd.read_csv(uploaded)
+    except Exception as exc:
+        st.error(f"Could not read the CSV: {exc}")
+        return
+    missing = [c for c in ("citation", "human_label") if c not in df.columns]
+    if missing:
+        st.error(f"Missing column(s): {', '.join(missing)}")
+        return
+    df["human_label"] = pd.to_numeric(df["human_label"], errors="coerce")
+    df = df[df["human_label"].isin([0, 1])].head(MAX_ROWS).reset_index(drop=True)
+    if df.empty:
+        st.error("No rows with a 0/1 human_label.")
+        return
+    st.success(f"{len(df)} labelled citations loaded ({int(df['human_label'].sum())} fabricated).")
+    with st.expander("Preview", expanded=False):
+        st.dataframe(df.head(10), width="stretch")
 
-            if "citation" not in df.columns:
-                st.error("CSV must contain column: ['citation']")
-                return
+    if st.button("Run evaluation", type="primary", use_container_width=True):
+        items = [(str(r["citation"]), _clean_doi(r.get("doi")) if "doi" in df.columns else None)
+                 for _, r in df.iterrows()]
+        res = _run(items)
+        res["human_label"] = df["human_label"].astype(int).values
+        st.session_state["study_results"] = res
 
-            st.success(f"Loaded {len(df)} citations from dataset")
+    res = st.session_state.get("study_results")
+    if res is None or len(res) != len(df):
+        return
 
-            with st.expander("Dataset preview", expanded=True):
-                st.dataframe(df.head(10), use_container_width=True)
+    threshold = float(st.session_state.get("threshold", 0.20))
+    y_true = res["human_label"].tolist()
+    scores = res["score"].astype(float).to_numpy()
+    m = binary_metrics(y_true, (scores < threshold).astype(int).tolist())
 
-            if st.button("Run evaluation", use_container_width=True):
-                with st.spinner("Running batch evaluation..."):
-                    results = []
-                    threshold = float(st.session_state.get("threshold", 0.20))
+    st.markdown("### Metrics")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Accuracy", f"{m['accuracy']:.1%}")
+    c2.metric("Precision", f"{m['precision']:.1%}")
+    c3.metric("Recall", f"{m['recall']:.1%}")
+    c4.metric("F1", f"{m['f1']:.1%}")
+    cm = m["confusion"]
+    st.caption(f"Threshold {threshold:.2f} · positive class = fabricated · "
+               f"TP {cm['tp']} · FP {cm['fp']} · FN {cm['fn']} · TN {cm['tn']}")
 
-                    has_doi = "doi" in df.columns
-                    has_human = "human_label" in df.columns
+    left, right = st.columns(2, gap="large")
+    with left:
+        st.markdown("#### Confusion matrix")
+        cm_df = pd.DataFrame([
+            {"Actual": "Real", "Predicted": "Real", "n": cm["tn"]},
+            {"Actual": "Real", "Predicted": "Fabricated", "n": cm["fp"]},
+            {"Actual": "Fabricated", "Predicted": "Real", "n": cm["fn"]},
+            {"Actual": "Fabricated", "Predicted": "Fabricated", "n": cm["tp"]},
+        ])
+        base = alt.Chart(cm_df).encode(x=alt.X("Predicted:N", sort=["Real", "Fabricated"]),
+                                       y=alt.Y("Actual:N", sort=["Real", "Fabricated"]))
+        heat = base.mark_rect(cornerRadius=6).encode(
+            color=alt.Color("n:Q", scale=alt.Scale(range=["#EEF1F6", TOK["accent"]]), legend=None))
+        labels = base.mark_text(fontSize=22, fontWeight="bold").encode(
+            text="n:Q", color=alt.condition("datum.n > 0", alt.value("#FFFFFF"), alt.value(TOK["muted"])))
+        st.altair_chart((heat + labels).properties(height=260), use_container_width=True)
+    with right:
+        st.markdown("#### Score distribution")
+        dist = res.assign(cls=np.where(res["human_label"] == 1, "Fabricated", "Real"))
+        hist = (alt.Chart(dist).mark_bar(opacity=0.75)
+                .encode(x=alt.X("score:Q", bin=alt.Bin(maxbins=20), title="Score"),
+                        y=alt.Y("count():Q", stack=None, title="Citations"),
+                        color=alt.Color("cls:N", scale=alt.Scale(domain=["Real", "Fabricated"],
+                                                                 range=[TOK["good"], TOK["bad"]]), title=None)))
+        rule = alt.Chart(pd.DataFrame({"t": [threshold]})).mark_rule(color=TOK["text"], strokeDash=[4, 4]).encode(x="t:Q")
+        st.altair_chart((hist + rule).properties(height=260), use_container_width=True)
 
-                    for idx, row in df.iterrows():
-                        citation = str(row["citation"])
-                        doi_val = _clean_doi(row.get("doi")) if has_doi else None
+    st.markdown("#### Threshold sweep")
+    sweep = []
+    for t in np.round(np.arange(0.05, 0.96, 0.05), 2):
+        mt = binary_metrics(y_true, (scores < t).astype(int).tolist())
+        sweep += [{"threshold": t, "metric": k.title(), "value": mt[k]} for k in ("precision", "recall", "f1")]
+    sweep_df = pd.DataFrame(sweep)
+    st.altair_chart(
+        alt.Chart(sweep_df).mark_line(point=True)
+        .encode(x="threshold:Q", y=alt.Y("value:Q", scale=alt.Scale(domain=[0, 1])), color="metric:N")
+        .properties(height=280), use_container_width=True,
+    )
+    best = sweep_df[sweep_df["metric"] == "F1"].sort_values("value", ascending=False).iloc[0]
+    st.caption(f"Highest F1 on this file: {best['value']:.3f} at threshold {best['threshold']:.2f}. "
+               "Choosing a threshold on the same data you report on overstates performance; "
+               "hold out part of your data.")
 
-                        # IMPORTANT: pass DOI through to enable registry verification tier
-                        result = audit_citation(citation, doi_val)
-
-                        pred = _predict_label(result.label, result.score, threshold)
-
-                        results.append(
-                            {
-                                "index": idx,
-                                "citation": citation,
-                                "doi": doi_val if doi_val else "",
-                                "score": float(result.score),
-                                "predicted_label": int(pred),
-                                "actual_label": int(row["human_label"]) if has_human and pd.notna(row["human_label"]) else None,
-                                "verdict": result.label,
-                                "tier": result.tier,
-                            }
-                        )
-
-                    results_df = pd.DataFrame(results)
-                    st.session_state["study_results"] = results_df
-
-                    st.markdown("### Evaluation metrics")
-
-                    if has_human:
-                        # Ensure clean numeric arrays
-                        eval_df = results_df.dropna(subset=["actual_label"]).copy()
-                        y_true = eval_df["actual_label"].astype(int).values
-                        y_pred = eval_df["predicted_label"].astype(int).values
-                        y_scores = eval_df["score"].astype(float).values
-
-                        from sklearn.metrics import (
-                            accuracy_score,
-                            precision_score,
-                            recall_score,
-                            f1_score,
-                            classification_report,
-                            confusion_matrix,
-                        )
-
-                        accuracy = accuracy_score(y_true, y_pred)
-                        precision = precision_score(y_true, y_pred, average="binary", zero_division=0)
-                        recall = recall_score(y_true, y_pred, average="binary", zero_division=0)
-                        f1 = f1_score(y_true, y_pred, average="binary", zero_division=0)
-
-                        c1, c2, c3, c4 = st.columns(4)
-                        c1.metric("Accuracy", f"{accuracy:.3f}")
-                        c2.metric("Precision", f"{precision:.3f}")
-                        c3.metric("Recall", f"{recall:.3f}")
-                        c4.metric("F1 Score", f"{f1:.3f}")
-
-                        st.markdown("### Classification Report")
-                        report = classification_report(y_true, y_pred, output_dict=True, zero_division=0)
-                        report_df = pd.DataFrame(report).transpose()
-                        st.dataframe(report_df, use_container_width=True)
-
-                        st.markdown("### Confusion matrix")
-                        cm = confusion_matrix(y_true, y_pred)
-                        fig, ax = plt.subplots(figsize=(7.2, 5.2))
-                        im = ax.imshow(cm)
-                        ax.set_xticks([0, 1], labels=["Real", "Hallucinated"])
-                        ax.set_yticks([0, 1], labels=["Real", "Hallucinated"])
-                        ax.set_xlabel("Predicted")
-                        ax.set_ylabel("Actual")
-                        for (i, j), v in np.ndenumerate(cm):
-                            ax.text(j, i, str(v), ha="center", va="center")
-                        st.pyplot(fig)
-
-                        st.markdown("### Score Distribution")
-                        fig, ax = plt.subplots(figsize=(9.5, 5.3))
-                        for label in [0, 1]:
-                            scores = eval_df.loc[eval_df["actual_label"] == label, "score"].astype(float).values
-                            if len(scores):
-                                ax.hist(scores, alpha=0.6, label=f"Label {label}", bins=20)
-                        ax.axvline(x=threshold, color="red", linestyle="--", label=f"Threshold = {threshold:.3f}")
-                        ax.set_xlabel("Plausibility Score")
-                        ax.set_ylabel("Count")
-                        ax.legend()
-                        st.pyplot(fig)
-
-                        st.markdown("### Threshold Optimization")
-                        thresholds = np.linspace(0.1, 0.9, 50)
-                        precisions, recalls, f1_scores = [], [], []
-
-                        for t in thresholds:
-                            # IMPORTANT: use the same verdict-aware rule in sweep
-                            y_pred_t = np.array(
-                                [
-                                    _predict_label(v, s, float(t))
-                                    for v, s in zip(eval_df["verdict"].values, eval_df["score"].values)
-                                ],
-                                dtype=int,
-                            )
-                            precisions.append(precision_score(y_true, y_pred_t, zero_division=0))
-                            recalls.append(recall_score(y_true, y_pred_t, zero_division=0))
-                            f1_scores.append(f1_score(y_true, y_pred_t, zero_division=0))
-
-                        fig, ax = plt.subplots(figsize=(9.5, 5.3))
-                        ax.plot(thresholds, precisions, label="Precision", marker=".")
-                        ax.plot(thresholds, recalls, label="Recall", marker=".")
-                        ax.plot(thresholds, f1_scores, label="F1 Score", marker=".")
-                        ax.axvline(x=threshold, color="red", linestyle="--", label=f"Current = {threshold:.3f}")
-                        ax.set_xlabel("Threshold")
-                        ax.set_ylabel("Score")
-                        ax.legend()
-                        ax.grid(True, alpha=0.3)
-                        st.pyplot(fig)
-
-                        best_idx = int(np.argmax(f1_scores))
-                        best_threshold = float(thresholds[best_idx])
-
-                        st.markdown(
-                            f"""
-### Recommendation
-**Optimal threshold for maximum F1: {best_threshold:.3f}**
-
-Current threshold ({threshold:.3f}) F1: {f1:.3f}  
-Optimal threshold F1: {float(f1_scores[best_idx]):.3f}
-""".strip()
-                        )
-
-                    st.markdown("### Detailed Results")
-                    st.dataframe(results_df, use_container_width=True, hide_index=True)
-
-                    csv = results_df.to_csv(index=False)
-                    st.download_button(
-                        label="Download Results CSV",
-                        data=csv,
-                        file_name=f"study_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                        mime="text/csv",
-                        use_container_width=True,
-                    )
-
-        except Exception as e:
-            st.error(f"Error processing file: {str(e)}")
-
-    else:
-        st.markdown(
-            f"""
-<div class="cv-idle-state">
-  <div style="margin-bottom:14px;opacity:0.7;color:{TOK['accent']};" class="cv-ico">{lucide('flask-conical')}</div>
-  <div style="font-weight:700;font-size:15px;color:{TOK['subtext']};margin-bottom:6px;">
-    Study Mode Ready
-  </div>
-  <div style="font-size:13px;color:{TOK['muted']};max-width:38ch;line-height:1.6;">
-    Upload a CSV file with citations and ground truth labels to begin evaluation.
-    The file should contain a 'citation' column and optionally a 'human_label' column.
-  </div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )
+    st.markdown("#### Per-row results")
+    st.dataframe(res, width="stretch", hide_index=True)
+    st.download_button("Download results (CSV)", res.to_csv(index=False),
+                       f"study_results_{datetime.now():%Y%m%d_%H%M%S}.csv", "text/csv", use_container_width=True)
+    footer("Study mode · bring your own labels")

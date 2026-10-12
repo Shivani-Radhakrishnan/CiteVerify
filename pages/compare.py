@@ -1,164 +1,64 @@
 """
-Compare Citations Page
+Compare two citations side by side.
 """
-import streamlit as st
+from __future__ import annotations
+
 import pandas as pd
-from utils.ui_helpers import hero, verdict_card, feature_badges
-from utils.auditor import audit_citation, extract_core_citation
-from config import TOK, FEATURE_DESCRIPTIONS, REAL_FEATURES, FAKE_FEATURES
+import streamlit as st
+
+from utils.ui_helpers import comparison_table, evidence_panel, footer, get_auditor, hero, idle_state, verdict_card
 
 
-def render():
-    """Render the compare page"""
+def render() -> None:
     hero(
         "Compare Citations",
-        "Side-by-side comparison of two citations with detailed diff analysis and feature comparison.",
-        badges=["A/B testing", "Diff view", "Feature comparison"],
+        "Audit two versions of a reference side by side, e.g. the citation in a draft and the one you "
+        "found in the publisher's page.",
+        badges=["Side-by-side verdicts", "Check-by-check diff"],
     )
 
-    # Initialize session state
-    if "compare_results" not in st.session_state:
-        st.session_state["compare_results"] = None
-
-    # Input columns
-    col_left, col_right = st.columns(2, gap="large")
-    
-    with col_left:
+    col_a, col_b = st.columns(2, gap="large")
+    with col_a:
         st.markdown("### Citation A")
-        citation_a = st.text_area(
-            "First citation",
-            height=120,
-            placeholder="Enter first citation to compare...",
-            key="compare_a",
-        )
+        text_a = st.text_area("First citation", height=120, key="compare_a")
         doi_a = st.text_input("DOI (optional)", key="doi_a")
-    
-    with col_right:
+    with col_b:
         st.markdown("### Citation B")
-        citation_b = st.text_area(
-            "Second citation",
-            height=120,
-            placeholder="Enter second citation to compare...",
-            key="compare_b",
-        )
+        text_b = st.text_area("Second citation", height=120, key="compare_b")
         doi_b = st.text_input("DOI (optional)", key="doi_b")
-    
-    # Compare button
-    if st.button("Compare citations", use_container_width=True):
-        if citation_a.strip() and citation_b.strip():
-            with st.spinner("Analyzing citations..."):
-                result_a = audit_citation(citation_a.strip(), doi_a.strip() or None)
-                result_b = audit_citation(citation_b.strip(), doi_b.strip() or None)
-                st.session_state["compare_results"] = (result_a, result_b, citation_a, citation_b, doi_a, doi_b)
-                st.rerun()
+
+    if st.button("Compare citations", type="primary", use_container_width=True):
+        if text_a.strip() and text_b.strip():
+            auditor = get_auditor()
+            with st.spinner("Checking registries…"):
+                pair = auditor.audit_many([(text_a.strip(), doi_a.strip() or None),
+                                           (text_b.strip(), doi_b.strip() or None)], max_workers=2)
+            st.session_state["compare_results"] = tuple(pair)
         else:
-            st.warning("Please enter both citations to compare.")
-    
-    # Display comparison results
-    if st.session_state["compare_results"]:
-        result_a, result_b, citation_a, citation_b, doi_a, doi_b = st.session_state["compare_results"]
-        
-        st.markdown("---")
-        st.markdown("### Comparison Results")
-        
-        # Metrics comparison
-        col1, col2, col3, col4 = st.columns(4)
-        
-        with col1:
-            st.metric("Citation A Score", f"{result_a.score:.3f}")
-        with col2:
-            st.metric("Citation B Score", f"{result_b.score:.3f}")
-        with col3:
-            st.metric("Citation A Label", result_a.label)
-        with col4:
-            st.metric("Citation B Label", result_b.label)
-        
-        # Verdict Comparison
-        st.markdown("### Verdict Comparison")
-        col_a, col_b = st.columns(2, gap="large")
-        
-        with col_a:
-            st.markdown("#### Citation A")
-            verdict_card(result_a, show_export=False, citation_text=citation_a, doi_input=doi_a)
-        
-        with col_b:
-            st.markdown("#### Citation B")
-            verdict_card(result_b, show_export=False, citation_text=citation_b, doi_input=doi_b)
-        
-        # Text difference
-        with st.expander("Text difference", expanded=True):
-            cleaned_a = extract_core_citation(citation_a)
-            cleaned_b = extract_core_citation(citation_b)
-            
-            col_clean_a, col_clean_b = st.columns(2)
-            with col_clean_a:
-                st.markdown("**Citation A (Cleaned)**")
-                st.code(cleaned_a, language="text")
-            with col_clean_b:
-                st.markdown("**Citation B (Cleaned)**")
-                st.code(cleaned_b, language="text")
-        
-        # Feature comparison
-        if hasattr(result_a, 'features') and hasattr(result_b, 'features'):
-            with st.expander("Feature comparison", expanded=True):
-                features_a = result_a.features or {}
-                features_b = result_b.features or {}
-                
-                # Create comparison data
-                comparison_data = []
-                for feature in set(list(features_a.keys()) + list(features_b.keys())):
-                    val_a = features_a.get(feature, False)
-                    val_b = features_b.get(feature, False)
-                    
-                    desc = FEATURE_DESCRIPTIONS.get(feature, feature)
-                    
-                    # Determine signal type
-                    signal_type = "Real" if feature in REAL_FEATURES else "Fake"
-                    
-                    comparison_data.append({
-                        "Feature": feature.replace("_", " ").title(),
-                        "Type": signal_type,
-                        "Description": desc,
-                        "Citation A": "Yes" if val_a else "—",
-                        "Citation B": "Yes" if val_b else "—"
-                    })
-                
-                # Convert to DataFrame and display
-                if comparison_data:
-                    df_comparison = pd.DataFrame(comparison_data)
-                    
-                    # Separate real and fake signals
-                    real_signals = df_comparison[df_comparison["Type"] == "Real"]
-                    fake_signals = df_comparison[df_comparison["Type"] == "Fake"]
-                    
-                    if not real_signals.empty:
-                        st.markdown("#### Real citation signals")
-                        st.dataframe(
-                            real_signals[["Feature", "Description", "Citation A", "Citation B"]],
-                            width='stretch'
-                        )
-                    
-                    if not fake_signals.empty:
-                        st.markdown("#### Hallucination signals")
-                        st.dataframe(
-                            fake_signals[["Feature", "Description", "Citation A", "Citation B"]],
-                            width='stretch'
-                        )
-                    
-                    # Summary
-                    st.markdown("#### Summary")
-                    col_sum1, col_sum2 = st.columns(2)
-                    with col_sum1:
-                        real_a = len(real_signals[real_signals["Citation A"] == "Yes"])
-                        fake_a = len(fake_signals[fake_signals["Citation A"] == "Yes"])
-                        st.metric(
-                            "Citation A Signals",
-                            f"{real_a} real, {fake_a} fake"
-                        )
-                    with col_sum2:
-                        real_b = len(real_signals[real_signals["Citation B"] == "Yes"])
-                        fake_b = len(fake_signals[fake_signals["Citation B"] == "Yes"])
-                        st.metric(
-                            "Citation B Signals",
-                            f"{real_b} real, {fake_b} fake"
-                        )
+            st.warning("Enter both citations to compare.")
+
+    results = st.session_state.get("compare_results")
+    if not results:
+        idle_state("Nothing to compare yet", "Enter two citations above and press Compare.", icon="scale")
+        footer("Compare · side-by-side audit")
+        return
+
+    res_a, res_b = results
+    st.markdown("---")
+    left, right = st.columns(2, gap="large")
+    for col, name, res in ((left, "A", res_a), (right, "B", res_b)):
+        with col:
+            st.markdown(f"#### Citation {name}")
+            verdict_card(res)
+            st.dataframe(comparison_table(res), width="stretch", hide_index=True)
+            with st.expander("Evidence", expanded=False):
+                evidence_panel(res)
+
+    st.markdown("#### Check-by-check")
+    names = list(dict.fromkeys([s.name for s in res_a.signals] + [s.name for s in res_b.signals]))
+    by_a = {s.name: s.status for s in res_a.signals}
+    by_b = {s.name: s.status for s in res_b.signals}
+    diff = pd.DataFrame([{"Check": n, "A": by_a.get(n, "—"), "B": by_b.get(n, "—"),
+                          "Differs": "yes" if by_a.get(n) != by_b.get(n) else ""} for n in names])
+    st.dataframe(diff, width="stretch", hide_index=True)
+    footer("Compare · side-by-side audit")
