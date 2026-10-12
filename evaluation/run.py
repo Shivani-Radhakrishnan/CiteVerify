@@ -78,8 +78,8 @@ def load(path: Path, split: str) -> list[dict]:
     return rows
 
 
-def study_format(text: str) -> str:
-    """Lower-case, punctuation-free form used by the original study data
+def lowercase_format(text: str) -> str:
+    """Lower-case, punctuation-free form of a citation
     (e.g. "devlin j chang mw 2019 bert pretraining of deep ...")."""
     t = text.lower().replace("-", "")
     t = re.sub(r"[^a-z0-9\s]", " ", t)
@@ -262,9 +262,9 @@ def render_markdown(report: dict) -> str:
         lines += ["", f"### Overlap probe ({report['probe']['n']} correct citations of real papers whose "
                   "first authors are in the legacy known-papers table)", "",
                   "Share wrongly flagged as hallucinated:", "",
-                  "| System | as written | study format (lower-case, no punctuation) |", "|---|---|---|"]
+                  "| System | as written | lower-case, no punctuation |", "|---|---|---|"]
         for name, v in report["probe"]["flagged"].items():
-            lines.append(f"| {name} | {v['raw']}/{report['probe']['n']} | {v['study']}/{report['probe']['n']} |")
+            lines.append(f"| {name} | {v['raw']}/{report['probe']['n']} | {v['lowercase']}/{report['probe']['n']} |")
     return "\n".join(lines) + "\n"
 
 
@@ -285,7 +285,7 @@ def evaluate(split: str, record: bool, cache_path: Path = CACHE, prune: bool = F
             print(f"  running {name} ...", file=sys.stderr)
             report["systems"][name] = summarise(run(rows, lambda t: t))
             flagged = {}
-            for fmt_name, fmt in (("raw", lambda t: t), ("study", study_format)):
+            for fmt_name, fmt in (("raw", lambda t: t), ("lowercase", lowercase_format)):
                 flagged[fmt_name] = sum(o.flagged for o in run(probe, fmt))
             report["probe"]["flagged"][name] = flagged
     finally:

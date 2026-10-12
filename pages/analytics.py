@@ -100,7 +100,7 @@ def _benchmark() -> None:
         st.caption(f"{probe['n']} correct citations of real papers whose first authors are in the legacy "
                    "table. Lower is better: these should never be flagged.")
         st.dataframe(pd.DataFrame([{"System": SYSTEM_NAMES.get(k, k), "Flagged (as written)": v["raw"],
-                                    "Flagged (study format)": v["study"]} for k, v in probe["flagged"].items()]),
+                                    "Flagged (lower-case)": v["lowercase"]} for k, v in probe["flagged"].items()]),
                      width="stretch", hide_index=True)
 
 

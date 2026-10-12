@@ -47,7 +47,7 @@ Per category (correct / n):
 
 Share wrongly flagged as hallucinated:
 
-| System | as written | study format (lower-case, no punctuation) |
+| System | as written | lower-case, no punctuation |
 |---|---|---|
 | v1 | 7/25 | 16/25 |
 | v1_no_table | 0/25 | 3/25 |

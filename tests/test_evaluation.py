@@ -10,7 +10,7 @@ from citeverify.detectors import known_papers
 from citeverify.metrics import binary_metrics
 from citeverify.parsing import extract_core_citation
 from evaluation import build_benchmark
-from evaluation.run import BENCHMARK, PROBE, RESULTS_DIR, evaluate, study_format
+from evaluation.run import BENCHMARK, PROBE, RESULTS_DIR, evaluate, lowercase_format
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -22,7 +22,7 @@ def rows(path):
 
 def test_benchmark_does_not_overlap_the_known_papers_table():
     for r in rows(BENCHMARK):
-        for text in (r["citation"], study_format(r["citation"])):
+        for text in (r["citation"], lowercase_format(r["citation"])):
             assert known_papers.lookup(extract_core_citation(text)) is None, r["id"]
     first_authors = {r["source_key"].rstrip("0123456789") for r in rows(BENCHMARK)}
     assert not first_authors & (set(known_papers.KNOWN_REAL) | set(known_papers.KNOWN_FAKE))
@@ -31,7 +31,7 @@ def test_benchmark_does_not_overlap_the_known_papers_table():
 def test_probe_is_built_from_table_authors():
     probe = rows(PROBE)
     assert all(r["human_label"] == "0" for r in probe)
-    hits = sum(known_papers.lookup(extract_core_citation(study_format(r["citation"]))) is not None for r in probe)
+    hits = sum(known_papers.lookup(extract_core_citation(lowercase_format(r["citation"]))) is not None for r in probe)
     assert hits >= 20
 
 

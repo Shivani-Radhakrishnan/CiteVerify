@@ -1,7 +1,7 @@
 """Turn free-text citations into structured fields (authors, year, title, venue, DOI).
 
 The parser understands the common reference styles (APA, IEEE, Vancouver), the
-lower-case "surname initial year title" form used by the original study data, and
+lower-case, punctuation-free "surname initial year title" form, and
 inline mentions ("as shown by Smith et al. 2020"). It is deliberately conservative:
 a field it cannot find is left empty rather than guessed, and downstream checks treat
 empty fields as "not checked".
@@ -211,7 +211,7 @@ _LC_VENUE = re.compile(
 
 
 def _parse_lowercase(body: str, year: Optional[int]) -> tuple[tuple[str, ...], str, str]:
-    """(authors, title, venue) for the lower-case, punctuation-free study format."""
+    """(authors, title, venue) for the lower-case, punctuation-free format."""
     tokens = body.split()
     authors, i = _lowercase_authors(tokens)
     rest = tokens[i:]
@@ -294,7 +294,7 @@ def parse_citation(text: str) -> ParsedCitation:
         if rest:
             title = _clean_title(rest[0])
             venue = _clean_venue(" ".join(rest[1:]))
-    elif body.islower() and "," not in body:  # study format: "vaswani a shazeer n 2017 attention ..."
+    elif body.islower() and "," not in body:  # lower-case format: "vaswani a shazeer n 2017 attention ..."
         style = "lowercase"
         authors, title, venue = _parse_lowercase(body, year)
     else:

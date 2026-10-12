@@ -1329,23 +1329,23 @@
   "flagged": {
    "v1": {
     "raw": 7,
-    "study": 16
+    "lowercase": 16
    },
    "v1_no_table": {
     "raw": 0,
-    "study": 3
+    "lowercase": 3
    },
    "v2": {
     "raw": 0,
-    "study": 2
+    "lowercase": 2
    },
    "v2_with_table": {
     "raw": 7,
-    "study": 16
+    "lowercase": 16
    },
    "v2_no_search": {
     "raw": 0,
-    "study": 3
+    "lowercase": 3
    }
   }
  }

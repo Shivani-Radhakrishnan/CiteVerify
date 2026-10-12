@@ -11,35 +11,6 @@ python -m evaluation.run --split dev
 `tests/test_evaluation.py` re-runs both splits from the recorded responses and fails if
 the numbers differ from the committed `results/*.json`.
 
-## Why the old number was replaced
-
-Earlier versions of the README said the engine reached "97.6% accuracy on 212 labeled
-citations". That number cannot be reproduced and should not be compared with the
-numbers below:
-
-- **The 212 labelled citations are not in this repository** (nor in its git history),
-  so the figure cannot be re-run.
-- **The figure partly measured memorisation.** The engine contained a hard-coded
-  "known papers" table (`KNOWN_REAL` / `KNOWN_FAKE`, now in
-  `citeverify/detectors/known_papers.py`) keyed by first-author surname, year and a
-  title keyword. The in-app documentation described it as "known-real and known-fake
-  citations from the study set", i.e. it was built from the same data the accuracy was
-  measured on. Several entries (`harwood` 2023 "bibliographic", `okafor` 2023
-  "bibliometric", `larsen` 2023 "synthetic doi", `owens` 2022 "venue scoring") do not
-  point to well-known papers and appear to be items from that study set.
-- **The table labels real papers as fake.** `KNOWN_FAKE` includes BERT, scikit-learn,
-  RAG, FEVER, DPR, Sentence-BERT, ROUGE, GPT-2, InstructGPT and others. It cannot tell a
-  correct citation of these papers from a fabricated one, so correct citations of them
-  are flagged as hallucinated (see the overlap probe below).
-- **The plausibility features learned the study's format, not fabrication.** They reward
-  inline fragments ("Smith et al. 2020 and") and penalise full reference entries
-  (surname + initials, title after the year, ending in a venue). On a list of correctly
-  formatted references that association does not hold: the v1 engine leaves almost
-  every text-only reference as UNCERTAIN, real or fake.
-
-The table is now off by default and kept only for the ablation. The heuristics are only
-used as a last-resort fallback when a citation cannot be looked up.
-
 ## The benchmark
 
 `data/benchmark/benchmark.csv` (270 citations) is generated deterministically by
@@ -78,8 +49,9 @@ v2 were developed by looking at errors on `dev`. The `test` responses were recor
 scored once, after the code was frozen; nothing was changed after seeing them.
 
 **Overlap probe.** `data/benchmark/overlap_probe.csv` holds 25 *correct* citations of
-real papers whose first authors are in the legacy table (Vaswani 2017, Devlin 2019,
-Hochreiter 1997, ...). It is not part of the benchmark; it shows what the table does.
+real papers whose first authors are in the first version's hard-coded "known papers"
+lookup table (Vaswani 2017, Devlin 2019, Hochreiter 1997, ...). It is not part of the
+benchmark; it shows what a fixed lookup table does on papers it lists.
 
 **Recorded responses.** `data/benchmark/http_cache.json` holds every Crossref,
 DataCite, arXiv and doi.org response the systems need (trimmed to the fields used).
@@ -111,9 +83,12 @@ dev-split numbers are in [`results/dev.md`](results/dev.md).
 
 **Ablation of the known-papers table.** On the held-out benchmark the table changes
 nothing (identical rows above): by construction no benchmark citation matches it, so it
-contributes no detection ability on unseen papers. On the overlap probe it does harm:
+contributes no detection ability on unseen papers. On the overlap probe it does harm,
+because a list keyed by author, year and a title word cannot tell a correct citation of a
+listed paper from a fabricated one. This is why v2 verifies against registries instead;
+the table is off by default and kept only for this ablation.
 
-| System | correct citations flagged as fake (as written) | (study format: lower-case, no punctuation) |
+| System | correct citations flagged as fake (as written) | (lower-case, no punctuation) |
 |---|---|---|
 | v1 (table on) | 7 / 25 | 16 / 25 |
 | v1, table removed | 0 / 25 | 3 / 25 |

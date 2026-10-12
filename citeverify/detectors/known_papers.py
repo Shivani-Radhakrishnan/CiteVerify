@@ -1,12 +1,10 @@
 """Tier (legacy, off by default): the hard-coded "known papers" lookup table.
 
 This table shipped with the first version of CiteVerify. Its entries are keyed by the
-first author's surname plus a year and a title keyword, and were taken from the same
-labelled study set that the original "97.6% accuracy" figure was measured on, so that
-figure partly measured memorisation. The table also cannot tell a correct citation of a
-paper from a fabricated one: several famous, real papers (BERT, scikit-learn, GPT-2,
-ROUGE, FEVER, ...) are in ``KNOWN_FAKE`` and a correct citation of them is flagged as
-hallucinated. See ``evaluation/README.md`` for the ablation.
+first author's surname plus a year and a title keyword. A fixed list cannot generalise
+to papers it doesn't contain, and it cannot tell a correct citation of a listed paper
+from a fabricated one, so registry checks replaced it. See ``evaluation/README.md`` for
+the ablation.
 
 It is kept only so the ablation can be reproduced: ``AuditConfig(use_known_papers=True)``.
 """

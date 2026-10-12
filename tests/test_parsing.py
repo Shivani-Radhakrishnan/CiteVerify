@@ -110,7 +110,7 @@ def test_parse_question_mark_title():
     assert p.title.endswith("too big?")
 
 
-def test_parse_lowercase_study_format():
+def test_parse_lowercase_format():
     p = parse_citation("vaswani a shazeer n 2017 attention is all you need")
     assert p.style == "lowercase"
     assert p.authors == ("vaswani", "shazeer")

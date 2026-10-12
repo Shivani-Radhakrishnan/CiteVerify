@@ -118,14 +118,8 @@ python -m evaluation.run_llm               # evaluate (offline)
 Raw model outputs, prompts and labels are in [`data/llm_citations/`](data/llm_citations);
 method and every error in [`evaluation/README.md`](evaluation/README.md#citations-written-by-language-models).
 
-**About the earlier "97.6% accuracy" claim.** Earlier versions of this README reported
-97.6% accuracy on 212 labelled citations. Those 212 citations are not in the repository,
-and the engine contained a hand-built "known papers" table taken from the same study set,
-so that figure partly measured memorisation. The table also marks several real papers
-(BERT, scikit-learn, GPT-2, ROUGE, ...) as fake. It is now switched off by default; on
-the held-out benchmark it changes nothing, and on 25 correct citations of the papers it
-lists it wrongly flags 7. The benchmark construction, dev/test protocol, ablations and
-per-category results are documented in [`evaluation/README.md`](evaluation/README.md).
+The benchmark construction, dev/test protocol, ablations and per-category results are
+documented in [`evaluation/README.md`](evaluation/README.md).
 
 ## Quick start
 

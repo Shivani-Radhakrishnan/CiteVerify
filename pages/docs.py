@@ -24,7 +24,7 @@ TIERS = [
      "similar title anywhere is treated as likely fabricated."),
     ("04", "sigma", "Heuristic fallback",
      "Only when nothing can be looked up (no usable title, search switched off, or registries unreachable). "
-     "Scores surface patterns from the original study. These describe format, not truthfulness, so this tier "
+     "Scores surface patterns of the citation text. These describe format, not truthfulness, so this tier "
      "never returns VERIFIED and should be read as 'unknown'."),
 ]
 

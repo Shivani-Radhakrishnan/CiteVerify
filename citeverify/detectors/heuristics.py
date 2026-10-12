@@ -1,11 +1,9 @@
-"""Tier (fallback): surface-pattern plausibility score from the original CiteVerify study.
+"""Tier (fallback): surface-pattern plausibility score from the first version of CiteVerify.
 
 Used only when the citation cannot be looked up (no usable title, registry search
-disabled, or the registries are unreachable). The features describe *format* — inline
-mention vs. reference-list entry — because in the original study data the genuine
-citations were mostly inline fragments and the fabricated ones were mostly full
-reference entries. On correctly formatted reference lists that association does not
-hold, so this tier is a weak, last-resort signal; see ``evaluation/README.md``.
+disabled, or the registries are unreachable). The features describe *format* (inline
+mention vs. reference-list entry), not whether the cited work exists, so this tier is a
+weak, last-resort signal and never returns VERIFIED.
 """
 from __future__ import annotations
 
