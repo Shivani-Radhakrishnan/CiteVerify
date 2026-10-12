@@ -70,6 +70,43 @@ Reproduce (offline, a few seconds; registry responses are recorded in the repo):
 python -m evaluation.run --split test
 ```
 
+### On citations that language models actually wrote
+
+Three Claude models (Haiku, Sonnet, Opus) wrote **605 references from memory**, with no
+lookup tools, for a general reading list (20 topics) and for narrow, recent-work requests
+(15 topics). Each was labelled against **OpenAlex**, which CiteVerify never queries, plus
+doi.org and arXiv; four borderline cases were decided by hand with sources noted. The
+labels were committed before CiteVerify was run on the set.
+
+| System | Real citations wrongly flagged | Real sent for review (UNCERTAIN) | Fabricated caught |
+|---|---|---|---|
+| v1 (original engine) | 110 / 600 (18.3%) | 25 | 5 / 5 |
+| v2, as frozen before this set | 4 / 600 (0.7%) | 41 | 4 / 5 |
+| **v2.1** (fixes for bugs this set exposed) | **1 / 600 (0.2%)** | **7** | **5 / 5** |
+
+What this shows:
+
+- **The models rarely invent references outright here.** Only 5 of 605 (0.8%) are
+  fabricated, all as wrong or non-existent DOIs and arXiv IDs. Asked for niche, recent
+  work, the models gave fewer references rather than making them up. Five fabrications
+  are too few to measure recall, so the number that matters on this set is false alarms.
+- **The original engine would reject about 1 in 5 correct, AI-written references**, which
+  makes it unusable on exactly the text it was built for. Frozen v2 rejects 4 in 600, v2.1 rejects 1.
+- **The set exposed three bugs, now fixed:** arXiv IDs in the DOI field were ignored,
+  titles were cut at "vs.", and a later conference year for an arXiv preprint (Kipf &
+  Welling: arXiv 2016, ICLR 2017) was treated as a mismatch. Because v2.1 was changed
+  after seeing this set, its row is not a held-out result; the held-out test split above
+  is unchanged by these fixes. The one remaining flag cites a 2020 journal volume as 2018
+  (its online-first year), which is arguably right to flag.
+
+```bash
+python -m evaluation.label_llm_citations   # rebuild the labels (offline, from recorded responses)
+python -m evaluation.run_llm               # evaluate (offline)
+```
+
+Raw model outputs, prompts and labels are in [`data/llm_citations/`](data/llm_citations);
+details in [`evaluation/README.md`](evaluation/README.md#citations-written-by-language-models).
+
 **About the earlier "97.6% accuracy" claim.** Earlier versions of this README reported
 97.6% accuracy on 212 labelled citations. Those 212 citations are not in the repository,
 and the engine contained a hand-built "known papers" table taken from the same study set,

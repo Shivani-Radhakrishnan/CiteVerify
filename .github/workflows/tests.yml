@@ -27,3 +27,5 @@ jobs:
         run: python -m pytest -q
       - name: Reproduce the benchmark results offline
         run: python -m evaluation.run --split test --no-save
+      - name: Reproduce the language-model citation results offline
+        run: python -m evaluation.run_llm --no-save

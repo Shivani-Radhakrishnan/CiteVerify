@@ -123,6 +123,14 @@ def check_year(parsed: ParsedCitation, record: WorkRecord) -> FieldCheck:
     if parsed.year in record.years:
         return FieldCheck("Year", "match", f"{parsed.year} matches the registry ({listed}).")
     gap = min(abs(parsed.year - y) for y in years)
+    is_preprint = record.source == "arXiv" or (record.doi or "").lower().startswith("10.48550/")
+    if is_preprint and 0 < parsed.year - years[0] <= 3:
+        # A paper posted to arXiv is normally cited by the year it appeared at a venue
+        # (Kipf & Welling: arXiv 2016, ICLR 2017), so a later year is the expected case.
+        return FieldCheck(
+            "Year", "match",
+            f"Cited {parsed.year}; arXiv preprint from {years[0]} (published versions come later).",
+        )
     if gap == 1:
         return FieldCheck(
             "Year", "minor",

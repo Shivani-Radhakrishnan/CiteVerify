@@ -249,11 +249,9 @@ def label(f: Fetcher, row: dict) -> dict:
     return out | {"human_label": 1, "category": "wrong_author" if "author" in reasons else "wrong_year"}
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--record", action="store_true")
-    args = ap.parse_args()
-    f = Fetcher(args.record)
+def build(record: bool = False) -> tuple[list[dict], list[dict]]:
+    """Label every raw citation. Returns (rows, rows that need a manual decision)."""
+    f = Fetcher(record)
     manual = {}
     if MANUAL.exists():
         with MANUAL.open(newline="") as fh:
@@ -273,10 +271,21 @@ def main() -> None:
             elif row["category"] == "no_match" and row["best_sim"] >= 0.75:
                 review.append(row)
             rows.append(row)
-    if args.record:
+    if record:
         f.save()
-    fields = ["id", "model", "topic", "citation", "doi", "human_label", "category", "parsed_author",
-              "parsed_year", "parsed_title", "matched_title", "best_sim", "note"]
+    return rows, review
+
+
+FIELDS = ["id", "model", "topic", "citation", "doi", "human_label", "category", "parsed_author",
+          "parsed_year", "parsed_title", "matched_title", "best_sim", "note"]
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--record", action="store_true")
+    args = ap.parse_args()
+    rows, review = build(args.record)
+    fields = FIELDS
     with OUT.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
         w.writeheader()

@@ -14,8 +14,8 @@ Review mode (UNCERTAIN also counts as flagged, i.e. "needs a human look"):
 |---|---|---|---|---|
 | v1 | 91.1% | 51.3% | 56.0% | 69.4% |
 | v1_no_table | 91.1% | 51.3% | 56.0% | 69.4% |
-| v2 | 100.0% | 6.4% | 91.8% | 95.7% |
-| v2_with_table | 100.0% | 6.4% | 91.8% | 95.7% |
+| v2 | 100.0% | 5.1% | 93.3% | 96.6% |
+| v2_with_table | 100.0% | 5.1% | 93.3% | 96.6% |
 | v2_no_search | 100.0% | 51.3% | 58.3% | 73.7% |
 
 Per detection tier (`v2`):

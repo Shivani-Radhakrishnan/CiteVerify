@@ -55,6 +55,15 @@ def arxiv_id_from_doi(doi: str) -> Optional[str]:
     return m.group(1) if m else None
 
 
+def arxiv_id_from_field(raw: object) -> Optional[str]:
+    """An arXiv identifier given where a DOI was expected: ``arXiv:2210.09421``,
+    ``2210.09421v2``, ``quant-ph/9705052`` or an ``arxiv.org/abs/`` URL."""
+    s = str(raw or "").strip()
+    s = re.sub(r"^(?:https?://)?(?:www\.)?arxiv\.org/(?:abs|pdf)/|^arxiv\s*[:：]?\s*", "", s, flags=re.I)
+    m = re.fullmatch(rf"({_ARXIV_NEW}|{_ARXIV_OLD})(v\d+)?(?:\.pdf)?", s, re.I)
+    return m.group(1) if m else None
+
+
 def find_arxiv_id(text: str) -> Optional[str]:
     """arXiv identifier written as ``arXiv:1706.03762`` / ``arxiv.org/abs/...`` in text."""
     m = _ARXIV_IN_TEXT.search(text or "")
@@ -232,7 +241,9 @@ def _split_sentences(text: str) -> list[str]:
     for m in re.finditer(r"(?<=[.?!])\s+", text):
         before = text[start:m.start()]
         last = before.split()[-1] if before.split() else ""
-        if last.lower() in {"eds.", "ed.", "vol.", "no.", "pp.", "proc.", "conf."}:
+        if last.lower() in {"eds.", "ed.", "vol.", "no.", "pp.", "proc.", "conf.", "vs.", "e.g.", "i.e."}:  # not "v."/"dr.", which end Vancouver initials ("Cox DR.")
+            continue
+        if re.fullmatch(r"(?:[A-Z]\.){2,}", last):  # "U.S.", "U.K." inside a title
             continue
         parts.append(text[start:m.start()].strip())
         start = m.end()
@@ -241,6 +252,8 @@ def _split_sentences(text: str) -> list[str]:
 
 
 def _clean_title(title: str) -> str:
+    # A bracketed note ("[Doctoral dissertation, Caltech]", "[Preprint]") is not part of the title.
+    title = re.sub(r"\s*\[[^\]]*\]", "", title)
     return title.strip().strip(" .,;:\"“”'")
 
 

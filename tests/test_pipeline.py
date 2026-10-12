@@ -249,3 +249,35 @@ def test_to_row(make_auditor, registry):
     he_record(registry)
     row = make_auditor().audit(HE, HE_DOI).to_row()
     assert row["label"] == "VERIFIED" and row["matched_doi"] == HE_DOI and row["error"] == ""
+
+
+# ── found by the language-model citation set (data/llm_citations) ─────────────
+
+def test_arxiv_id_in_the_doi_field_is_checked(make_auditor, registry):
+    # The ID points to a different paper: it must be caught, not ignored as "not a DOI".
+    doi = "10.48550/arXiv.2210.09421"
+    registry.datacite_missing(doi)
+    registry.arxiv_id("2210.09421", atom_feed(
+        ("2210.09421", "Deepfake Text Detection: Limitations and Opportunities", ["Jiameng Pu"], 2022)))
+    r = make_auditor().audit("Cao, Y., Bhupathiraju, S. H., et al. (2023). You can't see me: Physical removal "
+                             "attacks on LiDAR-based autonomous vehicles driving frameworks. USENIX Security.",
+                             "arXiv:2210.09421")
+    assert r.label == "HALLUCINATED" and r.tier == Tier.DOI.value
+
+
+def test_old_style_arxiv_id_in_the_doi_field(make_auditor, registry):
+    doi = "10.48550/arXiv.quant-ph/9705052"
+    registry.datacite_missing(doi)
+    registry.arxiv_id("quant-ph/9705052", atom_feed(
+        ("quant-ph/9705052", "Stabilizer Codes and Quantum Error Correction", ["Daniel Gottesman"], 1997)))
+    r = make_auditor().audit("Gottesman, D. (1997). Stabilizer codes and quantum error correction "
+                             "[Doctoral dissertation, California Institute of Technology].", "arXiv:quant-ph/9705052")
+    assert r.label == "VERIFIED"
+
+
+def test_conference_year_after_the_arxiv_preprint_is_fine(make_auditor, registry):
+    doi = "10.48550/arXiv.1609.02907"
+    registry.datacite_work(doi, "Semi-Supervised Classification with Graph Convolutional Networks", ["Kipf", "Welling"], 2016)
+    r = make_auditor().audit("Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph "
+                             "convolutional networks. ICLR.", doi)
+    assert r.label == "VERIFIED"

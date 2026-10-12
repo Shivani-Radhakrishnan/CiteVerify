@@ -142,3 +142,24 @@ def test_extract_core_citation(text, core):
 
 def test_fold():
     assert fold("Barabási: Émergence—of <i>Scaling</i>!") == "barabasi emergence of i scaling i"
+
+
+def test_title_keeps_abbreviations_and_drops_bracketed_notes():
+    p = parse_citation("Chetty, R., Friedman, J. N., & Olsen, T. (2014). Active vs. passive decisions and crowd-out "
+                       "in retirement savings accounts: Evidence from Denmark. The Quarterly Journal of Economics.")
+    assert p.title.startswith("Active vs. passive decisions") and p.title.endswith("Evidence from Denmark")
+    p = parse_citation("Smith, J. (2020). Heat waves in U.S. cities. Urban Climate, 31.")
+    assert p.title == "Heat waves in U.S. cities"
+    p = parse_citation("Gottesman, D. (1997). Stabilizer codes and quantum error correction [Doctoral dissertation, Caltech].")
+    assert p.title == "Stabilizer codes and quantum error correction"
+    # Vancouver initials still end the author list.
+    assert parse_citation("Cox DR. Regression models and life-tables. J R Stat Soc B. 1972.").title == "Regression models and life-tables"
+
+
+def test_arxiv_id_from_doi_field():
+    from citeverify.parsing import arxiv_id_from_field
+    assert arxiv_id_from_field("arXiv:2210.09421") == "2210.09421"
+    assert arxiv_id_from_field("2210.09421v2") == "2210.09421"
+    assert arxiv_id_from_field("https://arxiv.org/abs/1706.03762") == "1706.03762"
+    assert arxiv_id_from_field("arXiv:quant-ph/9705052") == "quant-ph/9705052"
+    assert arxiv_id_from_field("10.1109/CVPR.2016.90") is None

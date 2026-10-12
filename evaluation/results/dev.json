@@ -677,22 +677,22 @@
    },
    "review_mode": {
     "n": 134,
-    "accuracy": 0.9626865671641791,
-    "precision": 0.9180327868852459,
+    "accuracy": 0.9701492537313433,
+    "precision": 0.9333333333333333,
     "recall": 1.0,
-    "f1": 0.9572649572649572,
-    "false_positive_rate": 0.0641025641025641,
+    "f1": 0.9655172413793104,
+    "false_positive_rate": 0.05128205128205128,
     "confusion": {
      "tp": 56,
-     "fp": 5,
+     "fp": 4,
      "fn": 0,
-     "tn": 73
+     "tn": 74
     }
    },
    "labels": {
     "real": {
-     "VERIFIED": 73,
-     "UNCERTAIN": 5
+     "VERIFIED": 74,
+     "UNCERTAIN": 4
     },
     "fabricated": {
      "HALLUCINATED": 52,
@@ -847,22 +847,22 @@
    },
    "review_mode": {
     "n": 134,
-    "accuracy": 0.9626865671641791,
-    "precision": 0.9180327868852459,
+    "accuracy": 0.9701492537313433,
+    "precision": 0.9333333333333333,
     "recall": 1.0,
-    "f1": 0.9572649572649572,
-    "false_positive_rate": 0.0641025641025641,
+    "f1": 0.9655172413793104,
+    "false_positive_rate": 0.05128205128205128,
     "confusion": {
      "tp": 56,
-     "fp": 5,
+     "fp": 4,
      "fn": 0,
-     "tn": 73
+     "tn": 74
     }
    },
    "labels": {
     "real": {
-     "VERIFIED": 73,
-     "UNCERTAIN": 5
+     "VERIFIED": 74,
+     "UNCERTAIN": 4
     },
     "fabricated": {
      "HALLUCINATED": 52,

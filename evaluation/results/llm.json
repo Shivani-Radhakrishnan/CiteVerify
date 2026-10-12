@@ -1,0 +1,1932 @@
+{
+ "n_items": 605,
+ "n_fabricated": 5,
+ "systems": {
+  "v1": {
+   "overall": {
+    "n": 605,
+    "accuracy": 0.8181818181818182,
+    "precision": 0.043478260869565216,
+    "recall": 1.0,
+    "f1": 0.08333333333333333,
+    "false_positive_rate": 0.18333333333333332,
+    "confusion": {
+     "tp": 5,
+     "fp": 110,
+     "fn": 0,
+     "tn": 490
+    }
+   },
+   "review_mode": {
+    "n": 605,
+    "accuracy": 0.7768595041322314,
+    "precision": 0.03571428571428571,
+    "recall": 1.0,
+    "f1": 0.0689655172413793,
+    "false_positive_rate": 0.225,
+    "confusion": {
+     "tp": 5,
+     "fp": 135,
+     "fn": 0,
+     "tn": 465
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 465,
+     "HALLUCINATED": 110,
+     "UNCERTAIN": 25
+    },
+    "fabricated": {
+     "HALLUCINATED": 5
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 580,
+     "real": 575,
+     "fabricated": 5,
+     "correct": 470
+    },
+    "Plausibility heuristics": {
+     "n": 25,
+     "real": 25,
+     "fabricated": 0,
+     "correct": 25
+    }
+   },
+   "by_category": {
+    "doi_mismatch": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "doi_nonexistent": {
+     "n": 1,
+     "label": 1,
+     "flagged": 1,
+     "correct": 1
+    },
+    "real_text_only": {
+     "n": 25,
+     "label": 0,
+     "flagged": 0,
+     "correct": 25
+    },
+    "real_with_id": {
+     "n": 575,
+     "label": 0,
+     "flagged": 110,
+     "correct": 465
+    }
+   },
+   "errors": [
+    {
+     "id": "claude-haiku-niche-007",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-008",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-019",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-021",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-023",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-007",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-021",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-054",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-067",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-070",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-083",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-084",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-098",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-099",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-123",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-124",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-127",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-141",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-151",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-027",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-033",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-036",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-040",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-041",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-051",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-008",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-019",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-020",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-067",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-072",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-084",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-085",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-087",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-088",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-098",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-101",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-102",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-103",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-104",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-124",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-125",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-007",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-023",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-025",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-029",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-032",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-033",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-034",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-036",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-037",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-038",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-039",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-041",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-042",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-047",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-006",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-008",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-019",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-020",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-050",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-068",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-070",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-072",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-085",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-086",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-088",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-098",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-101",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-102",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-104",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-119",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-123",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-127",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-155",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    }
+   ]
+  },
+  "v1_no_table": {
+   "overall": {
+    "n": 605,
+    "accuracy": 0.8181818181818182,
+    "precision": 0.043478260869565216,
+    "recall": 1.0,
+    "f1": 0.08333333333333333,
+    "false_positive_rate": 0.18333333333333332,
+    "confusion": {
+     "tp": 5,
+     "fp": 110,
+     "fn": 0,
+     "tn": 490
+    }
+   },
+   "review_mode": {
+    "n": 605,
+    "accuracy": 0.7768595041322314,
+    "precision": 0.03571428571428571,
+    "recall": 1.0,
+    "f1": 0.0689655172413793,
+    "false_positive_rate": 0.225,
+    "confusion": {
+     "tp": 5,
+     "fp": 135,
+     "fn": 0,
+     "tn": 465
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 465,
+     "HALLUCINATED": 110,
+     "UNCERTAIN": 25
+    },
+    "fabricated": {
+     "HALLUCINATED": 5
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 580,
+     "real": 575,
+     "fabricated": 5,
+     "correct": 470
+    },
+    "Plausibility heuristics": {
+     "n": 25,
+     "real": 25,
+     "fabricated": 0,
+     "correct": 25
+    }
+   },
+   "by_category": {
+    "doi_mismatch": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "doi_nonexistent": {
+     "n": 1,
+     "label": 1,
+     "flagged": 1,
+     "correct": 1
+    },
+    "real_text_only": {
+     "n": 25,
+     "label": 0,
+     "flagged": 0,
+     "correct": 25
+    },
+    "real_with_id": {
+     "n": 575,
+     "label": 0,
+     "flagged": 110,
+     "correct": 465
+    }
+   },
+   "errors": [
+    {
+     "id": "claude-haiku-niche-007",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-008",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-019",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-021",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-023",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-niche-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-007",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-021",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-054",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-067",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-070",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-083",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-084",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-098",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-099",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-123",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-124",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-127",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-141",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-haiku-151",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-027",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-033",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-036",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-040",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-041",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-niche-051",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-008",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-019",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-020",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-067",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-072",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-084",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-085",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-087",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-088",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-098",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-101",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-102",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-103",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-104",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-124",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-opus-125",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-005",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-007",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-023",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-025",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-029",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-032",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-033",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-034",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-036",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-037",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-038",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-039",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-041",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-042",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-niche-047",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-001",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-002",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-003",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-004",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-006",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-008",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-017",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-019",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-020",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-024",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-050",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.08,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-065",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-066",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-068",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-070",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-071",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-072",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-085",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-086",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-088",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-098",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-100",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-101",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-102",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-104",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-119",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-123",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-127",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    },
+    {
+     "id": "claude-sonnet-155",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.01,
+     "tier": "DOI registry"
+    }
+   ]
+  },
+  "v2": {
+   "overall": {
+    "n": 605,
+    "accuracy": 0.9983471074380166,
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1": 0.9090909090909091,
+    "false_positive_rate": 0.0016666666666666668,
+    "confusion": {
+     "tp": 5,
+     "fp": 1,
+     "fn": 0,
+     "tn": 599
+    }
+   },
+   "review_mode": {
+    "n": 605,
+    "accuracy": 0.9867768595041322,
+    "precision": 0.38461538461538464,
+    "recall": 1.0,
+    "f1": 0.5555555555555556,
+    "false_positive_rate": 0.013333333333333334,
+    "confusion": {
+     "tp": 5,
+     "fp": 8,
+     "fn": 0,
+     "tn": 592
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 592,
+     "UNCERTAIN": 7,
+     "HALLUCINATED": 1
+    },
+    "fabricated": {
+     "HALLUCINATED": 5
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 580,
+     "real": 575,
+     "fabricated": 5,
+     "correct": 579
+    },
+    "Plausibility heuristics": {
+     "n": 1,
+     "real": 1,
+     "fabricated": 0,
+     "correct": 1
+    },
+    "Registry search": {
+     "n": 24,
+     "real": 24,
+     "fabricated": 0,
+     "correct": 24
+    }
+   },
+   "by_category": {
+    "doi_mismatch": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "doi_nonexistent": {
+     "n": 1,
+     "label": 1,
+     "flagged": 1,
+     "correct": 1
+    },
+    "real_text_only": {
+     "n": 25,
+     "label": 0,
+     "flagged": 0,
+     "correct": 25
+    },
+    "real_with_id": {
+     "n": 575,
+     "label": 0,
+     "flagged": 1,
+     "correct": 574
+    }
+   },
+   "errors": [
+    {
+     "id": "claude-haiku-054",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.05,
+     "tier": "DOI registry"
+    }
+   ]
+  },
+  "v2_no_search": {
+   "overall": {
+    "n": 605,
+    "accuracy": 0.9983471074380166,
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1": 0.9090909090909091,
+    "false_positive_rate": 0.0016666666666666668,
+    "confusion": {
+     "tp": 5,
+     "fp": 1,
+     "fn": 0,
+     "tn": 599
+    }
+   },
+   "review_mode": {
+    "n": 605,
+    "accuracy": 0.9520661157024793,
+    "precision": 0.14705882352941177,
+    "recall": 1.0,
+    "f1": 0.25641025641025644,
+    "false_positive_rate": 0.04833333333333333,
+    "confusion": {
+     "tp": 5,
+     "fp": 29,
+     "fn": 0,
+     "tn": 571
+    }
+   },
+   "labels": {
+    "real": {
+     "VERIFIED": 571,
+     "UNCERTAIN": 28,
+     "HALLUCINATED": 1
+    },
+    "fabricated": {
+     "HALLUCINATED": 5
+    }
+   },
+   "by_tier": {
+    "DOI registry": {
+     "n": 580,
+     "real": 575,
+     "fabricated": 5,
+     "correct": 579
+    },
+    "Plausibility heuristics": {
+     "n": 25,
+     "real": 25,
+     "fabricated": 0,
+     "correct": 25
+    }
+   },
+   "by_category": {
+    "doi_mismatch": {
+     "n": 4,
+     "label": 1,
+     "flagged": 4,
+     "correct": 4
+    },
+    "doi_nonexistent": {
+     "n": 1,
+     "label": 1,
+     "flagged": 1,
+     "correct": 1
+    },
+    "real_text_only": {
+     "n": 25,
+     "label": 0,
+     "flagged": 0,
+     "correct": 25
+    },
+    "real_with_id": {
+     "n": 575,
+     "label": 0,
+     "flagged": 1,
+     "correct": 574
+    }
+   },
+   "errors": [
+    {
+     "id": "claude-haiku-054",
+     "category": "real_with_id",
+     "label": 0,
+     "pred_score": 0.05,
+     "tier": "DOI registry"
+    }
+   ]
+  }
+ },
+ "by_model": {
+  "claude-haiku": {
+   "real": 157,
+   "fabricated": 3,
+   "fp": 1,
+   "tp": 3
+  },
+  "claude-haiku-niche": {
+   "real": 25,
+   "fabricated": 0,
+   "fp": 0,
+   "tp": 0
+  },
+  "claude-opus": {
+   "real": 160,
+   "fabricated": 0,
+   "fp": 0,
+   "tp": 0
+  },
+  "claude-opus-niche": {
+   "real": 53,
+   "fabricated": 0,
+   "fp": 0,
+   "tp": 0
+  },
+  "claude-sonnet": {
+   "real": 160,
+   "fabricated": 0,
+   "fp": 0,
+   "tp": 0
+  },
+  "claude-sonnet-niche": {
+   "real": 45,
+   "fabricated": 2,
+   "fp": 0,
+   "tp": 2
+  }
+ }
+}

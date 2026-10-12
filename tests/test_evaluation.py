@@ -70,3 +70,22 @@ def test_binary_metrics():
     assert binary_metrics([], [])["accuracy"] == 0.0
     with pytest.raises(ValueError):
         binary_metrics([1], [])
+
+
+def test_llm_citation_labels_reproduce_from_the_label_cache():
+    """Labels are rebuilt offline from recorded OpenAlex / doi.org / arXiv responses."""
+    from evaluation import label_llm_citations as L
+    built, review = L.build(record=False)
+    committed = rows(L.OUT)
+    assert not review
+    assert [(r["id"], str(r["human_label"]), r["category"]) for r in built] == \
+           [(r["id"], r["human_label"], r["category"]) for r in committed]
+
+
+def test_llm_citation_results_reproduce_offline():
+    from evaluation import run_llm
+    published = json.loads((RESULTS_DIR / "llm.json").read_text(encoding="utf-8"))
+    report = run_llm.evaluate(record=False)
+    for name, system in report["systems"].items():
+        assert system["overall"] == published["systems"][name]["overall"], name
+        assert system["labels"] == published["systems"][name]["labels"], name

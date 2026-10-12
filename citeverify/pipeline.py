@@ -21,7 +21,7 @@ from citeverify.detectors import Decision, heuristics, known_papers, temporal
 from citeverify.detectors.doi import DoiVerifier
 from citeverify.detectors.search import RegistrySearch
 from citeverify.models import AuditResult, ParsedCitation, Signal, Stage, Tier
-from citeverify.parsing import normalise_doi, parse_citation
+from citeverify.parsing import arxiv_id_from_field, normalise_doi, parse_citation
 
 
 @dataclass(frozen=True)
@@ -59,7 +59,11 @@ class Auditor:
         trace: list[Stage] = []
 
         doi_norm = normalise_doi(doi) if doi and str(doi).strip() else None
-        if doi and str(doi).strip() and doi_norm is None:
+        field_arxiv = arxiv_id_from_field(doi) if doi_norm is None and doi else None
+        if field_arxiv:  # an arXiv ID in the DOI field is checked through its arXiv DOI
+            doi_norm = f"10.48550/arXiv.{field_arxiv}"
+            parsed = replace(parsed, arxiv_id=field_arxiv)
+        elif doi and str(doi).strip() and doi_norm is None:
             signals.append(Signal("DOI field", "warn", f"'{str(doi).strip()[:60]}' is not a valid DOI; ignored."))
         doi_norm = doi_norm or parsed.doi
         if doi_norm is None and parsed.arxiv_id:
