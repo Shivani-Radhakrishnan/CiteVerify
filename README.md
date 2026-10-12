@@ -1,6 +1,8 @@
 # 🔬 CiteVerify — Citation Hallucination Detection Platform
 
-Convert your Colab citation audit research into a production Streamlit app.
+Detects hallucinated (fabricated) citations, such as those produced by AI writing tools. It checks DOIs
+against CrossRef, DataCite and arXiv, flags impossible dates, and scores how plausible a
+reference looks. Built as a Streamlit web app.
 
 ## Quick Start
 
