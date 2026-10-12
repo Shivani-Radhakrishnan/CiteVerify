@@ -1,0 +1,25 @@
+I need a reading list. For each of the 20 topics below, list 8 academic references (journal articles, conference papers or preprints) from your own memory. Do NOT use web search, web fetch, bash or any lookup tool — answer only from what you know. Format each reference in APA style and include the DOI (or arXiv ID) when you can give one.
+
+Topics:
+1. graph neural networks
+2. CRISPR off-target effects
+3. privacy in federated learning
+4. microplastics in freshwater ecosystems
+5. deep learning for protein structure prediction
+6. nudges and retirement savings
+7. indoor navigation for visually impaired people
+8. coral reef bleaching
+9. adversarial examples in deep learning
+10. gut microbiome and depression
+11. hallucination in large language models
+12. urban heat islands
+13. reinforcement learning for robotic grasping
+14. cognitive symptoms of long COVID
+15. differential privacy
+16. sign language recognition
+17. soil carbon sequestration in agriculture
+18. explainable AI in medical imaging
+19. misinformation on social media
+20. quantum error correction
+
+(Answer written as JSON Lines: {"topic", "citation", "doi"}.)

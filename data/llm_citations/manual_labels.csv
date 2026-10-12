@@ -1,0 +1,5 @@
+id,human_label,category,note
+claude-haiku-043,0,real_text_only,"Chapter in Wise (Ed.), Perspectives on the Economics of Aging, University of Chicago Press, 2004; OpenAlex only indexes the 2001 NBER working paper"
+claude-sonnet-043,0,real_text_only,"Chapter in Wise (Ed.), Perspectives on the Economics of Aging, University of Chicago Press, 2004; OpenAlex only indexes the 2001 NBER working paper"
+claude-opus-niche-016,0,real_text_only,"bioRxiv preprint 10.1101/2025.02.03.636309 (Skrinjar, Eberhardt, ... Schwede, 2025); found in Crossref, not by the OpenAlex title search"
+claude-opus-niche-037,0,real_text_only,"Pacific Symposium on Biocomputing 2024, 10.1142/9789811286421_0002, arXiv:2310.16146; found in Crossref and arXiv, not by the OpenAlex title search"
