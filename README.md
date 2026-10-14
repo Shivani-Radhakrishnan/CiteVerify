@@ -1,4 +1,4 @@
-# 🔬 CiteVerify — Citation Hallucination Detection
+# CiteVerify: Citation Hallucination Detection
 
 [![tests](https://github.com/Shivani-Radhakrishnan/CiteVerify/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Shivani-Radhakrishnan/CiteVerify/actions/workflows/tests.yml)
 
@@ -266,3 +266,7 @@ responses). GitHub Actions runs them on Python 3.10–3.12.
   three styles; real model hallucinations and messy real-world strings can be harder.
 - The benchmark is small (270 citations); one test item is worth about 0.7 points of
   accuracy.
+
+## License
+
+[MIT](LICENSE).
